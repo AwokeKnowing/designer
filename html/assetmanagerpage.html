@@ -1,0 +1,63 @@
+<div class= "preview-pane">
+    <div class="box">
+        <div class="prev-img-large">
+            <div></div>
+        </div>
+        <div class="prev-descr-large">
+            <div >
+                <div class="tmpl-title"></div>
+                <div class="tmpl-type"></div>
+                <div class="tmpl-about">Please choose an asset.</div>
+            </div>
+        </div>
+        <div class="prev-button-sec"><div class="prev-button disabled">Use This Asset</div></div>
+    </div>
+    <div class="decoration"><div><div></div></div></div>
+</div>
+<div class= "browser-pane">
+    <div class="filters" style="display: none;">
+        <div style="">
+            <div><label for="pgam_flt_quizzes">      <input type="checkbox" id="pgam_flt_quizzes"       checked> Lesson Images      </label></div>
+            <div><label for="pgam_flt_informational"><input type="checkbox" id="pgam_flt_informational" checked> Course Images </label></div>
+            <div><label for="pgam_flt_games">        <input type="checkbox" id="pgam_flt_games"         checked> Games        </label></div>
+            <div><label for="pgam_flt_favorites">    <input type="checkbox" id="pgam_flt_favorites"     checked> Favorites    </label></div>
+        </div>
+    </div>
+    <div class="tabs">
+        <div>
+            <div class="tab selected" id="pgam_tab-lesson"><div>Lesson</div></div>
+            <div class="tab" id="pgam_tab-course"><div>Course</div></div>
+            <div class="tab" id="pgam_tab-library"><div>Library</div></div>
+            <div class="tab" id="pgam_tab-public"><div>Public</div></div>
+            <div class="tab upload" id="pgam_tab-upload"><div>Upload</div></div>
+        </div>
+    </div>
+    <div class="assets">
+        <div class="assets-list assets-lesson selected" data-tab="lesson" data-index="account">Loading assets...</div>
+        <div class="assets-list assets-course"  data-tab="course"  data-index="account"></div>
+        <div class="assets-list assets-library" data-tab="library" data-index="account"></div>
+        <div class="assets-list assets-public"  data-tab="public"  data-index="external"></div>
+        <div class="assets-list assets-upload"  data-tab="upload"  data-index="upload">
+        <!--uploader todo: generate in js-->
+        <div class="uploader-title">Upload images to your account</div>
+        <div class="uploader-tag">(jpg, png, gif)</div>
+            <form id="upload_file-upload-form" class="uploader" action="https://api.knowledgecity.com/echo">
+                <input id="upload_file-upload" type="file" name="fileUpload" accept="image/*" />
+                <label for="upload_file-upload" id="upload_file-drag">
+                    <img id="upload_file-image" src="#" alt="Preview" class="hidden">
+                    <div id="upload_start">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <div>Drag an image here, or browse your computer</div>
+                        <div id="upload_notimage" class="hidden">Please select an image</div>
+                        <span id="upload_file-upload-btn" class="btn btn-primary">Browse files...</span>
+                    </div>
+                    <div id="upload_response" class="hidden">
+                        <div id="upload_messages"></div>
+                        <progress class="progress" id="upload_file-progress" value="0"><span>0</span>%</progress>
+                    </div>
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+<div style="clear:both"></div>

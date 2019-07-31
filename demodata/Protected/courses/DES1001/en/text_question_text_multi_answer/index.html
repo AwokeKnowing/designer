@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="height=540,initial-scale=1">
+</head>
+<body>
+<style>
+*{box-sizing: border-box;}
+html,body{margin:0; overflow: hidden; font-family: sans-serif; font-size: 18px;}
+.container{margin: auto; width: 960px; height:540px;position: relative; background: rgb(240,240,240); overflow: hidden; }
+.header{min-height: 140px; position: relative; box-shadow: 0px 2px 8px  0px rgba(0,0,0,.8); z-index: 10; }
+.question-contain{font-size: 26px; display:table; text-shadow: 1px 1px 2px rgba(0,0,0,.3); color:black; width:100%;}
+.question-contain div {width: 100%; display: table-cell; vertical-align: middle; padding: 10px 15px; text-align: left;}
+.question-contain img {width:122px;height: 122px; display: table-cell; vertical-align: middle;}
+.instructions {font-size: 20px; width:100%; background: rgb(163, 47, 59); padding: 6px 15px; color: rgb(197, 197, 197);}
+.task {position: relative; display: table; width: 100%; z-index: 5;height:380px;}
+.task .choice-contain {display: table-cell;vertical-align: middle;text-align: center;transition: all 2s;}
+.task .choice-contain .choices {position: relative;width: 100%;padding-left: 10%;}
+.task .choice-contain .choices .choice {position: relative;display: table;width: 85%;margin: 1.5% 4% auto;min-height: 80px;background: rgb(62,109,209);
+    box-shadow: 2px 2px 3px 0px rgba(0,0,30, .5);border-radius: 20px;font-size: 24px;color: rgb(250,250,250);text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    cursor: pointer;opacity: 1;transform: scale(1, 1) translateX(0);transition: all 0.2s ease-in-out;}
+#c1{animation: .7s ease-out 0s 1 slideInFromLeft;}
+#c2{animation: .8s ease-out 0s 1 slideInFromLeft;}
+#c3{animation: .9s ease-out 0s 1 slideInFromLeft;}
+#c4{animation: 1s  ease-out 0s 1 slideInFromLeft;}
+.task .choice-contain .choices .choice:hover {opacity: .8;transform: translateX(5px);}
+.task .choice-contain .choices .choice div {padding: 15px;display: table-cell;vertical-align: middle;}
+.task .pic-contain {display: table-cell;width:40%;vertical-align: middle;text-align: right;overflow: hidden;position: relative;top: 0;right: 0;left: 0;bottom:0;}
+.task .pic-contain > div{position: absolute;top:-20%;left:28%;right:-50%;bottom:-20%;border-radius: 50%;overflow: hidden;box-shadow: 0px 0px 5px 2px rgba(0,0,30,.6);animation: 1s ease-out 0s 1 slideInFromRight;}
+.task .pic-contain > div > div{position: absolute;top:10%;left:0;right:0;bottom:10%;background-repeat: no-repeat;background-size: contain;background-position: left center;}
+@keyframes slideInFromRight {0% {transform: translateX(100%);} 100% {transform: translateX(0);}}
+@keyframes slideInFromLeft {0% {transform: translateX(-100%);} 100% {transform: translateX(0);}}
+
+.msgboxes {background: rgba(155,155,155,.9);position: absolute;top:0;right:0;left:0;bottom:0;z-index: 9999;}
+.msgboxes .msgbox{position: relative;top:180px;margin: auto;background: #fff;color:#444;border:2px solid #444;border-radius: 20px;box-shadow: 0px 2px 70px 0px rgba(92,0,0,.9);
+                  width: 450px;min-height: 150px;padding: 10px;text-align: center;display: table;cursor:pointer;}
+.msgboxes .close{cursor:pointer;width:40px;height: 40px;background: #bd0404;color:white;border-radius: 0px 20px 0px 10px;position:absolute;top:0;right:0;font-size:30px;box-shadow:-1px 1px 5px 0px rgba(0,0,0,.4);}
+.msgboxes.correct > div{box-shadow: 0px 2px 70px 0px rgba(0,62,0,.9);background: #046282;color:#fff;}
+.msgboxes.incorrect > div{background:#710b0b;color:#fff;}
+.msgboxes >div >div{display: table-cell; vertical-align: middle;}
+.hidden{display: none!important}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.js"></script>
+<script src="https://cdn0.knowledgecity.com/vendors/kc/webplayer/lesson.js"></script>
+
+<div  id="r-c1" class="msgboxes hidden correct">
+    <div class="msgbox"><div data-bind="text: content.correctFeedback.val">Yes</div><div class="close">x</div></div>
+</div>
+<div  id="r-c2" class="msgboxes hidden incorrect">
+    <div class="msgbox"><div data-bind="text: content.answer2Feedback.val">No</div><div class="close">x</div></div>
+</div>
+<div  id="r-c3" class="msgboxes hidden incorrect">
+    <div class="msgbox"><div data-bind="text: content.answer3Feedback.val">No</div><div class="close">x</div></div>
+</div>
+<div  id="r-c4" class="msgboxes hidden incorrect">
+    <div class="msgbox"><div data-bind="text: content.answer4Feedback.val">No</div><div class="close">x</div></div>
+</div>
+
+<div class="container" data-bind="style: {backgroundColor: theme.backgroundColor.val}">
+    <div style="position: absolute;top:50px;left:50px;width:50px;height: 50px;background:rgba(0,0,0,.5);color:red;z-index: 50;text-align: center;line-height: 50px">
+    2</div>
+    <div class="header">
+        <div class="question-contain" data-bind="style: {backgroundColor: theme.questionBackgroundColor.val, color: theme.questionColor.val}">
+            <div data-bind="text: content.question.val"></div>
+            <img src="_kc_question-mark3.png">
+        </div>
+        <div class="instructions" data-bind="style: {background: theme.accentColor.val, color: theme.accentColorText.val}">
+            <div data-bind="text: content.instructions.val"></div>
+        </div>
+    </div>
+    <div class="task" >
+        <div class="choice-contain">
+            <div class="choices">
+                <div class="choice" id="c1" data-bind="style: {background: theme.answerBackgroundColor.val, color: theme.answerColor.val}">
+                    <div data-bind="text: content.correctAnswer.val"></div>
+                </div>
+                <div class="choice" id="c2" data-bind="style: {background: theme.answerBackgroundColor.val, color: theme.answerColor.val}">
+                    <div data-bind="text: content.answer2.val"></div>
+                </div>
+                <div class="choice" id="c3" data-bind="style: {background: theme.answerBackgroundColor.val, color: theme.answerColor.val}">
+                    <div data-bind="text: content.answer3.val"></div>
+                </div>
+                <div class="choice" id="c4" data-bind="style: {background: theme.answerBackgroundColor.val, color: theme.answerColor.val}">
+                    <div data-bind="text: content.answer4.val"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pic-contain">
+            <div>
+                <div>
+                    <div data-bind="style: {width: appearance.decorativeSideImage.val.width()+'px', height:  appearance.decorativeSideImage.val.height()+'px'}">
+                        <div class="croppie-result" style="transform-origin: left top 0px;position:relative;overflow: hidden;" data-bind="style: { width:  ( appearance.decorativeSideImage.val.crop.width()) + 'px', height: (appearance.decorativeSideImage.val.crop.height()) + 'px', transform: 'scale('+  appearance.decorativeSideImage.val.crop.zoom() +')'}"> 
+                            <img style="position: absolute;" data-bind="attr:{src: appearance.decorativeSideImage.val.src()}, style:{ left:  -( appearance.decorativeSideImage.val.crop.x()) + 'px', top: -( appearance.decorativeSideImage.val.crop.y()) + 'px' }">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <div class="next"></div>
+    </div>
+
+    
+</div>
+
+<script>
+//$(".choices").randomize(".choice")
+(function($){$.fn.randomize=function(childElem) {return this.each(function(){var $this=$(this);var elems=$this.children(childElem);elems.sort(function(){return (Math.round(Math.random())-0.5);});$this.remove(childElem);for(var i=0; i < elems.length; i++)$this.append(elems[i]);});}})(jQuery);
+
+
+$(".choice").hide();//only show boxes with content
+$(".choices").randomize(".choice");
+$(".msgboxes > div").click(function(){$(this).parent().addClass("hidden");if(!$(this).parent().hasClass("correct"))$(".choices").randomize(".choice");else lesson.next(1)})
+//check twice per second if content exists, and show if so.
+setInterval(function(){$(".choice").each(function(){$(this).toggle(!!$(this).children().first().html())})},500);
+
+//interaction
+$(".choice").click(function(){
+    var rid = $(this).attr('id');
+    if(rid == "c1")
+        lesson.complete(1);
+        
+    $("#r-"+rid).removeClass("hidden");
+    
+});
+
+
+//todo: make like:
+//  lesson.getSettings().done(function(settings){lesson.render(settings)})
+path = location.pathname.split('/');
+configFilename = path[path.length-1].replace('index', 'lesson').replace('html','json');
+
+$.ajax({"url":configFilename,cache:false,dataType:"json"}).done(function(settings){
+
+	vm = ko.mapping.fromJS(settings.designer.bind);
+	ko.applyBindings(vm); // This makes Knockout get to work
+
+	window.parent.postMessage(JSON.stringify({eventName:"designerSettings",eventData: settings.designer}),'*');
+
+	window.addEventListener('message', function(e){
+		try {var data = JSON.parse(e.data);} catch(ev) { return false; }
+		
+		if(data['eventName'] == "bindUpdated") {
+			//console.log("received update", data);
+			ko.mapping.fromJS(data['eventData'], vm);
+		}
+	});
+
+}).fail(
+	function(r){console.log("error",r)
+});
+
+
+</script>
+
+</body>
+</html>

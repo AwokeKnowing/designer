@@ -1,0 +1,364 @@
+{
+    "assetFiles": false,
+    "assetBasePath": "https:\/\/cdn0.knowledgecity.com\/opencontent\/accounts\/3dc9ef63-3689-494d-8399-233e49b1325b\/designer\/assets\/",
+    "assetIndex": {
+        "image": {
+            "DES1001": {
+                "en": {
+                    "DES1001-2ik6z": [
+                        "_kc_computer_saleswoman.jpg",
+                        "_kc_computer_saleswoman2.jpg",
+                        "_kc_gecko.jpg"
+                    ],
+                    "DES1001-3ik63": [
+                        "_kc_acting.jpg",
+                        "_kc_arrowtwoway.png",
+                        "_kc_engineeringstudent.jpg",
+                        "_kc_listening.jpg"
+                    ],
+                    "DES1001-jtiah": [
+                        "_kc_computer_saleswoman.jpg",
+                        "_kc_computer_saleswoman2.jpg",
+                        "_kc_gecko.jpg",
+                        "_kc_question-mark3.png"
+                    ]
+                },
+                "es": {
+                    "DES1001-5ik6z": [
+                        "_kc_computer_saleswoman.jpg",
+                        "_kc_computer_saleswoman2.jpg",
+                        "_kc_gecko.jpg"
+                    ],
+                    "DES1001-5ik63": [
+                        "_kc_acting.jpg",
+                        "_kc_arrowtwoway.png",
+                        "_kc_engineeringstudent.jpg",
+                        "_kc_listening.jpg"
+                    ]
+                }
+            },
+            "DES1001B": {
+                "en": {
+                    "DES1001B-2ikbb": [
+                        "_kc_acting.jpg",
+                        "_kc_arrowtwoway.png",
+                        "_kc_retire.jpg",
+                        "_kc_school_children1.jpg",
+                        "_kc_writing.jpg"
+                    ]
+                }
+            }
+        }
+    },
+    "assets": {
+        "_kc_acting.jpg": {
+            "txtid": "_kc_acting.jpg",
+            "md5": "b568c5632ee7be76452c4193e573f0b0",
+            "added": 1552088417,
+            "tags": [
+                "images",
+                "acting",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_acting.jpg",
+            "file": "_kc_acting.jpg",
+            "width": 160,
+            "height": 90,
+            "mime": "image\/jpeg",
+            "size": 5473,
+            "hsize": "5 KB",
+            "about": "160x90 (5 KB)"
+        },
+        "_kc_arrowtwoway.png": {
+            "txtid": "_kc_arrowtwoway.png",
+            "md5": "5b7d9f59379d6b6448d825fc1826cb2b",
+            "added": 1552088517,
+            "tags": [
+                "images",
+                "arrowtwoway",
+                "png"
+            ],
+            "type": "image",
+            "title": "_kc_arrowtwoway.png",
+            "file": "_kc_arrowtwoway.png",
+            "width": 120,
+            "height": 120,
+            "mime": "image\/png",
+            "size": 1697,
+            "hsize": "2 KB",
+            "about": "120x120 (2 KB)"
+        },
+        "_kc_computer_saleswoman.jpg": {
+            "txtid": "_kc_computer_saleswoman.jpg",
+            "md5": "f0d2e78445edd80f66fdd7668c357801",
+            "added": 1552088617,
+            "tags": [
+                "images",
+                "computer",
+                "saleswoman",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_computer_saleswoman.jpg",
+            "file": "_kc_computer_saleswoman.jpg",
+            "width": 467,
+            "height": 720,
+            "mime": "image\/jpeg",
+            "size": 47666,
+            "hsize": "47 KB",
+            "about": "467x720 (47 KB)"
+        },
+        "_kc_computer_saleswoman2.jpg": {
+            "txtid": "_kc_computer_saleswoman2.jpg",
+            "md5": "f3599c5bcd3c6f96041db1c9db2f9a62",
+            "added": 1552088717,
+            "tags": [
+                "images",
+                "computer",
+                "saleswoman2",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_computer_saleswoman2.jpg",
+            "file": "_kc_computer_saleswoman2.jpg",
+            "width": 706,
+            "height": 1024,
+            "mime": "image\/jpeg",
+            "size": 267353,
+            "hsize": "261 KB",
+            "about": "706x1024 (261 KB)"
+        },
+        "_kc_engineeringstudent.jpg": {
+            "txtid": "_kc_engineeringstudent.jpg",
+            "md5": "3d367cc1305eb7ccd38e37099cba07dc",
+            "added": 1552088817,
+            "tags": [
+                "images",
+                "engineeringstudent",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_engineeringstudent.jpg",
+            "file": "_kc_engineeringstudent.jpg",
+            "width": 621,
+            "height": 372,
+            "mime": "image\/jpeg",
+            "size": 68100,
+            "hsize": "67 KB",
+            "about": "621x372 (67 KB)"
+        },
+        "_kc_gecko.jpg": {
+            "txtid": "_kc_gecko.jpg",
+            "md5": "eff46a8997be3a48d7a6069ef9ed759d",
+            "added": 1552088917,
+            "tags": [
+                "images",
+                "gecko",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_gecko.jpg",
+            "file": "_kc_gecko.jpg",
+            "width": 509,
+            "height": 340,
+            "mime": "image\/jpeg",
+            "size": 20519,
+            "hsize": "20 KB",
+            "about": "509x340 (20 KB)"
+        },
+        "_kc_listening.jpg": {
+            "txtid": "_kc_listening.jpg",
+            "md5": "6da4d76e10d352aa08e7b9e4b9410fe7",
+            "added": 1552089017,
+            "tags": [
+                "images",
+                "listening",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_listening.jpg",
+            "file": "_kc_listening.jpg",
+            "width": 160,
+            "height": 90,
+            "mime": "image\/jpeg",
+            "size": 4740,
+            "hsize": "5 KB",
+            "about": "160x90 (5 KB)"
+        },
+        "_kc_next-arrow.png": {
+            "txtid": "_kc_next-arrow.png",
+            "md5": "7eb6df5043393f07983385e6a93c1a92",
+            "added": 1552089117,
+            "tags": [
+                "images",
+                "next",
+                "arrow",
+                "png"
+            ],
+            "type": "image",
+            "title": "_kc_next-arrow.png",
+            "file": "_kc_next-arrow.png",
+            "width": 420,
+            "height": 420,
+            "mime": "image\/png",
+            "size": 44001,
+            "hsize": "43 KB",
+            "about": "420x420 (43 KB)"
+        },
+        "_kc_observing.jpg": {
+            "txtid": "_kc_observing.jpg",
+            "md5": "3a56ea44d09413a593b69c7239c8556b",
+            "added": 1552089217,
+            "tags": [
+                "images",
+                "observing",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_observing.jpg",
+            "file": "_kc_observing.jpg",
+            "width": 160,
+            "height": 90,
+            "mime": "image\/jpeg",
+            "size": 5113,
+            "hsize": "5 KB",
+            "about": "160x90 (5 KB)"
+        },
+        "_kc_officeworkerfem.jpg": {
+            "txtid": "_kc_officeworkerfem.jpg",
+            "md5": "23060abd5dbba2c9dab84adf9d7547fc",
+            "added": 1552089317,
+            "tags": [
+                "images",
+                "officeworkerfem",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_officeworkerfem.jpg",
+            "file": "_kc_officeworkerfem.jpg",
+            "width": 200,
+            "height": 133,
+            "mime": "image\/jpeg",
+            "size": 5896,
+            "hsize": "6 KB",
+            "about": "200x133 (6 KB)"
+        },
+        "_kc_question-mark3.png": {
+            "txtid": "_kc_question-mark3.png",
+            "md5": "40a02507bc970b1f1fc03a5c9257d087",
+            "added": 1552089417,
+            "tags": [
+                "images",
+                "question",
+                "mark3",
+                "png"
+            ],
+            "type": "image",
+            "title": "_kc_question-mark3.png",
+            "file": "_kc_question-mark3.png",
+            "width": 512,
+            "height": 512,
+            "mime": "image\/png",
+            "size": 29959,
+            "hsize": "29 KB",
+            "about": "512x512 (29 KB)"
+        },
+        "_kc_reading.jpg": {
+            "txtid": "_kc_reading.jpg",
+            "md5": "1da698d46d45b6ef9846def1adff23b3",
+            "added": 1552089517,
+            "tags": [
+                "images",
+                "reading",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_reading.jpg",
+            "file": "_kc_reading.jpg",
+            "width": 160,
+            "height": 90,
+            "mime": "image\/jpeg",
+            "size": 5663,
+            "hsize": "6 KB",
+            "about": "160x90 (6 KB)"
+        },
+        "_kc_retire.jpg": {
+            "txtid": "_kc_retire.jpg",
+            "md5": "e98a150b00f22a8a277a317d49461df0",
+            "added": 1552089617,
+            "tags": [
+                "images",
+                "retire",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_retire.jpg",
+            "file": "_kc_retire.jpg",
+            "width": 200,
+            "height": 133,
+            "mime": "image\/jpeg",
+            "size": 50664,
+            "hsize": "49 KB",
+            "about": "200x133 (49 KB)"
+        },
+        "_kc_school_children1.jpg": {
+            "txtid": "_kc_school_children1.jpg",
+            "md5": "3967ea12b4e538780723f3006a552850",
+            "added": 1552089717,
+            "tags": [
+                "images",
+                "school",
+                "children1",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_school_children1.jpg",
+            "file": "_kc_school_children1.jpg",
+            "width": 500,
+            "height": 334,
+            "mime": "image\/jpeg",
+            "size": 207531,
+            "hsize": "203 KB",
+            "about": "500x334 (203 KB)"
+        },
+        "_kc_speaking.jpg": {
+            "txtid": "_kc_speaking.jpg",
+            "md5": "e29334817b9c0ec17bcfa58ad70dcc2c",
+            "added": 1552089817,
+            "tags": [
+                "images",
+                "speaking",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_speaking.jpg",
+            "file": "_kc_speaking.jpg",
+            "width": 160,
+            "height": 90,
+            "mime": "image\/jpeg",
+            "size": 4518,
+            "hsize": "4 KB",
+            "about": "160x90 (4 KB)"
+        },
+        "_kc_writing.jpg": {
+            "txtid": "_kc_writing.jpg",
+            "md5": "354f219447ea6ea81ca891d2664d93e4",
+            "added": 1552089917,
+            "tags": [
+                "images",
+                "writing",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_writing.jpg",
+            "file": "_kc_writing.jpg",
+            "width": 160,
+            "height": 90,
+            "mime": "image\/jpeg",
+            "size": 5606,
+            "hsize": "5 KB",
+            "about": "160x90 (5 KB)"
+        }
+    }
+}

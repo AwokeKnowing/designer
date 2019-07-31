@@ -1,0 +1,74 @@
+{
+    "templates": [
+        {
+            "txtid": "text_question_text_multi_answer",
+            "version": "v1",
+            "tags": ["quizzes"],
+            "lang": "en",
+            "image": "img/posters/text_question_text_multi_answer_en.png",
+            "sourcePath":"lessontemplates/text_question_text_multi_answer/en/v1/",
+            "title": "Text Question - Text Answers",
+            "about": "User will read a question and select from multiple-choices until the correct answer is chosen."
+        },
+        {
+            "txtid": "text_question_4_picture_answers",
+            "version": "v1",
+            "tags": ["quizzes"],
+            "lang": "en",
+            "image": "img/posters/text_question_4_picture_answers_en.png",
+            "sourcePath":"lessontemplates/text_question_4_picture_answers/en/v1/",
+            "title": "Text Question - Text Answers",
+            "about": "User will read a question and select from multiple-choices of pictures until the correct answer is chosen."
+        },
+        {
+            "txtid": "text_question_3_matching_drag",
+            "version": "v1",
+            "tags": ["quizzes", "drag-and-drop"],
+            "lang": "en",
+            "image": "img/posters/text_question_3_matching_drag_en.png",
+            "sourcePath":"lessontemplates/text_question_3_matching_drag/en/v1/",
+            "title": "Drag and Drop Matching - 3 Picture boxes",
+            "about": "User will drag and drop boxes from one area to a space beside the corresponding correct answer.  When the Next button is clicked, if they are correct, the lesson is done. If there is an error, the boxes return to their starting point."
+        },
+        {
+            "txtid": "text_question_fill_in_the_blank_answer",
+            "version": "v1",
+            "tags": ["quizzes", "fill in the blank", "short answer"],
+            "lang": "en",
+            "image": "img/posters/text_question_fill_in_the_blank_answer.png",
+            "sourcePath":"lessontemplates/text_question_fill_in_the_blank_answer/en/v1/",
+            "title": "Fill in the Blank / Short Answer",
+            "about": "User will type in the exact answer to the question.  When the Next button is clicked, if they are correct, the lesson is done. If there is an error, a hint is given. Third hint is actual answer (to ensure they can't get stuck)."
+        },
+        {
+            "txtid": "picture_question_text_multi_answer",
+            "version": "v1",
+            "tags": ["quizzes", "picture question", "multiple choice"],
+            "lang": "en",
+            "image": "img/posters/picture_question_text_multi_answer.png",
+            "sourcePath":"lessontemplates/picture_question_text_multi_answer/en/v1/",
+            "title": "Picture Question - Text Answers",
+            "about": "User will view a picture, read a comment/question, and select from several answers. If the wrong answer is selected, user receives feedback. Once the correct answer is chosen, the lesson is done."
+        },
+        {
+            "txtid": "html_question_text_multi_answer",
+            "version": "v1",
+            "tags": ["quizzes", "picture question", "multiple choice"],
+            "lang": "en",
+            "image": "img/posters/html_question_text_multi_answer.png",
+            "sourcePath":"lessontemplates/html_question_text_multi_answer/en/v1/",
+            "title": "Text/HTML Content Question - Text Answers",
+            "about": "User will read the selection of text, and select one of several answers. If the wrong answer is selected, user receives feedback. Once the correct answer is chosen, the lesson is done."
+        },
+        {
+            "txtid": "text_question_picture_hot_spots",
+            "version": "v1",
+            "tags": ["quizzes", "picture", "hot-spot"],
+            "lang": "en",
+            "image": "img/posters/text_question_picture_hot_spots_en.png",
+            "sourcePath":"lessontemplates/text_question_picture_hot_spots/en/v1/",
+            "title": "Picture Area Question",
+            "about": "User will read a question click on the area of the picture that represents the best answer. Feedback can be given for other areas the user may click on."
+        }
+    ]
+}

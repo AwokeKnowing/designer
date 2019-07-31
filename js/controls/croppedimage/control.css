@@ -1,0 +1,20 @@
+.croppie-dialog .cr-viewport {border:none!important;box-shadow:0 0 2000px 2000px rgba(100, 0, 0, 0.7);}
+.croppie-dialog {position:absolute;z-index:10;background:rgba(10,10,10,.8); top: 50px; left:0vh; width:100vw; height:calc(100vh - 50px);}
+.croppie-tool {position:absolute;background:black; position: absolute; top:calc(10vh - 50px); left:10vw; width:80vw; height:calc(80vh - 40px); border: 60px solid rgb(40,40,40);  border-radius: 5px;  box-shadow: 0 1px 18px 9px rgba(0,0,0,.6);}
+
+.croppie-controls {position: absolute; bottom: calc(10vh + 40px); right: calc(10vw + 60px); width: 250px; height: 60px; text-align: right;color:white;font-family: sans-serif;font-size: 14px}
+.croppie-controls > div {margin:5px 4px;display:inline-block;text-align: center;padding: 16px 30px;background: #df803d;border-radius: 4px;box-shadow: 2px 2px 6px 0px rgba(0,0,0,.5);opacity:.9;cursor: pointer;}
+.croppie-controls > div:hover {opacity: 1;box-shadow: 2px 2px 16px 0px rgba(0,0,0,.5);}
+.croppie-controls > div.disabled {opacity:.1;cursor: default;pointer-events: none;}
+.croppie-controls.left {right:auto;left: calc(10vw + 60px);text-align: left;}
+.croppie-controls.left > div {background: #2b576b;}
+
+.croppedimage {/*position: relative; causes image to overlap title of next control*/}
+.croppedimage .thumbnail {width: 27px; height: 27px; border: 1px solid #888; border-radius: 5px 0px 0px 5px; position: relative; margin-top: -27px; overflow: hidden;}
+.croppedimage .thumbnail > div {transform: scale(.25);  transform-origin: left top 0px; width: 108px; height: 108px;background: black; text-align: center; overflow: hidden; transition: all .3s ease-out; margin-left:-1px; margin-top:-1px;}
+.croppedimage .thumbnail:hover {overflow: visible;}
+.croppedimage .thumbnail > div:hover {transform: scale(1);margin-top: -50px;margin-left: -5px; z-index: 50}
+.croppedimage.control input { padding: 5px 5px 5px 30px!important; margin-right: -3px;}
+.croppedimage .thumbnail > div > div {display: inline-block;}
+.croppedimage .thumbnail  > div > div > div {transform-origin: left top 0px!important;position: relative; overflow: hidden;}
+.croppedimage .thumbnail img {position:absolute;}

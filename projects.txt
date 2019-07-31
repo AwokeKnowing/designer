@@ -1,0 +1,49 @@
+outline of current and future projects
+
+more simple templates (differnt looks)
+slider and checkbox and dropdown and radio controls
+
+restart lesson. (and update lessons to enter a 'done' state)
+deconflict asset name on upload: somefile(2).jpg
+delete assets
+lesson linking and partial progress resets
+fullscreen
+full page/scroll view (eg udacity)
+
+undo(ctl+z and button)
+redo(ctl+y and button)
+save reminder (button flash+note about time since last save)
+
+smarttext control (eg text gets smaller to fit, can center or left or justify)
+
+designer mode (templates can optionally show differently during design)
+hover select (click items in template to select in sidebar)
+
+templates/asset manager 
+	interactive chat
+	games
+	video/pdf/image
+	Youtube embed
+	Audio clip (with questions, and for hovering over pictures)
+	native powerpoint
+	livestream/webcast
+	webcam recording (background removal)
+    a dynamic add objects to collection/drag drop/type text
+	vr
+	freeform
+
+code editor
+
+full course mode
+lesson browsing within designer
+downloading/uploading course (self-contained)
+
+section 508 compliance (hearing/visual impaired)
+
+Desktop app.
+training course.
+
+environment (dev stage experimental)
+localization of ui
+localization of templates 
+file-handling optimization (too slow to change templates/copy cdn assets etc)

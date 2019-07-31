@@ -1,0 +1,300 @@
+{
+    "thememanager_themes_colorscience_tetrad": {
+    
+        "_kc_0041T6uE8w0w0": {
+            "txtid": "_kc_0041T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#FFCBCB",
+                "accentColor":             "#2F7676",
+                "accentColorText":         "#C2DBDB",
+                "questionBackgroundColor": "#AEDBAE",
+                "answerBackgroundColor":   "#A66F42",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        },
+        "_kc_0u41T6uE8w0w0": {
+            "txtid": "_kc_0u41T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#FFE3CB",
+                "accentColor":             "#344A7F",
+                "accentColorText":         "#CBD1E1",
+                "questionBackgroundColor": "#91B6B6",
+                "answerBackgroundColor":   "#A68542",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        },
+        "_kc_0X41T6uE8w0w0": {
+            "txtid": "_kc_0X41T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#FFEECB",
+                "accentColor":             "#473581",
+                "accentColorText":         "#D2CCE3",
+                "questionBackgroundColor": "#A0AAC3",
+                "answerBackgroundColor":   "#A69542",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        },
+        "_kc_1q41T6uE8w0w0": {
+            "txtid": "_kc_1q41T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#FFF6CB",
+                "accentColor":             "#64337E",
+                "accentColorText":         "#D8C9E1",
+                "questionBackgroundColor": "#ABA3C6",
+                "answerBackgroundColor":   "#A6A642",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        },
+        "_kc_1T41T6uE8w0w0": {
+            "txtid": "_kc_1T41T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#FFFFCB",
+                "accentColor":             "#8E3969",
+                "accentColorText":         "#EDD3E2",
+                "questionBackgroundColor": "#B59DC2",
+                "answerBackgroundColor":   "#7E9E3F",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        },
+        "_kc_2m41T6uE8w0w0": {
+            "txtid": "_kc_2m41T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#E2F3C2",
+                "accentColor":             "#A64242",
+                "accentColorText":         "#FFE3E3",
+                "questionBackgroundColor": "#DBAFC8",
+                "answerBackgroundColor":   "#398E39",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        },
+        "_kc_2P41T6uE8w0w0": {
+            "txtid": "_kc_2P41T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#AEDBAE",
+                "accentColor":             "#A66F42",
+                "accentColorText":         "#FFEFE3",
+                "questionBackgroundColor": "#FFCBCB",
+                "answerBackgroundColor":   "#2F7676",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        },
+        "_kc_3i41T6uE8w0w0": {
+            "txtid": "_kc_3i41T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#91B6B6",
+                "accentColor":             "#A68542",
+                "accentColorText":         "#FFF6E3",
+                "questionBackgroundColor": "#FFE3CB",
+                "answerBackgroundColor":   "#344A7F",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        },
+        "_kc_3L41T6uE8w0w0": {
+            "txtid": "_kc_3L41T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#A0AAC3",
+                "accentColor":             "#A69542",
+                "accentColorText":         "#FFFAE3",
+                "questionBackgroundColor": "#FFEECB",
+                "answerBackgroundColor":   "#473581",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        },
+        "_kc_4e41T6uE8w0w0": {
+            "txtid": "_kc_4e41T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#ABA3C6",
+                "accentColor":             "#A6A642",
+                "accentColorText":         "#FFFFE3",
+                "questionBackgroundColor": "#FFF6CB",
+                "answerBackgroundColor":   "#64337E",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        },
+        "_kc_4H41T6uE8w0w0": {
+            "txtid": "_kc_4H41T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#B59DC2",
+                "accentColor":             "#7E9E3F",
+                "accentColorText":         "#F0F9DD",
+                "questionBackgroundColor": "#FFFFCB",
+                "answerBackgroundColor":   "#8E3969",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        },
+        "_kc_5a41T6uE8w0w0": {
+            "txtid": "_kc_5a41T6uE8w0w0",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "#DBAFC8",
+                "accentColor":             "#398E39",
+                "accentColorText":         "#D2EDD2",
+                "questionBackgroundColor": "#E2F3C2",
+                "answerBackgroundColor":   "#A64242",
+                "questionColor":           "#000000",
+                "answerColor":             "#ffffff"
+            }
+        }
+    },
+    "thememanager_themes_singlecolor": {
+        "_kc_singlecolorredtheme": {
+            "txtid": "_kc_singlecolorredtheme",
+            "title": "",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "rgb(40, 48, 57)",
+                "accentColor":             "rgba(142, 39, 39, 1.0)",
+                "accentColorText":         "rgb(255,255,255)",
+                "questionBackgroundColor": "rgb(255, 255, 255)",
+                "answerBackgroundColor":   "rgba(142, 39, 39, 1.0)",
+                "questionColor":           "rgb(  0,   0,   0)",
+                "answerColor":             "rgb(255, 255, 255)"
+            }
+        },
+        "_kc_singlecolororangetheme": {
+            "txtid": "_kc_orangetheme",
+            "title": "",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "rgb(40, 48, 57)",
+                "accentColor":             "rgba(188, 104, 28, 1.0)",
+                "accentColorText":         "rgb(255,255,255)",
+                "questionBackgroundColor": "rgb(255, 255, 255)",
+                "answerBackgroundColor":   "rgba(188, 104, 28, 1.0)",
+                "questionColor":           "rgb(  0,   0,   0)",
+                "answerColor":             "rgb(255, 255, 255)"
+            }
+        },
+        "_kc_singlecolortealtheme": {
+            "txtid": "_kc_singlecolortealtheme",
+            "title": "",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "rgb(40, 48, 57)",
+                "accentColor":             "rgb(4,  124,  96)",
+                "accentColorText":         "rgb(255,255,255)",
+                "questionBackgroundColor": "rgb(255, 255, 255)",
+                "answerBackgroundColor":   "rgb(4,  124,  96)",
+                "questionColor":           "rgb(  0,   0,   0)",
+                "answerColor":             "rgb(255, 255, 255)"
+            }
+        },
+        "_kc_singlecolorbluetheme": {
+            "txtid": "_kc_singlecolorbluetheme",
+            "title": "",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "rgb(40, 48, 57)",
+                "accentColor":             "rgba(14, 77, 144, 1.0)",
+                "accentColorText":         "rgb(255,255,255)",
+                "questionBackgroundColor": "rgb(255, 255, 255)",
+                "answerBackgroundColor":   "rgba(14, 77, 144, 1.0)",
+                "questionColor":           "rgb(  0,   0,   0)",
+                "answerColor":             "rgb(255, 255, 255)"
+            }
+        },
+        "_kc_singlecolorpurpletheme": {
+            "txtid": "_kc_singlecolorpurpletheme",
+            "title": "",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "rgb(40, 48, 57)",
+                "accentColor":             "rgba(69, 26, 133, 1.0)",
+                "accentColorText":         "rgb(255,255,255)",
+                "questionBackgroundColor": "rgb(255, 255, 255)",
+                "answerBackgroundColor":   "rgba(69, 26, 133, 1.0)",
+                "questionColor":           "rgb(  0,   0,   0)",
+                "answerColor":             "rgb(255, 255, 255)"
+            }
+        },
+        "_kc_singlecolorbrowntheme": {
+            "txtid": "_kc_singlecolorbrowntheme",
+            "title": "",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "rgb(40, 48, 57)",
+                "accentColor":             "rgba(111, 69, 15, 1.0)",
+                "accentColorText":         "rgb(255,255,255)",
+                "questionBackgroundColor": "rgb(255, 255, 255)",
+                "answerBackgroundColor":   "rgba(111, 69, 15, 1.0)",
+                "questionColor":           "rgb(  0,   0,   0)",
+                "answerColor":             "rgb(255, 255, 255)"
+            }
+        }
+    },
+    "thememanager_themes_builtin" : {
+        "_kc_defaulttheme": {
+            "txtid": "_kc_defaulttheme",
+            "title": "thememanager_titles_defaulttheme",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "rgb(240, 240, 240)",
+                "accentColor":             "rgb(163,  47,  59)",
+                "accentColorText":         "rgb(197, 197, 197)",
+                "questionBackgroundColor": "rgb(240, 240, 240)",
+                "answerBackgroundColor":   "rgb( 62, 109, 209)",
+                "questionColor":           "rgb(  0,   0,   0)",
+                "answerColor":             "rgb(255, 255, 255)"
+            }
+        },
+        "_kc_highcontrasttheme": {
+            "txtid": "_kc_highcontrasttheme",
+            "title": "thememanager_titles_highcontrasttheme",
+            "type": "thememanager",
+            "control": "thememanager",
+            "properties": {
+                "backgroundColor":         "rgb(0, 0, 30)",
+                "accentColor":             "rgb(215,  215,  255)",
+                "accentColorText":         "rgb(0, 0, 0)",
+                "questionBackgroundColor": "rgb(255, 255, 255)",
+                "answerBackgroundColor":   "rgb( 255, 255, 255)",
+                "questionColor":           "rgb(  0,   0,   0)",
+                "answerColor":             "rgb(0, 0, 0)"
+            }
+        }
+    },
+    "thememanager_themes_custom": {
+    }
+
+}

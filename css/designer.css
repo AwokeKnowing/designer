@@ -1,0 +1,24 @@
+
+/* all this is in the main index page*/
+html, body{margin:0;background: #444}
+*{box-sizing: border-box;}
+
+/*Application*/
+.designer {min-height: 100vh;width:100vw; height: 100vh; background-color: #444; font-family: sans-serif;}
+
+/*Header*/
+.header {height:50px;border:1px solid #555;font-size: 24px;color:white;background: #555;padding: 5px 35px;}
+.header img{width:28px;height: 28px;display: inline-block;position:relative;top: 4px; left:-4px;}
+.app {width: 100%;height: calc(100vh - 50px);}
+.pages {}
+
+.hidden {display: none!important /*needs important since this css is loaded first, and to apply anywhere to more specific css*/}
+.loading {background: rgba(220, 220, 255, 0.3);bottom: 0;left: 0;position: fixed;right: 0; top: 50px; z-index: 9998;}
+.spinner { background: #000 url(https://code.jquery.com/mobile/1.1.0/images/ajax-loader.gif) 0 0  no-repeat; border: 0; -webkit-border-radius: 36px; -moz-border-radius: 36px; border-radius: 36px; box-shadow: 0 1px 1px -1px #fff; display: block; height: 46px; left: 50%; margin: -23px 0 0 -23px; opacity: 0.18; overflow: hidden; padding: 1px; position: fixed; text-align: center; top: 50%; width: 46px; z-index: 9999;}
+
+/* all of the above is inline in the index page. it's here for reference.*/
+
+
+/*scrollbar*/
+.designer{/*scrollbar*/ scrollbar-face-color: #646464; scrollbar-base-color: #646464; scrollbar-3dlight-color: #646464; scrollbar-highlight-color: #646464; scrollbar-track-color: #000; scrollbar-arrow-color: #000; scrollbar-shadow-color: #646464; scrollbar-dark-shadow-color: #646464;}
+::-webkit-scrollbar { width: 12px; height: 3px;} ::-webkit-scrollbar-button {  background-color: #666; } ::-webkit-scrollbar-track {  background-color: #646464;} ::-webkit-scrollbar-track-piece { background-color: #000;} ::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;} ::-webkit-scrollbar-corner { background-color: #646464;}} ::-webkit-resizer { background-color: #666;}
