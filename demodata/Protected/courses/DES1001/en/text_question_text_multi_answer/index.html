@@ -44,7 +44,7 @@ html,body{margin:0; overflow: hidden; font-family: sans-serif; font-size: 18px;}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.js"></script>
-<script src="https://cdn0.knowledgecity.com/vendors/kc/webplayer/lesson.js"></script>
+<script src="https://cdn0.knowledgecity.com/vendors/kc/webplayer/2.0/lesson.js"></script>
 
 <div  id="r-c1" class="msgboxes hidden correct">
     <div class="msgbox"><div data-bind="text: content.correctFeedback.val">Yes</div><div class="close">x</div></div>
@@ -108,6 +108,7 @@ html,body{margin:0; overflow: hidden; font-family: sans-serif; font-size: 18px;}
 </div>
 
 <script>
+lesson.size(960,540,960,540);
 //$(".choices").randomize(".choice")
 (function($){$.fn.randomize=function(childElem) {return this.each(function(){var $this=$(this);var elems=$this.children(childElem);elems.sort(function(){return (Math.round(Math.random())-0.5);});$this.remove(childElem);for(var i=0; i < elems.length; i++)$this.append(elems[i]);});}})(jQuery);
 

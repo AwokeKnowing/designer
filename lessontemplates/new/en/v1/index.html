@@ -16,12 +16,13 @@
 
   <body tabindex="1" class="loadingInProgress">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdn0.knowledgecity.com/vendors/kc/webplayer/lesson.js"></script>
+    <script src="https://cdn0.knowledgecity.com/vendors/kc/webplayer/2.0/lesson.js"></script>
     <script src="https://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.js"></script>
     
     <div class="img" style="width:100%;height:auto;"><img src="_kc_newlesson.jpg" class="slide" />    </div>
     <script>
+    lesson.size(960,540,960,540);
 path = location.pathname.split('/');
 configFilename = path[path.length-1].replace('index', 'lesson').replace('html','json');
     

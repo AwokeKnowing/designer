@@ -77,7 +77,7 @@ img[src=""] {display: none}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.js"></script>
 <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script src="jquery.ui.touch-punch.min.js"></script>
-<script src="https://cdn0.knowledgecity.com/vendors/kc/webplayer/lesson.js"></script>
+<script src="https://cdn0.knowledgecity.com/vendors/kc/webplayer/2.0/lesson.js"></script>
 
 <div  id="r-correct" class="msgboxes hidden correct">
     <div class="msgbox"><div data-bind="text: content.correctFeedback.val">Yes</div><div class="close">x</div></div>
@@ -175,6 +175,7 @@ img[src=""] {display: none}
 </div>
 
 <script>
+lesson.size(960,540,960,540);
 //lesson.getSettings().done(function(settings){lesson.render(settings)})
 selections = [];
 setTimeout("reset()",1000);
