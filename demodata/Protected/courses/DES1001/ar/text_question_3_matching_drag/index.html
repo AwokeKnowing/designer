@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<style>
+*{box-sizing: border-box;}
+html,body{margin:0; overflow: hidden; font-family: sans-serif; font-size: 18px;}
+.container{margin: auto; width: 960px; height:540px;position: relative; background: rgb(240,240,240); overflow: hidden; }
+.header{min-height: 140px; position: relative; box-shadow: 0px 2px 8px  0px rgba(0,0,0,.8); z-index: 10; }
+.question-contain{font-size: 26px; display:table; text-shadow: 1px 1px 2px rgba(0,0,0,.3); color:black; width:100%;}
+.question-contain div {width: 100%; display: table-cell; vertical-align: middle; padding: 10px 15px; text-align: left;}
+.question-contain img {width:122px;height: 122px; display: table-cell; vertical-align: middle;}
+.instructions {font-size: 20px; width:100%; background: rgb(163, 47, 59); padding: 6px 15px; color: rgb(197, 197, 197);}
+.task {position: relative; display: table; width: 100%; z-index: 5;}
+.task .choice-contain {text-align: center;transition: all 2s;pointer-events: none;user-select: none;}
+.task .choice-contain .choices {position: relative;width: 200px;}
+.task .choice-contain .choices .row {margin-top: 5px}
+.task .choice-contain .choices .row .choice {position: relative;display: inline-block;overflow:hidden;width: 160px;height:120px;background: rgb(62,109,209);
+    box-shadow: 2px 2px 3px 0px rgba(0,0,30, .5);border-radius: 20px;font-size: 18px;color: rgb(250,250,250);text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    cursor: pointer;opacity: 1;transform: scale(1, 1) translateX(0);}
+#c1{animation: .6s ease-out 0s 1 slideInFromLeft;}
+#c2{animation: .7s ease-out 0s 1 slideInFromLeft;}
+#c3{animation: .8s ease-out 0s 1 slideInFromLeft;}
+#c4{animation: .9s ease-out 0s 1 slideInFromLeft;}
+/*.task .choice-contain .choices .choice:hover {opacity: .8;transform: translateX(5px);}*/
+.task .choice-contain .choices .choice img {/*width: 160px;height:90px;position: relative;*/}
+.task .choice-contain .choices .choice > div {display: table;height: 30px;text-align: center;width:100%;}
+.task .choice-contain .choices .choice > div > div{display: table-cell;vertical-align: middle;}
+.task .pic-contain {display: table-cell;width:40%;vertical-align: middle;text-align: right;overflow: hidden;position: relative;top: 0;right: 0;left: 0;bottom:0;}
+.task .pic-contain > div{position: absolute;top:-20%;left:28%;right:-50%;bottom:-20%;border-radius: 50%;overflow: hidden;box-shadow: 0px 0px 5px 2px rgba(0,0,30,.6);animation: 1s ease-out 0s 1 slideInFromRight;}
+.task .pic-contain > div > div{position: absolute;top:10%;left:0;right:0;bottom:10%;background-repeat: no-repeat;background-size: contain;background-position: left center;}
+
+
+.circle {position: absolute; margin: 0px; left: 540px; top: 16px; width: 352px; height: 349px; right: auto; bottom: auto; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.23) 2px 2px 4px 4px inset; border: 4px solid rgb(241, 241, 241); background-color: rgb(0, 184, 144); -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.arrows {width:120px;margin: 10px 30px;position:absolute; top:0;left:160px;}
+.spaces {width:130px;margin: 4px 30px;position:absolute; top:0;left:300px;}
+.spaces > div {margin:2px;width: 164px; height: 124px;  border-radius: 10px; border: 2px dashed rgb(67, 134, 193); background-color: rgb(200, 200, 255);}
+.matches {position: absolute;top:0;left:550px;width:350px;right:auto;bottom:auto;}
+.matches >div {position:relative;}
+
+.controls .next {display:none;width:20px; height:8px;z-index: 998}
+.controls .next img {width:210px; height:128px;margin-top:-64px;margin-left:-80px}
+
+.matches .choice {position: relative;display: inline-block;overflow:hidden;width: 160px;height:120px;background: rgb(62,109,209);
+box-shadow: 2px 2px 8px 0px rgba(0,0,30, .7);border-radius: 20px;font-size: 16px;color: rgb(250,250,250);text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    cursor: pointer;opacity: 1;transform: scale(1, 1) translateX(0);
+}
+.matches .choice img {/*width: 160px;height:90px;position: relative;*/}
+.matches .choice > div {display: table;height: 30px;text-align: center;width:100%;}
+.matches .choice > div > div{display: table-cell;vertical-align: middle;}
+.dropbox-active {border: 4px dashed green!important}
+/*to keep missing images from having annoying border*/
+img[src=""] {display: none}
+
+.msgboxes {background: rgba(155,155,155,.9);position: absolute;top:0;right:0;left:0;bottom:0;z-index: 9999;}
+.msgboxes .msgbox{position: relative;top:180px;margin: auto;background: #fff;color:#444;border:2px solid #444;border-radius: 20px;box-shadow: 0px 2px 70px 0px rgba(92,0,0,.9);
+                  width: 450px;min-height: 150px;padding: 10px;text-align: center;display: table;cursor:pointer;}
+.msgboxes .close{cursor:pointer;width:40px;height: 40px;background: #bd0404;color:white;border-radius: 0px 20px 0px 10px;position:absolute;top:0;right:0;font-size:30px;box-shadow:-1px 1px 5px 0px rgba(0,0,0,.4);}
+.msgboxes.correct > div{box-shadow: 0px 2px 70px 0px rgba(0,62,0,.9);background: #046282;color:#fff;}
+.msgboxes.incorrect > div{background:#710b0b;color:#fff;}
+.msgboxes >div >div{display: table-cell; vertical-align: middle;}
+.hidden{display: none!important}
+
+.pulse-button {position: absolute; bottom: 70px; right: 120px; display: block; width: 0px; height: 0px; border-radius: 50%; cursor: pointer; box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5); animation: pulse 1s infinite;}
+.pulse-button:hover {animation: none; box-shadow: 0 0 90px 40px rgba(40, 20, 10, .6);}
+
+@keyframes slideInFromRight {0% {transform: translateX(100%);} 100% {transform: translateX(0);}}
+@keyframes slideInFromLeft {0% {transform: translateX(-100%);} 100% {transform: translateX(0);}}
+@keyframes slideInFromLeft {0% {transform: translateX(-100%);} 100% {transform: translateX(0);}}
+@keyframes pulse {0%{transform: scale(0.9);} 70%  {transform: scale(1);  box-shadow: 0 0 0 100px rgba(90, 153, 212, 0);} 100% {transform: scale(0.9);box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);}}
+
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdn0.knowledgecity.com/vendors/kc/webplayer/2.0/lesson.js"></script>
+
+<div  id="r-correct" class="msgboxes hidden correct">
+    <div class="msgbox"><div data-bind="text: content.correctFeedback.val">Yes</div><div class="close">x</div></div>
+</div>
+<div  id="r-incorrect" class="msgboxes hidden incorrect">
+    <div class="msgbox"><div data-bind="text: content.incorrectFeedback.val">No</div><div class="close">x</div></div>
+</div>
+<div class="container" data-bind="style: {backgroundColor: theme.backgroundColor.val}">
+    <div class="header">
+        <div class="question-contain" data-bind="style: {backgroundColor: theme.questionBackgroundColor.val, color: theme.questionColor.val}">
+            <div data-bind="text: content.question.val"></div>
+            <img src="_kc_question-mark3.png">
+        </div>
+        <div class="instructions" data-bind="style: {backgroundColor: theme.accentColor.val, color: theme.accentColorText.val}">
+            <div data-bind="text: content.instructions.val"></div>
+        </div>
+    </div>
+    <div class="task" >
+        <div class="choice-contain">
+            <div class="choices">
+                <div class="row">
+                    <div class="choice" id="c1" data-bind="style: {backgroundColor: theme.answerBackgroundColor.val, color: theme.answerColor.val}">
+                        <div><div data-bind="text: content.answer1.val"></div></div>
+                        <div data-bind="style: {width: content.answer1Image.val.width()+'px', height:  content.answer1Image.val.height()+'px'}">
+                            <div class="croppie-result" style="transform-origin: left top 0px;position:absolute;overflow: hidden;" data-bind="style: { width:  ( content.answer1Image.val.crop.width()) + 'px', height: (content.answer1Image.val.crop.height()) + 'px', transform: 'scale('+  content.answer1Image.val.crop.zoom() +')'}"> 
+                                <img style="position: absolute;" data-bind="attr:{src: content.answer1Image.val.src()}, style:{ left:  -( content.answer1Image.val.crop.x()) + 'px', top: -( content.answer1Image.val.crop.y()) + 'px' }">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" id="c2" data-bind="style: {backgroundColor: theme.answerBackgroundColor.val, color: theme.answerColor.val}">
+                        <div><div data-bind="text: content.answer2.val"></div></div>
+                        <div data-bind="style: {width: content.answer2Image.val.width()+'px', height:  content.answer2Image.val.height()+'px'}">
+                            <div class="croppie-result" style="transform-origin: left top 0px;position:absolute;overflow: hidden;" data-bind="style: { width:  ( content.answer2Image.val.crop.width()) + 'px', height: (content.answer2Image.val.crop.height()) + 'px', transform: 'scale('+  content.answer2Image.val.crop.zoom() +')'}"> 
+                                <img style="position: absolute;" data-bind="attr:{src: content.answer2Image.val.src()}, style:{ left:  -( content.answer2Image.val.crop.x()) + 'px', top: -( content.answer2Image.val.crop.y()) + 'px' }">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" id="c3" data-bind="style: {backgroundColor: theme.answerBackgroundColor.val, color: theme.answerColor.val}">
+                        <div><div data-bind="text: content.answer3.val"></div></div>
+                        <div data-bind="style: {width: content.answer3Image.val.width()+'px', height:  content.answer3Image.val.height()+'px'}">
+                            <div class="croppie-result" style="transform-origin: left top 0px;position:absolute;overflow: hidden;" data-bind="style: { width:  ( content.answer3Image.val.crop.width()) + 'px', height: (content.answer3Image.val.crop.height()) + 'px', transform: 'scale('+  content.answer3Image.val.crop.zoom() +')'}"> 
+                                <img style="position: absolute;" data-bind="attr:{src: content.answer3Image.val.src()}, style:{ left:  -( content.answer3Image.val.crop.x()) + 'px', top: -( content.answer3Image.val.crop.y()) + 'px' }">
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <div><img src="_kc_arrowtwoway.png"></div>
+                <div><img src="_kc_arrowtwoway.png"></div>
+                <div><img src="_kc_arrowtwoway.png"></div>
+            </div>
+            <div class="spaces">
+                <div id="space0"></div>
+                <div id="space1"></div>
+                <div id="space2"></div>
+            </div>
+            
+            
+        </div>
+        <div class="circle"></div>
+        <div class="matches">
+            <div>
+                <div class="choice dragbox" style="position: absolute;top:80px;left:50px;" id="matchfor0" data-bind="style: {backgroundColor: theme.answerBackgroundColor.val, color: theme.answerColor.val}">
+                    <div><div data-bind="text: content.answer1Match.val"></div></div>
+                    <div data-bind="style: {width: content.answer1MatchImage.val.width()+'px', height:  content.answer1MatchImage.val.height()+'px'}">
+                        <div class="croppie-result" style="transform-origin: left top 0px;position:absolute;overflow: hidden;" data-bind="style: { width:  ( content.answer1MatchImage.val.crop.width()) + 'px', height: (content.answer1MatchImage.val.crop.height()) + 'px', transform: 'scale('+  content.answer1MatchImage.val.crop.zoom() +')'}"> 
+                            <img style="position: absolute;" data-bind="attr:{src: content.answer1MatchImage.val.src()}, style:{ left:  -( content.answer1MatchImage.val.crop.x()) + 'px', top: -( content.answer1MatchImage.val.crop.y()) + 'px' }">
+                        </div>
+                    </div>
+                </div>
+                <div class="choice dragbox" style="position: absolute;top:130px;left:140px;" id="matchfor1" data-bind="style: {backgroundColor: theme.answerBackgroundColor.val, color: theme.answerColor.val}">
+                    <div><div data-bind="text: content.answer2Match.val"></div></div>
+                    <div data-bind="style: {width: content.answer2MatchImage.val.width()+'px', height:  content.answer2MatchImage.val.height()+'px'}">
+                        <div class="croppie-result" style="transform-origin: left top 0px;position:absolute;overflow: hidden;" data-bind="style: { width:  ( content.answer2MatchImage.val.crop.width()) + 'px', height: (content.answer2MatchImage.val.crop.height()) + 'px', transform: 'scale('+  content.answer2MatchImage.val.crop.zoom() +')'}"> 
+                            <img style="position: absolute;" data-bind="attr:{src: content.answer2MatchImage.val.src()}, style:{ left:  -( content.answer2MatchImage.val.crop.x()) + 'px', top: -( content.answer2MatchImage.val.crop.y()) + 'px' }">
+                        </div>
+                    </div>
+                </div>
+                <div class="choice dragbox" style="position: absolute;top:200px;left:80px;" id="matchfor2" data-bind="style: {backgroundColor: theme.answerBackgroundColor.val, color: theme.answerColor.val}">
+                    <div><div data-bind="text: content.answer3Match.val"></div></div>
+                    <div data-bind="style: {width: content.answer3MatchImage.val.width()+'px', height:  content.answer3MatchImage.val.height()+'px'}">
+                        <div class="croppie-result" style="transform-origin: left top 0px;position:absolute;overflow: hidden;" data-bind="style: { width:  ( content.answer3MatchImage.val.crop.width()) + 'px', height: (content.answer3MatchImage.val.crop.height()) + 'px', transform: 'scale('+  content.answer3MatchImage.val.crop.zoom() +')'}"> 
+                            <img style="position: absolute;" data-bind="attr:{src: content.answer3MatchImage.val.src()}, style:{ left:  -( content.answer3MatchImage.val.crop.x()) + 'px', top: -( content.answer3MatchImage.val.crop.y()) + 'px' }">
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        
+    </div>
+    <div class="controls">
+        <div class="next pulse-button"><img src="_kc_nextarrow.png"></div>
+    </div>
+</div>
+
+<script>
+lesson.size(960,540,960,540);
+//lesson.getSettings().done(function(settings){lesson.render(settings)})
+selections = [];
+setTimeout("reset()",1000);
+function configureDrag()
+{
+    var dragOptions = {
+        revert: "invalid", 
+        stack: ".dragbox"
+    }
+
+    $("#matchfor0").draggable(dragOptions)
+    $("#matchfor1").draggable(dragOptions)
+    $("#matchfor2").draggable(dragOptions)
+    
+    var dropOptions={
+        activeClass: "dropbox-active",
+        tolerance: "intersect",
+        drop: function(e,ui){
+
+            var p=$(this).offset();
+            ui.draggable.offset({left:p.left+2,top:p.top+2});
+
+            var isD1=$(this).attr('id').indexOf("space0")>-1;
+            var isD2=$(this).attr('id').indexOf("space1")>-1;
+            var isD3=$(this).attr('id').indexOf("space2")>-1;
+
+            var Di=isD1?0:isD2?1:2; //selections is 0-based
+            var current =selections[Di]; //store what is currently in the location dropped on
+
+            //find which box is being dragged
+            if(ui.draggable.attr('id').indexOf("matchfor0")>-1)selections[Di]="matchfor0";
+            if(ui.draggable.attr('id').indexOf("matchfor1")>-1)selections[Di]="matchfor1";
+            if(ui.draggable.attr('id').indexOf("matchfor2")>-1)selections[Di]="matchfor2";
+
+            //if dropped back on same place, exit
+            if(current == selections[Di])
+                return;
+
+            //if moving from one box to another, erase previous entry
+            for(var di=0;di<3;di++)
+                if (di!=Di && selections[di]==selections[Di])
+                    selections[di]="";
+
+            //if there was already a box, move it to the start area.
+            if(current!="")
+                $('#'+current).animate({top: 30+~~(Math.random()*210),left: 30+~~(Math.random()*110)},200);
+
+            $(".next").toggle(!!(selections[0] && selections[1] && selections[2]))
+
+        }
+    };
+
+
+    $("#space0").droppable(dropOptions)
+    $("#space1").droppable(dropOptions)
+    $("#space2").droppable(dropOptions)
+
+
+    //start circle
+    $(".circle").droppable({tolerance: "fit",drop: function (e,ui){
+        //handle item dropped back onto circle, eg they changed their mind
+        var remove;
+        if(ui.draggable.attr('id').indexOf("matchfor0")>-1)remove="matchfor0";
+        if(ui.draggable.attr('id').indexOf("matchfor1")>-1)remove="matchfor1";
+        if(ui.draggable.attr('id').indexOf("matchfor2")>-1)remove="matchfor2";
+        for (var Di=0;Di<3;Di++)
+            if (selections[Di]==remove)
+                selections[Di]="";
+
+        $(".next").toggle(!!(selections[0] && selections[1] && selections[2]))
+        
+    }});
+}
+
+function reset() {
+    $('#matchfor0').animate({top: 30+~~(Math.random()*210),left: 30+~~(Math.random()*110)},200);
+    $('#matchfor1').animate({top: 30+~~(Math.random()*210),left: 30+~~(Math.random()*110)},200);
+    $('#matchfor2').animate({top: 30+~~(Math.random()*210),left: 30+~~(Math.random()*110)},200);
+    for (var Di=0;Di<3;Di++)
+        selections[Di] = ""
+    $(".next").hide();
+}
+
+$(".msgboxes > div").click(function(){$(this).parent().addClass("hidden");if($(this).parent().hasClass("correct")){lesson.next(1)} else reset();})
+$(".next").click(function(){
+    var ok=true;
+    for (var Di=0;Di<3;Di++)
+        if(selections[Di]!=="matchfor"+Di)
+            ok=false;
+
+    if(ok){lesson.complete(1);$("#r-correct").removeClass("hidden");}else $("#r-incorrect").removeClass("hidden");
+})
+
+path = location.pathname.split('/');
+configFilename = path[path.length-1].replace('index', 'lesson').replace('html','json');
+    
+$.ajax({"url":configFilename,cache:false,dataType:"json"}).done(function(settings){
+
+    vm = ko.mapping.fromJS(settings.designer.bind);
+    ko.applyBindings(vm); // This makes Knockout get to work
+
+    configureDrag();
+
+    window.parent.postMessage(JSON.stringify({eventName:"designerSettings",eventData: settings.designer}),'*');
+
+    window.addEventListener('message', function(e){
+        try {var data = JSON.parse(e.data);} catch(ev) { return false; }
+        
+        if(data['eventName'] == "bindUpdated") {
+            //console.log("received update", data);
+            ko.mapping.fromJS(data['eventData'], vm);
+        }
+    });
+
+}).fail(
+    function(r){console.log("error",r)
+});
+
+
+</script>
+
+</body>
+</html>
