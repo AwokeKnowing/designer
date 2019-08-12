@@ -17,7 +17,7 @@
             "lang": "en",
             "image": "img/posters/text_question_4_picture_answers_en.png",
             "sourcePath":"lessontemplates/text_question_4_picture_answers/en/v1/",
-            "title": "Text Question - Text Answers",
+            "title": "Text Question - Picture Answers",
             "about": "User will read a question and select from multiple-choices of pictures until the correct answer is chosen."
         },
         {
@@ -35,7 +35,7 @@
             "version": "v1",
             "tags": ["quizzes", "fill in the blank", "short answer"],
             "lang": "en",
-            "image": "img/posters/text_question_fill_in_the_blank_answer.png",
+            "image": "img/posters/text_question_fill_in_the_blank_answer_en.png",
             "sourcePath":"lessontemplates/text_question_fill_in_the_blank_answer/en/v1/",
             "title": "Fill in the Blank / Short Answer",
             "about": "User will type in the exact answer to the question.  When the Next button is clicked, if they are correct, the lesson is done. If there is an error, a hint is given. Third hint is actual answer (to ensure they can't get stuck)."
@@ -45,7 +45,7 @@
             "version": "v1",
             "tags": ["quizzes", "picture question", "multiple choice"],
             "lang": "en",
-            "image": "img/posters/picture_question_text_multi_answer.png",
+            "image": "img/posters/picture_question_text_multi_answer_en.png",
             "sourcePath":"lessontemplates/picture_question_text_multi_answer/en/v1/",
             "title": "Picture Question - Text Answers",
             "about": "User will view a picture, read a comment/question, and select from several answers. If the wrong answer is selected, user receives feedback. Once the correct answer is chosen, the lesson is done."
@@ -55,7 +55,7 @@
             "version": "v1",
             "tags": ["quizzes", "picture question", "multiple choice"],
             "lang": "en",
-            "image": "img/posters/html_question_text_multi_answer.png",
+            "image": "img/posters/html_question_text_multi_answer_en.png",
             "sourcePath":"lessontemplates/html_question_text_multi_answer/en/v1/",
             "title": "Text/HTML Content Question - Text Answers",
             "about": "User will read the selection of text, and select one of several answers. If the wrong answer is selected, user receives feedback. Once the correct answer is chosen, the lesson is done."
@@ -69,6 +69,148 @@
             "sourcePath":"lessontemplates/text_question_picture_hot_spots/en/v1/",
             "title": "Picture Area Question",
             "about": "User will read a question click on the area of the picture that represents the best answer. Feedback can be given for other areas the user may click on."
+        },
+        {
+            "txtid": "text_question_text_multi_answer",
+            "version": "v1",
+            "tags": ["quizzes"],
+            "lang": "es",
+            "image": "img/posters/text_question_text_multi_answer_es.png",
+            "sourcePath":"lessontemplates/text_question_text_multi_answer/es/v1/",
+            "title": "Pregunta de texto - Respuestas de texto",
+            "about": "El usuario leerá una pregunta y seleccionará entre varias opciones hasta que se elija la respuesta correcta."
+        },
+        {
+            "txtid": "text_question_4_picture_answers",
+            "version": "v1",
+            "tags": ["quizzes"],
+            "lang": "es",
+            "image": "img/posters/text_question_4_picture_answers_es.png",
+            "sourcePath":"lessontemplates/text_question_4_picture_answers/es/v1/",
+            "title": "Pregunta de texto - Respuestas de imagen",
+            "about": "El usuario leerá una pregunta y seleccionará entre múltiples opciones de imágenes hasta que se elija la respuesta correcta."
+        },
+        {
+            "txtid": "text_question_3_matching_drag",
+            "version": "v1",
+            "tags": ["quizzes", "drag-and-drop"],
+            "lang": "es",
+            "image": "img/posters/text_question_3_matching_drag_es.png",
+            "sourcePath":"lessontemplates/text_question_3_matching_drag/es/v1/",
+            "title": "Arrastrar y soltar coincidencias - 3 cuadros de imagen",
+            "about": "El usuario arrastrará y soltará cuadros de un área a un espacio al lado de la respuesta correcta correspondiente. Cuando se hace clic en el botón Siguiente, si son correctos, se termina la lección. Si hay un error, los cuadros vuelven a su punto de partida."
+        },
+        {
+            "txtid": "text_question_fill_in_the_blank_answer",
+            "version": "v1",
+            "tags": ["quizzes", "fill in the blank", "short answer"],
+            "lang": "es",
+            "image": "img/posters/text_question_fill_in_the_blank_answer_es.png",
+            "sourcePath":"lessontemplates/text_question_fill_in_the_blank_answer/es/v1/",
+            "title": "Complete el espacio en blanco / respuesta corta",
+            "about": "El usuario escribirá la respuesta exacta a la pregunta. Cuando se hace clic en el botón Siguiente, si son correctos, se termina la lección. Si hay un error, se da una pista. La tercera pista es la respuesta real (para garantizar que no se atasquen)."
+        },
+        {
+            "txtid": "picture_question_text_multi_answer",
+            "version": "v1",
+            "tags": ["quizzes", "picture question", "multiple choice"],
+            "lang": "es",
+            "image": "img/posters/picture_question_text_multi_answer_es.png",
+            "sourcePath":"lessontemplates/picture_question_text_multi_answer/es/v1/",
+            "title": "Pregunta con imagen - Respuestas de texto",
+            "about": "El usuario verá una imagen, leerá un comentario / pregunta y seleccionará entre varias respuestas. Si se selecciona la respuesta incorrecta, el usuario recibe comentarios. Una vez que se elige la respuesta correcta, se termina la lección."
+        },
+        {
+            "txtid": "html_question_text_multi_answer",
+            "version": "v1",
+            "tags": ["quizzes", "picture question", "multiple choice"],
+            "lang": "es",
+            "image": "img/posters/html_question_text_multi_answer_es.png",
+            "sourcePath":"lessontemplates/html_question_text_multi_answer/es/v1/",
+            "title": "Pregunta de contenido de texto / HTML - Respuestas de texto",
+            "about": "El usuario leerá la selección de texto y seleccionará una de varias respuestas. Si se selecciona la respuesta incorrecta, el usuario recibe comentarios. Una vez que se elige la respuesta correcta, se termina la lección."
+        },
+        {
+            "txtid": "text_question_picture_hot_spots",
+            "version": "v1",
+            "tags": ["quizzes", "picture", "hot-spot"],
+            "lang": "es",
+            "image": "img/posters/text_question_picture_hot_spots_es.png",
+            "sourcePath":"lessontemplates/text_question_picture_hot_spots/es/v1/",
+            "title": "Pregunta del área de imagen",
+            "about": "El usuario leerá una pregunta, haga clic en el área de la imagen que representa la mejor respuesta. Se pueden enviar comentarios sobre otras áreas en las que el usuario puede hacer clic."
+        },
+
+
+        {
+            "txtid": "text_question_text_multi_answer",
+            "version": "v1",
+            "tags": ["quizzes"],
+            "lang": "ar",
+            "image": "img/posters/text_question_text_multi_answer_ar.png",
+            "sourcePath":"lessontemplates/text_question_text_multi_answer/ar/v1/",
+            "title": "سؤال النص - إجابات النص",
+            "about": "يقوم المستخدم بقراءة السؤال، ويختار من الإجابات المتعددة إلى أن يتم اختيار الإجابة الصحيحة."
+        },
+        {
+            "txtid": "text_question_4_picture_answers",
+            "version": "v1",
+            "tags": ["quizzes"],
+            "lang": "ar",
+            "image": "img/posters/text_question_4_picture_answers_ar.png",
+            "sourcePath":"lessontemplates/text_question_4_picture_answers/ar/v1/",
+            "title": "سؤال النص - إجابات الصور",
+            "about": "يقوم المستخدم بقراءة السؤال، ويختار من الاختيارات المتعددة من الصور إلى أن يتم اختيار الإجابة الصحيحة."
+        },
+        {
+            "txtid": "text_question_3_matching_drag",
+            "version": "v1",
+            "tags": ["quizzes", "drag-and-drop"],
+            "lang": "ar",
+            "image": "img/posters/text_question_3_matching_drag_ar.png",
+            "sourcePath":"lessontemplates/text_question_3_matching_drag/ar/v1/",
+            "title": "توافق السحب والإفلات – 3 مربعات صور",
+            "about": "يقوم المستخدم بسحب وإفلات المربعات المختارة إلى جانب الإجابة الصحيحة، وعند النقر على زر (التالي)، إذا كانت الإجابة صحيحة، ينتهي الدرس. إذا كان هناك خطأ، تعود المربعات إلى نقطة البداية."
+        },
+        {
+            "txtid": "text_question_fill_in_the_blank_answer",
+            "version": "v1",
+            "tags": ["quizzes", "fill in the blank", "short answer"],
+            "lang": "ar",
+            "image": "img/posters/text_question_fill_in_the_blank_answer_ar.png",
+            "sourcePath":"lessontemplates/text_question_fill_in_the_blank_answer/ar/v1/",
+            "title": "ضع الإجابة في المكان الخالي / إجابة قصيرة",
+            "about": "يقوم المستخدم بكتابة الإجابة في المكان الخالي للسؤال. وعند النقر على زر (التالي)، إذا كانت الإجابة صحيحة، ينتهي الدرس. إذا كانت الإجابة غير صحيحة، يتم إعطاء تلميح. والتلميح الثالث هو الإجابة الفعلية (للتأكد من عدم استغراق الأمر لوقت طويل)."
+        },
+        {
+            "txtid": "picture_question_text_multi_answer",
+            "version": "v1",
+            "tags": ["quizzes", "picture question", "multiple choice"],
+            "lang": "ar",
+            "image": "img/posters/picture_question_text_multi_answer_ar.png",
+            "sourcePath":"lessontemplates/picture_question_text_multi_answer/ar/v1/",
+            "title": "سؤال الصورة – إجابات النص",
+            "about": "يقوم المستخدم بمشاهدة صورة، وقراءة تعليق/سؤال، والاختيار من إجابات متعددة. إذا تم اختيار إجابة خاطئة، يتلقى المستخدم ملاحظة توضيحية، وبمجرد اختيار الإجابة الصحيحة، يتم الانتهاء من الدرس."
+        },
+        {
+            "txtid": "html_question_text_multi_answer",
+            "version": "v1",
+            "tags": ["quizzes", "picture question", "multiple choice"],
+            "lang": "ar",
+            "image": "img/posters/html_question_text_multi_answer_ar.png",
+            "sourcePath":"lessontemplates/html_question_text_multi_answer/ar/v1/",
+            "title": "سؤال المحتوى/سؤال النص – إجابات النص",
+            "about": "يقوم المستخدم بقراءة النص، ويختار إحدى الإجابات المتعددة. إذا تم اختيار إجابة خاطئة، يتلقى المستخدم ملاحظة توضيحية. وبمجرد اختيار الإجابة الصحيحة، يتم الانتهاء من الدرس."
+        },
+        {
+            "txtid": "text_question_picture_hot_spots",
+            "version": "v1",
+            "tags": ["quizzes", "picture", "hot-spot"],
+            "lang": "ar",
+            "image": "img/posters/text_question_picture_hot_spots_ar.png",
+            "sourcePath":"lessontemplates/text_question_picture_hot_spots/ar/v1/",
+            "title": "سؤال أجزاء الصورة",
+            "about": "يقوم المستخدم بقراءة السؤال، ثم يضغط على الصورة التي تمثل الإجابة الصحيحة. إذا تم اختيار إجابة خاطئة، يتلقى المستخدم ملاحظة توضيحية."
         }
     ]
 }

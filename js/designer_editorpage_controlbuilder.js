@@ -58,7 +58,7 @@ var DesignerEditorPageControlBuilderModule = (function() {
 
         // Plugins are loaded depending on which controls are needed
         loadControlBuilderPlugins(dataFromTemplate).done(function(){
-            
+
             // Panels such as appearance and content are added with the controls such as question, image.
             buildControlPanels(el, dataFromTemplate).done(function(){
                 console.log("Editor Page - Control Builder: done building controls");

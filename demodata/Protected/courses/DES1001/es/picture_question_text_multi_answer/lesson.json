@@ -1,1 +1,164 @@
-{"designer":{"template":{"txtid":"picture_question_text_multi_answer"},"bind":{"content":{"question":{"val":"This is an oil on canvas by the Dutch post-impressionist painter Vincent van Gogh. Painted in June 1889, it describes the view from the east-facing window of his room, just before sunrise.  <br> <b>What is the name of the painting?<\/b>","control":{"type":"textarea","rows":5}},"questionImage":{"val":{"src":"_kc_starry_night.jpg","width":256,"height":256,"crop":{"zoom":0.3951,"x":149,"y":0,"width":647,"height":648}},"control":{"type":"croppedimage"}},"instructions":{"val":"Consider image and the comment\/question, and select a response"},"correctAnswer":{"val":"The Starry Night"},"answer2":{"val":"The Mona Lisa"},"answer3":{"val":"The Last Supper"},"answer4":{"val":"Moonlight Sonata"},"correctFeedback":{"val":"That's right! You selected the best answer"},"answer2Feedback":{"val":"Sorry, that's not correct"},"answer3Feedback":{"val":"Sorry, that's incorrect"},"answer4Feedback":{"val":"Sorry, please check your answer"}},"theme":{"themeManager": {"control": {"type": "thememanager"} },"backgroundColor":{"val":"rgb(240, 240, 240)","control":{"type":"color"}},"accentColor":{"val":"rgb(163, 47, 59)","control":{"type":"color"}},"accentColorText":{"val":"rgb(197, 197, 197)","control":{"type":"color"}},"questionBackgroundColor":{"val":"rgb(240, 240, 240)","control":{"type":"color"}},"answerBackgroundColor":{"val":"rgb(62, 109, 209)","control":{"type":"color"}},"questionColor":{"val":"rgb(0, 0, 0)","control":{"type":"color"}},"answerColor":{"val":"rgb(255, 255, 255)","control":{"type":"color"}}}},"assets":{"_kc_question-mark3.png":{"txtid":"_kc_question-mark3.png","md5":"40a02507bc970b1f1fc03a5c9257d087","added":1552089417,"tags":["images","question","mark3","png"],"type":"image","title":"_kc_question-mark3.png","file":"_kc_question-mark3.png","width":512,"height":512,"mime":"image\/png","size":29959,"hsize":"29 KB","about":"512x512 (29 KB)"},"_kc_starry_night.jpg":{"txtid":"_kc_starry_night.jpg","md5":"4a6359dc48a2da76cafe5c5f4efc8adf","added":1552089417,"tags":["images","starry","nighyt","jpg"],"type":"image","title":"_kc_starry_night.jpg","file":"_kc_starry_night.jpg","width":819,"height":648,"mime":"image\/jpeg","size":103052,"hsize":"103 KB","about":"819x648 (103 KB)"}},"manifest":{"files":["index.html","lesson.json","_kc_question-mark3.png","_kc_starry_night.jpg"]}},"lang":"en","courseId":"DES1001","lessonId":"7348abab-a73e-4480-a007-8d4ff9cb59e9"}
+{
+  "designer": {
+    "template": {
+      "txtid": "picture_question_text_multi_answer"
+    },
+    "bind": {
+      "content": {
+        "question": {
+          "val": "Este es un óleo sobre lienzo del pintor postimpresionista holandés Vincent van Gogh. Pintado en junio de 1889, describe la vista desde la ventana orientada al este de su habitación, justo antes del amanecer. <br> <b> ¿Cuál es el nombre de la pintura? </b>",
+          "control": {
+            "type": "textarea",
+            "rows": 5
+          }
+        },
+        "questionImage": {
+          "val": {
+            "src": "_kc_starry_night.jpg",
+            "width": 256,
+            "height": 256,
+            "crop": {
+              "zoom": 0.3951,
+              "x": 149,
+              "y": 0,
+              "width": 647,
+              "height": 648
+            }
+          },
+          "control": {
+            "type": "croppedimage"
+          }
+        },
+        "instructions": {
+          "val": "Considere la imagen y el comentario / pregunta, y seleccione una respuesta"
+        },
+        "correctAnswer": {
+          "val": "La noche estrellada"
+        },
+        "answer2": {
+          "val": "La Mona Lisa"
+        },
+        "answer3": {
+          "val": "La última cena"
+        },
+        "answer4": {
+          "val": "Sonata a la luz de la luna"
+        },
+        "correctFeedback": {
+          "val": "¡Eso es correcto! Seleccionaste la mejor respuesta"
+        },
+        "answer2Feedback": {
+          "val": "Lo siento, eso no es correcto"
+        },
+        "answer3Feedback": {
+          "val": "Lo siento, eso es incorrecto"
+        },
+        "answer4Feedback": {
+          "val": "Lo siento, verifique su respuesta"
+        }
+      },
+      "theme": {
+        "themeManager": {
+          "control": {
+            "type": "thememanager"
+          }
+        },
+        "backgroundColor": {
+          "val": "rgb(240, 240, 240)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "accentColor": {
+          "val": "rgb(163, 47, 59)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "accentColorText": {
+          "val": "rgb(197, 197, 197)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "questionBackgroundColor": {
+          "val": "rgb(240, 240, 240)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "answerBackgroundColor": {
+          "val": "rgb(62, 109, 209)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "questionColor": {
+          "val": "rgb(0, 0, 0)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "answerColor": {
+          "val": "rgb(255, 255, 255)",
+          "control": {
+            "type": "color"
+          }
+        }
+      }
+    },
+    "assets": {
+      "_kc_question-mark3.png": {
+        "txtid": "_kc_question-mark3.png",
+        "md5": "40a02507bc970b1f1fc03a5c9257d087",
+        "added": 1552089417,
+        "tags": [
+          "images",
+          "question",
+          "mark3",
+          "png"
+        ],
+        "type": "image",
+        "title": "_kc_question-mark3.png",
+        "file": "_kc_question-mark3.png",
+        "width": 512,
+        "height": 512,
+        "mime": "image/png",
+        "size": 29959,
+        "hsize": "29 KB",
+        "about": "512x512 (29 KB)"
+      },
+      "_kc_starry_night.jpg": {
+        "txtid": "_kc_starry_night.jpg",
+        "md5": "4a6359dc48a2da76cafe5c5f4efc8adf",
+        "added": 1552089417,
+        "tags": [
+          "images",
+          "starry",
+          "nighyt",
+          "jpg"
+        ],
+        "type": "image",
+        "title": "_kc_starry_night.jpg",
+        "file": "_kc_starry_night.jpg",
+        "width": 819,
+        "height": 648,
+        "mime": "image/jpeg",
+        "size": 103052,
+        "hsize": "103 KB",
+        "about": "819x648 (103 KB)"
+      }
+    },
+    "manifest": {
+      "files": [
+        "index.html",
+        "lesson.json",
+        "_kc_question-mark3.png",
+        "_kc_starry_night.jpg"
+      ]
+    }
+  },
+  "lang": "en",
+  "courseId": "DES1001",
+  "lessonId": "7348abab-a73e-4480-a007-8d4ff9cb59e9"
+}

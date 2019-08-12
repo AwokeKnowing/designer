@@ -30,7 +30,8 @@
             params.courseId = "DES1001";
             params.accountId = "demo3dc9ef63-3689-494d-8399-233e49b1325b";
             params.lessonId = "new";
-            params.lessonLang = "en";
+            params.lessonLang = params.lessonLang || "en";
+            params.uiLang = params.uiLang || "en"
             
             $.ajaxSetup({ cache: true }); //we'll manage cache ourselves
             $.getScript('js/designer'+params.rvt+'.js').done( function() {

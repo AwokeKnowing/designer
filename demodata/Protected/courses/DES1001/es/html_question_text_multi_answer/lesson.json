@@ -1,1 +1,153 @@
-{"designer":{"template":{"txtid":"html_question_text_multi_answer"},"bind":{"content":{"question":{"val":"<h2 style=\"text-align: center;\">Customer Segmentation Employee Training Tips</h2>\n<p>As a consumer, you may have been targeted by online ads, direct emails, social media and other forms of marketing. As a marketing professional, you know that to attract customers, old-fashioned marketing approaches are not enough.</p>\n\n<p>Some of today’s consumers want the personal touch.  They want to know not only about your product, but about your company, its values, its vision, and how it does business. They want to understand how your product will improve their lives and give them a reason to come back.</p>\n\n<p>That’s where  <a href=\"https://www.decisionanalyst.com/whitepapers/marketsegmentation/\" target=\"_blank\">customer segmentation</a>  comes in. A recent  <a href=\"https://hbr.org/2008/02/find-your-sweet-spot-1.html\" target=\"_blank\">survey</a>  by Bain &amp; Company revealed that 81% of company executives thought customer segmentation was critical for profit growth, but less than 25% believed their companies used it effectively. Even when customer segmentation showed profits increase by more than 15%, there still seemed to be a disconnect between theory and practice.</p>\n\n<p>One reason for this disconnect may be that different departments are not all on the same page when it comes to understanding and using customer segmentation tactics. Technology gurus may be dazzled by metrics and analytics; graphic designers and customer service might favor new social media approaches; managers may worry about the budget.</p>\n\n<p>What’s the solution? Bring all involved departments together before embarking on your next customer segmentation project. Why? To train them about customer segmentation –  <a href=\"https://www.qualtrics.com/experience-management/brand/what-is-market-segmentation/\" target=\"_blank\">what it is</a>,   how it works, and why they need to know how to use it. The departments will learn to use the right tools to design and implement a targeted program that gets results. For those who already use this method, training can be a refresher. For those who are unfamiliar with it, training will demonstrate just how effective this approach can be.</p>\n\n<p><b>Here are 10 tips to help you design and implement an organization-wide customer segmentation training session:</b></p>\n<ol>\n<li>Start by identifying who needs to be part of the training. If you only include the marketing department, you might be preaching to the choir. Be sure to also include IT professionals who predominantly work with marketing, customer service employees and sales team members.</li>\n<li>Design a short online  <a href=\"http://www.fao.org/3/w3241e/w3241e05.htm\" target=\"_blank\">questionnaire</a> to get an idea of the range of knowledge each involved member has about customer segmentation and the tools needed to make it work. You can limit this to 10 key questions or less.</li>\n<li>Analyze the questionnaire results to determine where you need to focus the training. You may want to have two sessions: a  <a href=\"https://digitalmarketinginstitute.com/en-us/blog/2018-04-24-customer-segmentation-targeting-a-guide\" target=\"_blank\">basic intro</a> to explain customer segmentation to non-marketing professionals, and a second session to go more in-depth on how to improve the process.</li>\n<li>Use your professional marketing team members as mentors to other departments. The marketing department can guide the others in learning the ideas and processes necessary for a successful customer segmentation campaign.</li>\n<li>Determine how well your  <a href=\"https://www.hubspot.com/growth-stack/what-is-crm\" target=\"_blank\">Customer Relationship Management</a> (CRM) software works and if it is being updated regularly by all users. If you are relying on this data and it is not up-to-date, your project may miss its target. If not everyone understands how to use the CRM, schedule an additional training session for those who are not savvy with the programs.</li>\n<li>Provide additional training and/or assistance in data analysis. This includes the ability to read, understand and create simple analytics pertaining to customer segmentation. Being able to understand and use data is one of the key  <a href=\"https://www.monster.com/career-advice/article/work-skills-2018-1217\" target=\"_blank\">required traits</a> employers are seeking in new employees.</li>\n<li>Use an open communication approach during the training. Be sure to welcome questions and ideas from all stakeholders and ask for feedback. You may be surprised at some of the insights you find.</li>\n<li>Stress the concept of “Know Your Customer.” Use scenarios and models to create sample  <a href=\"https://www.thebalancesmb.com/consumer-profile-defining-the-ideal-customer-2296932\" target=\"_blank\">customer profiles</a> using customer segmentation components.</li>\n<li>Consider developing a series of videos specific to each area of customer segmentation. Keep them short and targeted, approximately 10 minutes or less. If possible, make them a requirement for new hires in specific departments to simplify future training initiatives.</li>\n<li>Depending on time and money constraints, use online course providers or  <a href=\"https://www.knowledgecity.com/en/lms\" target=\"_blank\">Learning Management Systems</a> that use short videos with scenarios, interactive choices and immediate feedback. This approach is especially appealing to millennial and Generation Z employees.</li>\n</ol>\n\n<p>Technology changes daily, and so does the way we deliver our message. Ongoing, targeted training will keep your staff members at the top of their game and your organization ahead of the competition.</p>","control":{"type":"wysiwyg","rows":"15","position":{"top":"10","left":"0","width":"960","height":"250"}}},"instructions":{"val":"Which of these is the best summary of the above selection?"},"correctAnswer":{"val":"Customer segmentation adds a personal touch and adds profit"},"answer2":{"val":"Customer segmentation is handled by splitting a database"},"answer3":{"val":"Technology can handle most customer segmentation needs"},"answer4":{"val":"Customers do not appreciate being stereotyped"},"correctFeedback":{"val":"That's right! You selected the best answer"},"answer2Feedback":{"val":"Sorry, that's not correct"},"answer3Feedback":{"val":"Sorry, that's incorrect"},"answer4Feedback":{"val":"Sorry, please check your answer"}},"theme":{"themeManager": {"control": {"type": "thememanager"} },"backgroundColor":{"val":"rgb(240, 240, 240)","control":{"type":"color"}},"accentColor":{"val":"rgb(163, 47, 59)","control":{"type":"color"}},"accentColorText":{"val":"rgb(197, 197, 197)","control":{"type":"color"}},"questionBackgroundColor":{"val":"rgb(240, 240, 240)","control":{"type":"color"}},"answerBackgroundColor":{"val":"rgb(62, 109, 209)","control":{"type":"color"}},"questionColor":{"val":"rgb(0, 0, 0)","control":{"type":"color"}},"answerColor":{"val":"rgb(255, 255, 255)","control":{"type":"color"}}}},"assets":{"_kc_question-mark3.png":{"txtid":"_kc_question-mark3.png","md5":"40a02507bc970b1f1fc03a5c9257d087","added":"1552089417","tags":["images","question","mark3","png"],"type":"image","title":"_kc_question-mark3.png","file":"_kc_question-mark3.png","width":"512","height":"512","mime":"image\/png","size":"29959","hsize":"29 KB","about":"512x512 (29 KB)"},"_kc_starry_night.jpg":{"txtid":"_kc_starry_night.jpg","md5":"4a6359dc48a2da76cafe5c5f4efc8adf","added":"1552089417","tags":["images","starry","nighyt","jpg"],"type":"image","title":"_kc_starry_night.jpg","file":"_kc_starry_night.jpg","width":"819","height":"648","mime":"image\/jpeg","size":"103052","hsize":"103 KB","about":"819x648 (103 KB)"}},"manifest":{"files":["index.html","lesson.json","_kc_question-mark3.png","_kc_starry_night.jpg"]}},"lang":"en","courseId":"DES1001","lessonId":"a931c37a-60a3-4735-ab0a-7573b0faaeaf"}
+{
+  "designer": {
+    "template": {
+      "txtid": "html_question_text_multi_answer"
+    },
+    "bind": {
+      "content": {
+        "question": {
+          "val": "<h2 style=\"text-align: center\">Segmentación de clientes Consejos de capacitación para empleados</h2>\n\n<p>Como consumidor, es posible que haya sido objeto de anuncios en línea, correos electrónicos directos, redes sociales y otras formas de marketing. Como profesional de marketing, sabe que para atraer clientes, los enfoques de marketing anticuados no son suficientes.</p>\n\n<p>Algunos de los consumidores de hoy quieren el toque personal. Quieren saber no solo sobre su producto, sino también sobre su empresa, sus valores, su visión y cómo hace negocios. Quieren entender cómo su producto mejorará sus vidas y les dará una razón para volver.</p>\n\n<p>Ahí es donde entra en juego la segmentación de clientes. Una encuesta reciente realizada por Bain & Company reveló que el 81% de los ejecutivos de la compañía pensaban que la segmentación de clientes era crítica para el crecimiento de las ganancias, pero menos del 25% creía que sus compañías la usaban de manera efectiva. Incluso cuando la segmentación de clientes mostró que las ganancias aumentaron en más del 15%, todavía parecía haber una desconexión entre la teoría y la práctica.</p>\n\n<p>Una razón para esta desconexión puede ser que diferentes departamentos no están todos en la misma página cuando se trata de comprender y usar tácticas de segmentación de clientes. Los gurús de la tecnología pueden quedar deslumbrados por las métricas y los análisis; los diseñadores gráficos y el servicio al cliente podrían favorecer nuevos enfoques de redes sociales; Los gerentes pueden preocuparse por el presupuesto.</p>\n\n<p>¿Cual es la solución? Reúna a todos los departamentos involucrados antes de embarcarse en su próximo proyecto de segmentación de clientes. ¿Por qué? Para capacitarlos sobre la segmentación de clientes: qué es, cómo funciona y por qué necesitan saber cómo usarlo. Los departamentos aprenderán a usar las herramientas adecuadas para diseñar e implementar un programa específico que obtenga resultados. Para aquellos que ya usan este método, la capacitación puede ser un repaso. Para aquellos que no están familiarizados con él, la capacitación demostrará cuán efectivo puede ser este enfoque.<p>\n\n<p>Aquí hay 10 consejos para ayudarlo a diseñar e implementar una sesión de capacitación de segmentación de clientes en toda la organización:</p>\n\n<ol>\n<li>Comience por identificar quién necesita ser parte de la capacitación. Si solo incluye el departamento de marketing, podría estar predicando al coro. Asegúrese de incluir también profesionales de TI que trabajen principalmente con empleados de marketing, servicio al cliente y miembros del equipo de ventas. Diseñe un breve cuestionario en línea para tener una idea del rango de conocimiento que cada miembro involucrado tiene sobre la segmentación del cliente y las herramientas necesarias para que funcione. Puede limitar esto a 10 preguntas clave o menos.<li>\n<li>Analice los resultados del cuestionario para determinar dónde necesita enfocar la capacitación. Es posible que desee tener dos sesiones: una introducción básica para explicar la segmentación de clientes a profesionales que no son de marketing, y una segunda sesión para profundizar en cómo mejorar el proceso.</li>\n<li>Utilice a los miembros de su equipo profesional de marketing como mentores para otros departamentos. El departamento de marketing puede guiar a los demás en el aprendizaje de las ideas y procesos necesarios para una exitosa campaña de segmentación de clientes.</li>\n<li>Determine qué tan bien funciona su software de Gestión de la relación con el cliente (CRM) y si todos los usuarios lo actualizan regularmente. Si confía en esta información y no está actualizada, su proyecto puede perder su objetivo. Si no todos entienden cómo usar el CRM, programe una sesión de capacitación adicional para aquellos que no conocen los programas.</li>\n<li>Proporcionar capacitación y / o asistencia adicional en el análisis de datos. Esto incluye la capacidad de leer, comprender y crear análisis simples relacionados con la segmentación de clientes. Poder comprender y utilizar los datos es uno de los rasgos clave que los empleadores buscan en los nuevos empleados. Use un enfoque de comunicación abierta durante el entrenamiento. Asegúrese de recibir preguntas e ideas de todas las partes interesadas y solicite comentarios. Puede que se sorprenda de algunas de las ideas que encuentre. Haga hincapié en el concepto de 'Conozca a su cliente'. Utilice escenarios y modelos para crear perfiles de clientes de muestra utilizando componentes de segmentación de clientes.</li>\n<li>Considere desarrollar una serie de videos específicos para cada área de segmentación de clientes. Manténgalos cortos y específicos, aproximadamente 10 minutos o menos. Si es posible, haga que sean un requisito para nuevas contrataciones en departamentos específicos para simplificar futuras iniciativas de capacitación.</li>\n<li>Dependiendo de las limitaciones de tiempo y dinero, use proveedores de cursos en línea o sistemas de gestión de aprendizaje que usen videos cortos con escenarios, opciones interactivas y comentarios inmediatos. Este enfoque es especialmente atractivo para los empleados milenarios y de la Generación Z.</li>\n</ol>\n<p>La tecnología cambia a diario, y también lo hace la forma en que transmitimos nuestro mensaje. La capacitación continua y dirigida mantendrá a los miembros de su personal en la cima de su juego y a su organización por delante de la competencia.</p>",
+          "control": {
+            "type": "wysiwyg",
+            "rows": "15",
+            "position": {
+              "top": "10",
+              "left": "0",
+              "width": "960",
+              "height": "250"
+            }
+          }
+        },
+        "instructions": {
+          "val": "¿Cuál de estos es el mejor resumen de la selección anterior?"
+        },
+        "correctAnswer": {
+          "val": "La segmentación del cliente agrega un toque personal y agrega ganancias"
+        },
+        "answer2": {
+          "val": "La segmentación del cliente se maneja dividiendo una base de datos"
+        },
+        "answer3": {
+          "val": "La tecnología puede manejar la mayoría de las necesidades de segmentación de clientes"
+        },
+        "answer4": {
+          "val": "Los clientes no aprecian los estereotipos"
+        },
+        "correctFeedback": {
+          "val": "¡Eso es correcto! Seleccionaste la mejor respuesta"
+        },
+        "answer2Feedback": {
+          "val": "Lo siento, eso no es correcto"
+        },
+        "answer3Feedback": {
+          "val": "Lo siento, eso es incorrecto"
+        },
+        "answer4Feedback": {
+          "val": "Lo siento, verifique su respuesta"
+        }
+      },
+      "theme": {
+        "themeManager": {
+          "control": {
+            "type": "thememanager"
+          }
+        },
+        "backgroundColor": {
+          "val": "rgb(240, 240, 240)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "accentColor": {
+          "val": "rgb(163, 47, 59)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "accentColorText": {
+          "val": "rgb(197, 197, 197)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "questionBackgroundColor": {
+          "val": "rgb(240, 240, 240)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "answerBackgroundColor": {
+          "val": "rgb(62, 109, 209)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "questionColor": {
+          "val": "rgb(0, 0, 0)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "answerColor": {
+          "val": "rgb(255, 255, 255)",
+          "control": {
+            "type": "color"
+          }
+        }
+      }
+    },
+    "assets": {
+      "_kc_question-mark3.png": {
+        "txtid": "_kc_question-mark3.png",
+        "md5": "40a02507bc970b1f1fc03a5c9257d087",
+        "added": "1552089417",
+        "tags": [
+          "images",
+          "question",
+          "mark3",
+          "png"
+        ],
+        "type": "image",
+        "title": "_kc_question-mark3.png",
+        "file": "_kc_question-mark3.png",
+        "width": "512",
+        "height": "512",
+        "mime": "image/png",
+        "size": "29959",
+        "hsize": "29 KB",
+        "about": "512x512 (29 KB)"
+      },
+      "_kc_starry_night.jpg": {
+        "txtid": "_kc_starry_night.jpg",
+        "md5": "4a6359dc48a2da76cafe5c5f4efc8adf",
+        "added": "1552089417",
+        "tags": [
+          "images",
+          "starry",
+          "nighyt",
+          "jpg"
+        ],
+        "type": "image",
+        "title": "_kc_starry_night.jpg",
+        "file": "_kc_starry_night.jpg",
+        "width": "819",
+        "height": "648",
+        "mime": "image/jpeg",
+        "size": "103052",
+        "hsize": "103 KB",
+        "about": "819x648 (103 KB)"
+      }
+    },
+    "manifest": {
+      "files": [
+        "index.html",
+        "lesson.json",
+        "_kc_question-mark3.png",
+        "_kc_starry_night.jpg"
+      ]
+    }
+  },
+  "lang": "en",
+  "courseId": "DES1001",
+  "lessonId": "a931c37a-60a3-4735-ab0a-7573b0faaeaf"
+}

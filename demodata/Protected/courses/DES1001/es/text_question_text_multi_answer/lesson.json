@@ -6,38 +6,38 @@
     "bind": {
       "content": {
         "question": {
-          "val": "Some questions need answers. To see if you know the answer, you are being asked a question. Which of the following is the best answer to the question?",
+          "val": "Algunas preguntas necesitan respuestas. Para ver si sabe la respuesta, se le está haciendo una pregunta. ¿Cuál de las siguientes es la mejor respuesta a la pregunta?",
           "control": {
             "type": "textarea",
             "rows": 5
           }
         },
         "instructions": {
-          "val": "Consider the question, and select a response"
+          "val": "Considere la pregunta y seleccione una respuesta"
         },
         "correctAnswer": {
-          "val": "The best answer"
+          "val": "La mejor respuesta"
         },
         "answer2": {
-          "val": "The almost correct answer"
+          "val": "La respuesta casi correcta"
         },
         "answer3": {
-          "val": "The clearly wrong answer"
+          "val": "La respuesta claramente incorrecta"
         },
         "answer4": {
           "val": ""
         },
         "correctFeedback": {
-          "val": "That's right! You selected the best answer"
+          "val": "¡Eso es correcto! Seleccionaste la mejor respuesta"
         },
         "answer2Feedback": {
-          "val": "Sorry, that's not the best answer"
+          "val": "Lo siento, esa no es la mejor respuesta"
         },
         "answer3Feedback": {
-          "val": "Sorry, that's incorrect"
+          "val": "Lo siento, eso es incorrecto"
         },
         "answer4Feedback": {
-          "val": "Sorry, please check your answer"
+          "val": "Lo siento, verifique su respuesta"
         }
       },
       "appearance": {

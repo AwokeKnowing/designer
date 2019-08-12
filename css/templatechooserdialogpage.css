@@ -33,8 +33,8 @@
 .pg-templ .template.selected {border-bottom: 3px solid #df803d;background:  #504440;transform: translate(-10px, -1px);}
 .pg-templ .template:hover{transform: translate(-1px, -1px);background: #444}
 .pg-templ .template.selected:hover{transform: translate(-10px, -1px);}
-.pg-templ .template .prev-small {width:192px;height: 100px;background-size: 100% 100%;margin-right:13px;display: inline-block;} 
-.pg-templ .template .info {min-width: 220px;width: calc(100% - 220px);display: inline-block;vertical-align: top;font-size:14px;}
+.pg-templ .template .prev-small {width:192px;height: 100px;background-size: 100% 100%;display: inline-block;} 
+.pg-templ .template .info {min-width: 220px;width: calc(100% - 220px);margin:0px 12px;;display: inline-block;vertical-align: top;font-size:14px;}
 .pg-templ .template .tmpl-title {font-size:16px;}
 .pg-templ .template .tmpl-version {color:#999;}
 .pg-templ .template .tmpl-interaction {}

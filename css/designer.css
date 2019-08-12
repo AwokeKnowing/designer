@@ -11,6 +11,7 @@ html, body{margin:0;background: #444}
 .header img{width:28px;height: 28px;display: inline-block;position:relative;top: 4px; left:-4px;}
 .app {width: 100%;height: calc(100vh - 50px);}
 .pages {}
+.rtl {direction: rtl;}
 
 .hidden {display: none!important /*needs important since this css is loaded first, and to apply anywhere to more specific css*/}
 .loading {background: rgba(220, 220, 255, 0.3);bottom: 0;left: 0;position: fixed;right: 0; top: 50px; z-index: 9998;}
