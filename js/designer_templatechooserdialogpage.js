@@ -172,7 +172,7 @@ var DesignerTemplateChooserDialogPage = (function() {
 
             var $info = $('<div class="info"></div>');
             $info.append($('<div class="tmpl-title">').text(td.title));
-            $info.append($('<div class="tmpl-version">').text('Version: '+td.version));
+            $info.append($('<div class="tmpl-version">').text(designer.mui.uiLang['designer_ui_itemVersion']+": "+td.version));
             $info.append($('<div class="tmpl-about">').text(td.about));
 
             $tmpl.append($info);
@@ -198,7 +198,7 @@ var DesignerTemplateChooserDialogPage = (function() {
         // show in preview pane
         $page.find('.preview-pane .prev-img-large > div').css('backgroundImage', 'url('+tmpl.image+')');
         $page.find('.preview-pane .tmpl-title').html(tmpl.title);
-        $page.find('.preview-pane .tmpl-version').html("Version: " + tmpl.version);
+        $page.find('.preview-pane .tmpl-version').html(designer.mui.uiLang['designer_ui_itemVersion']+": "+tmpl.version);;
         $page.find('.preview-pane .tmpl-about').html(tmpl.about);
     }
 

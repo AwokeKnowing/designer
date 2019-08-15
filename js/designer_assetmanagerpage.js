@@ -430,7 +430,7 @@ var DesignerAssetManagerPage = (function() {
 
                 var $info = $('<div class="info"></div>');
                 $info.append($('<div class="tmpl-title">').text(asset.title));
-                $info.append($('<div class="tmpl-type">').text('type: '+asset.type));
+                $info.append($('<div class="tmpl-type">').text(designer.mui.uiLang['designer_ui_itemType']+": "+designer.mui.uiLang['designer_ui_filetype_'+asset.type]));
                 $info.append($('<div class="tmpl-about">').text(asset.about));
 
                 $asset.append($info);
@@ -451,7 +451,7 @@ var DesignerAssetManagerPage = (function() {
             
         if(maxShown < assets.length){
 
-            var $morebtn = $('<div class="load-more">Load More...</div>')
+            var $morebtn = $('<div class="load-more">'+designer.mui.uiLang['designer_ui_showMore']+'</div>')
             let selector = '.assets-list.assets-' + tab + ' .asset:hidden';
             let tb = tab;
             let max = maxShown;
@@ -506,7 +506,7 @@ var DesignerAssetManagerPage = (function() {
         if(tab=="public") {
             //render if not rendered
             if( !$('.assets-list.assets-public').data("rendered") ) {
-                $('.assets-list.assets-public').data("rendered",'1').html("Loading...");
+                $('.assets-list.assets-public').data("rendered",'1').html(designer.mui.uiLang['designer_ui_loading']);
                 setTimeout(function(){renderAssets(assets["public"],  "public",  assetIndexes["external"].assetBasePath || "",  200, false)}, 10);
             }
         }
@@ -614,7 +614,7 @@ var DesignerAssetManagerPage = (function() {
             
             $page.find('.preview-pane .prev-img-large > div').css('backgroundImage', 'url('+image+')');
             $page.find('.preview-pane .tmpl-title').html(asset.title);
-            $page.find('.preview-pane .tmpl-type').html("type: " + asset.type);
+            $page.find('.preview-pane .tmpl-type').html(designer.mui.uiLang['designer_ui_itemType']+": "+designer.mui.uiLang['designer_ui_filetype_'+asset.type]);
             $page.find('.preview-pane .tmpl-about').html(asset.about);
             
 

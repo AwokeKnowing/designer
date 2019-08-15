@@ -54,6 +54,53 @@
                     ]
                 },
                 "es": {
+                    "html_question_text_multi_answer": [
+
+                    ],
+                    "picture_question_text_multi_answer": [
+                        "_kc_question-mark3.png",
+                        "_kc_starry_night.jpg",
+                        "chess1.gif"
+                    ],
+                    "text_question_3_matching_drag": [
+                        "_kc_acting.jpg",
+                        "_kc_arrowtwoway.png",
+                        "_kc_listening.jpg",
+                        "_kc_observing.jpg",
+                        "business-clipart-animated-gif-448886-3518714.gif",
+                        "_kc_question-mark3.png",
+                        "business-clipart-animated-gif-448886-5209975.gif",
+                        "_kc_reading.jpg",
+                        "_kc_speaking.jpg",
+                        "_kc_writing.jpg"
+                    ],
+                    "text_question_4_picture_answers": [
+                        "_kc_engineeringstudent.jpg",
+                        "_kc_officeworkerfem.jpg",
+                        "_kc_question-mark3.png",
+                        "_kc_retire.jpg",
+                        "_kc_school_children1.jpg",
+                        "construction-worker-concrete-hummer-vibrator-38600.jpeg",
+                        "business-clipart-animated-gif-448886-1772845.gif"
+                    ],
+                    "text_question_fill_in_the_blank_answer": [
+                        "_kc_computer_saleswoman2.jpg",
+                        "_kc_question-mark3.png",
+                        "_kc_engineeringstudent.jpg",
+                        "contingency-arrow-signs.jpg"
+                    ],
+                    "text_question_picture_hot_spots": [
+                        "_kc_conflictresolution-es.jpg",
+                        "_kc_question-mark3.png",
+                        "_kc_food-groups.png"
+                    ],
+                    "text_question_text_multi_answer": [
+                        "_kc_computer_saleswoman.jpg",
+                        "_kc_computer_saleswoman2.jpg",
+                        "business-design-development-2.gif",
+                        "_kc_gecko.jpg",
+                        "_kc_question-mark3.png"
+                    ]
                     
                 }
             },
@@ -811,6 +858,25 @@
             "size": 103052,
             "hsize": "103 KB",
             "about": "819x648 (103 KB)"
+        },
+        "_kc_conflictresolution-es.jpg": {
+            "txtid": "_kc_conflictresolution-es.jpg",
+            "md5": "24f652d2d3af6f6c380ccc452fb9527f",
+            "added": 1552089317,
+            "tags": [
+                "images",
+                "conflict",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_conflictresolution-es.jpg",
+            "file": "_kc_conflictresolution-es.jpg",
+            "width": 1280,
+            "height": 720,
+            "mime": "image\/jpeg",
+            "size": 101246,
+            "hsize": "101.2 KB",
+            "about": "1280x720 (101 KB)"
         },
         "_kc_conflictresolution.jpg": {
             "txtid": "_kc_conflictresolution.jpg",

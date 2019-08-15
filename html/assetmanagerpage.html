@@ -7,10 +7,10 @@
             <div >
                 <div class="tmpl-title"></div>
                 <div class="tmpl-type"></div>
-                <div class="tmpl-about">Please choose an asset.</div>
+                <div class="tmpl-about" data-mui="designer_ui_pleaseChooseAsset">Please choose an asset.</div>
             </div>
         </div>
-        <div class="prev-button-sec"><div class="prev-button disabled">Use This Asset</div></div>
+        <div class="prev-button-sec"><div class="prev-button disabled" data-mui="designer_ui_useThisAsset">Use This Asset</div></div>
     </div>
     <div class="decoration"><div><div></div></div></div>
 </div>
@@ -25,21 +25,21 @@
     </div>
     <div class="tabs">
         <div>
-            <div class="tab selected" id="pgam_tab-lesson"><div>Lesson</div></div>
-            <div class="tab" id="pgam_tab-course"><div>Course</div></div>
-            <div class="tab" id="pgam_tab-library"><div>Library</div></div>
-            <div class="tab" id="pgam_tab-public"><div>Public</div></div>
-            <div class="tab upload" id="pgam_tab-upload"><div>Upload</div></div>
+            <div class="tab selected" id="pgam_tab-lesson"><div data-mui="designer_ui_lessonTab">Lesson</div></div>
+            <div class="tab" id="pgam_tab-course"><div data-mui="designer_ui_courseTab">Course</div></div>
+            <div class="tab" id="pgam_tab-library"><div data-mui="designer_ui_libraryTab">Library</div></div>
+            <div class="tab" id="pgam_tab-public"><div data-mui="designer_ui_publicTab">Public</div></div>
+            <div class="tab upload" id="pgam_tab-upload"><div data-mui="designer_ui_uploadTab">Upload</div></div>
         </div>
     </div>
     <div class="assets">
-        <div class="assets-list assets-lesson selected" data-tab="lesson" data-index="account">Loading assets...</div>
+        <div class="assets-list assets-lesson selected" data-tab="lesson" data-index="account" data-mui="designer_ui_loadingAssets">Loading assets...</div>
         <div class="assets-list assets-course"  data-tab="course"  data-index="account"></div>
         <div class="assets-list assets-library" data-tab="library" data-index="account"></div>
         <div class="assets-list assets-public"  data-tab="public"  data-index="external"></div>
         <div class="assets-list assets-upload"  data-tab="upload"  data-index="upload">
         <!--uploader todo: generate in js-->
-        <div class="uploader-title">Upload images to your account</div>
+        <div class="uploader-title" data-mui="designer_ui_upImgToAccount">Upload images to your account</div>
         <div class="uploader-tag">(jpg, png, gif)</div>
             <form id="upload_file-upload-form" class="uploader" action="https://api.knowledgecity.com/echo">
                 <input id="upload_file-upload" type="file" name="fileUpload" accept="image/*" />
@@ -47,9 +47,9 @@
                     <img id="upload_file-image" src="#" alt="Preview" class="hidden">
                     <div id="upload_start">
                         <i class="fa fa-download" aria-hidden="true"></i>
-                        <div>Drag an image here, or browse your computer</div>
-                        <div id="upload_notimage" class="hidden">Please select an image</div>
-                        <span id="upload_file-upload-btn" class="btn btn-primary">Browse files...</span>
+                        <div data-mui="designer_ui_dragImgOrBrowse">Drag an image here, or browse your computer</div>
+                        <div id="upload_notimage" class="hidden" >Please select a supported file</div>
+                        <span id="upload_file-upload-btn" class="btn btn-primary" data-mui="designer_ui_browseFiles">Browse files...</span>
                     </div>
                     <div id="upload_response" class="hidden">
                         <div id="upload_messages"></div>

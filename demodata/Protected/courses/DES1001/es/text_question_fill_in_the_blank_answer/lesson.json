@@ -6,7 +6,7 @@
     "bind": {
       "content": {
         "question": {
-          "val": "El plan que aborda \" Cómo un negocio continuará en una emergencia \", \" Qué sucede inmediatamente después del incidente \"y \" Cómo se reanudarán las operaciones \"se llama plan de ____________ ",
+          "val": "El plan que aborda ¿Cómo un negocio continuará en una emergencia?, ¿Qué sucede inmediatamente después del incidente? y ¿Cómo se reanudarán las operaciones?\" se llama plan de ________ ",
           "control": {
             "type": "textarea",
             "rows": 5
@@ -165,7 +165,7 @@
       ]
     }
   },
-  "lang": "en",
+  "lang": "es",
   "courseId": "DES1001",
   "lessonId": "88842a51-9cb0-48b2-add7-8653b81cff9a"
 }

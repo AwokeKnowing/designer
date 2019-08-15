@@ -24,7 +24,8 @@ var EditorControl_wysiwyg = (function() {
         
         var config = settings['control'] || {};
         
-        var editBtn = $('<div class="widebutton">Edit Content</div>');
+        var editBtn = $('<div class="widebutton" data-mui="wysiwyg_editContent">Edit Content</div>');
+        designer.applyMui(editBtn);
         editBtn.click(function(e,t){editButton_click(ctlid, panelKey, controlKey, settings)} );
         $control.append(editBtn);
 
@@ -104,8 +105,8 @@ var EditorControl_wysiwyg = (function() {
         var $dialog = $('<div class="wsw-dialog"><div class="wsw-tool"></div></div>');
         
         $('<div class="wsw-controls">')
-            .append('<div class="wsw-save" >Save</div>')
-            .append('<div class="wsw-cancel">Cancel</div')
+            .append('<div class="wsw-save" data-mui="designer_ui_save">Save</div>')
+            .append('<div class="wsw-cancel" data-mui="designer_ui_cancel">Cancel</div')
             .appendTo($dialog);
 
 
@@ -142,6 +143,7 @@ var EditorControl_wysiwyg = (function() {
 
         tool.append(content);
 
+        designer.applyMui($dialog);
         $('.pg-edit').append($dialog);
 
         control.activePromise = $.Deferred();
@@ -190,7 +192,7 @@ var EditorControl_wysiwyg = (function() {
         switch(id){
           case "createLink":
             var sel = window.getSelection().getRangeAt(0);
-            argument = prompt("Enter the link URL");
+            argument = prompt(designer.mui.uiLang['wysiwyg_enterLinkUrl'] || "Enter the link URL");
             window.getSelection().addRange(sel);
             command(id, 'LINK_TO_CHANGE');
 
@@ -201,12 +203,12 @@ var EditorControl_wysiwyg = (function() {
             
             break;
           case "insertImage":
-            argument = prompt("Enter the image URL");
+            argument = prompt(designer.mui.uiLang['wysiwyg_enterImageUrl'] || "Enter the image URL");
             command(id, argument);
             break;
 
           case "forecolor":
-            argument = prompt("Enter the HTML color code");
+            argument = prompt(designer.mui.uiLang['wysiwyg_enterColorCode'] || "Enter the HTML color code");
             command(id, argument);
             break;
           case "text_h1":
@@ -232,7 +234,7 @@ var EditorControl_wysiwyg = (function() {
 
     $('.pg-edit').on('click','#save',function(){
         $('.message-popup').remove();
-        $('.wysiwyg').append('<div class="message-popup">All changes saved.</div>');
+        $('.wysiwyg').append('<div class="message-popup" data-mui="wyswiwyg_changesSaved">'+designer.mui.uiLang['designer_ui_allChangesSaved'] ||"All changes saved."+'</div>');
         setTimeout(function(){
           $('.message-popup').css("opacity", ".8");
         }, 100);

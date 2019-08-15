@@ -61,15 +61,15 @@ var EditorControl_croppedimage = (function() {
         var $dialog = $('<div class="croppie-dialog"><div class="croppie-tool"></div></div>');
         
         $('<div class="croppie-controls">')
-            .append('<div class="croppie-save"  >Save</div>')
-            .append('<div class="croppie-cancel">Cancel</div')
+            .append('<div class="croppie-save" data-mui="designer_ui_save" >Save</div>')
+            .append('<div class="croppie-cancel" data-mui="designer_ui_cancel">Cancel</div')
             .appendTo($dialog);
 
         $('<div class="croppie-controls left">')
-            .append('<div class="croppie-chooseimage">Change Image...</div>')
+            .append('<div class="croppie-chooseimage" data-mui="designer_ui_changeImage">Change Image...</div>')
             .appendTo($dialog);
 
-
+        designer.applyMui($dialog);
        
         $('.pg-edit').append($dialog);
 

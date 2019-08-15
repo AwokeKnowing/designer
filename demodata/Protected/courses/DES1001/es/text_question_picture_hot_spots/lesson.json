@@ -17,7 +17,7 @@
         },
         "image": {
           "val": {
-            "src": "_kc_conflictresolution.jpg",
+            "src": "_kc_conflictresolution-es.jpg",
             "width": "704",
             "height": "396",
             "crop": {
@@ -47,28 +47,28 @@
           }
         },
         "correctFeedback": {
-          "val": "¡Observe que la situación actual es correcta!"
+          "val": "¡Observe que la situación actual es correcto!"
         },
         "answer2Feedback": {
-          "val": "Utilizar conflicto a su favor no es correcto"
+          "val": "Utilizar conflicto a su favor no es correcto."
         },
         "answer3Feedback": {
           "val": "Incorrecto. ¿Hay algo que hacer antes de calificar?"
         },
         "answer4Feedback": {
-          "val": "Esta es una buena pregunta, pero no es la mejor respuesta"
+          "val": "Esta es una buena pregunta, pero no es la mejor respuesta."
         },
         "answer5Feedback": {
-          "val": "Simplificar es muy importante, pero no es el primer paso"
+          "val": "Simplificar es muy importante, pero no es el primer paso."
         },
         "answer6Feedback": {
-          "val": "Haga clic en una de las imágenes circundantes"
+          "val": "Haga clic en una de las imágenes circundantes."
         },
         "answer7Feedback": {
-          "val": "Lo siento, esa no es la mejor respuesta"
+          "val": "Lo siento, esa no es la mejor respuesta."
         },
         "answer8Feedback": {
-          "val": "Lo siento, esa no es la mejor respuesta"
+          "val": "Lo siento, esa no es la mejor respuesta."
         }
       },
       "theme": {
@@ -122,24 +122,24 @@
       }
     },
     "assets": {
-      "_kc_conflictresolution.jpg": {
-        "txtid": "_kc_conflictresolution.jpg",
-        "md5": "a53fefeb3bdaba762cec7d43602ed77a",
-        "added": "1552089317",
-        "tags": [
-          "images",
-          "conflict",
-          "jpg"
-        ],
-        "type": "image",
-        "title": "_kc_conflictresolution.jpg",
-        "file": "_kc_conflictresolution.jpg",
-        "width": "1280",
-        "height": "720",
-        "mime": "image/jpeg",
-        "size": "100646",
-        "hsize": "100.6 KB",
-        "about": "1280x720 (6 KB)"
+      "_kc_conflictresolution-es.jpg": {
+          "txtid": "_kc_conflictresolution-es.jpg",
+          "md5": "24f652d2d3af6f6c380ccc452fb9527f",
+          "added": 1552089317,
+          "tags": [
+            "images",
+            "conflict",
+            "jpg"
+          ],
+          "type": "image",
+          "title": "_kc_conflictresolution-es.jpg",
+          "file": "_kc_conflictresolution-es.jpg",
+          "width": 1280,
+          "height": 720,
+          "mime": "image\/jpeg",
+          "size": 101246,
+          "hsize": "101.2 KB",
+          "about": "1280x720 (101 KB)"
       },
       "_kc_question-mark3.png": {
         "txtid": "_kc_question-mark3.png",
@@ -171,7 +171,7 @@
       ]
     }
   },
-  "lang": "en",
+  "lang": "es",
   "courseId": "DES1001",
   "lessonId": "842072dc-7a33-43c9-bc0b-0481998db41b"
 }

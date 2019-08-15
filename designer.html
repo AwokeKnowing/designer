@@ -5,13 +5,14 @@
     <style>html, body{margin:0;background: #444}*{box-sizing: border-box;}.designer {min-height: 100vh;width:100vw; height: 100vh; background-color: #444; font-family: sans-serif;}.header {height:50px;border:1px solid #555;font-size: 24px;color:white;background: #555;padding: 5px 35px;}.header img{width:28px;height: 28px;display: inline-block;position:relative;top: 4px; left:-4px;}.app {width: 100%;height: calc(100vh - 50px);}.hidden {display: none!important}.loading {background: rgba(220, 220, 255, 0.3);bottom: 0;left: 0;position: fixed;right: 0; top: 50px; z-index: 9998;}.spinner { background: #000 url(https://code.jquery.com/mobile/1.1.0/images/ajax-loader.gif) 0 0  no-repeat; border: 0; -webkit-border-radius: 36px; -moz-border-radius: 36px; border-radius: 36px; box-shadow: 0 1px 1px -1px #fff; display: block; height: 46px; left: 50%; margin: -23px 0 0 -23px; opacity: 0.18; overflow: hidden; padding: 1px; position: fixed; text-align: center; top: 50%; width: 46px; z-index: 9999;}</style>
 </head>
 <body>
+    <!-- index.html is 'demo' entrypoint. designer.html is LMS entrypoint-->
     <!-- show basic empty structure while app loads -->
     <div class="loading" style="display:none"><div class="spinner"></div></div>
     <div class="designer">
         <div class="header">
             <div>
                 <img src="img/KC-logo-circle-only.png">
-                <i>KnowledgeCity Lesson Designer</i>
+                <i data-mui="designer_ui_lesson_designer">KnowledgeCity Lesson Designer</i>
             </div>
         </div>
         <div class="app">

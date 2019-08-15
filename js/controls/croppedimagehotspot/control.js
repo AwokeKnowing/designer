@@ -24,8 +24,9 @@ var EditorControl_croppedimagehotspot = (function() {
         
         var config = settings['control'] || {};
         
-        var editBtn = $('<div class="widebutton">Edit Image Hot Spots</div>');
+        var editBtn = $('<div class="widebutton" data-mui="croppedimagehotspot_editImgHot">Edit Image Hot Spots</div>');
         editBtn.click(function(e,t){editButton_click(ctlid, panelKey, controlKey, settings)} );
+        designer.applyMui(editBtn);
         $control.append(editBtn);
 
         var inp = $('<textarea></textarea>').attr('rows', 9).hide();
@@ -59,7 +60,7 @@ var EditorControl_croppedimagehotspot = (function() {
             '<div class="editor-area">'+
                 '<div class="panel-buttons">'+
                     '<div class="button-group">'+
-                      '<button type="button" id="grid_clearall" data-role="0" ><div><b>Clear All</b></div></button>'+
+                      '<button type="button" id="grid_clearall" data-role="0" ><div><b data-mui="croppedimagehotspot_clearAll">Clear All</b></div></button>'+
                     '</div>'+
                     '<div class="button-group">'+
                       '<button type="button" id="grid_0" data-role="0" ><div><b>[&nbsp;&nbsp;]</b></div></button>'+
@@ -93,8 +94,8 @@ var EditorControl_croppedimagehotspot = (function() {
         var $dialog = $('<div class="hotspot-dialog"><div class="hotspot-tool"></div></div>');
         
         $('<div class="hotspot-controls">')
-            .append('<div class="hotspot-save" >Save</div>')
-            .append('<div class="hotspot-cancel">Cancel</div')
+            .append('<div class="hotspot-save" data-mui="designer_ui_save">Save</div>')
+            .append('<div class="hotspot-cancel" data-mui="designer_ui_cancel">Cancel</div')
             .appendTo($dialog);
 
 
@@ -136,6 +137,7 @@ var EditorControl_croppedimagehotspot = (function() {
             for(var i=0;i<gridvals[0].length;i++)
                 $cells.eq(xy++).addClass('c'+gridvals[j][i]);//xy works because this is order jquery finds them
 
+        designer.applyMui($dialog);
         $('.pg-edit').append($dialog);
         $('#grid_1').click();
 

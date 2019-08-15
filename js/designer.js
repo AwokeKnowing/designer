@@ -25,7 +25,7 @@ var Designer = (function() {
 // You can create the object, set some settings, and then load.  This can allow robust 
 // separation of parameter validation.  Second, the explicit load carries a more clear 
 // idea that the load may very well fail, and should be handled.  Contrast that with
-// an 'onReady', which maybe never is ready do to a loading problem.
+// an 'onReady', which maybe never is ready due to a loading problem.
 // It also allows for the concept of reloading an object. There are other advantages
 // not discussed here related to dependencies and debugging. Overall it's just a 
 // pattern that encourages a clear creating/loading of components, which separates the 
@@ -68,6 +68,7 @@ var Designer = (function() {
         designer.settings.lessonLang = "en";
         designer.settings.lessonFolder = null; //eg DES1001-abv21
         designer.settings.token = "";
+        designer.originalConfig = {};
 
     }
 
@@ -79,13 +80,13 @@ var Designer = (function() {
         designer.waitForLoad = $.Deferred();
 
         $.extend(designer.settings, config);
+        designer.originalConfig = $.extend(true, {}, designer.settings); //keep copy of original config at start.
 
         // if a version is supplied we'll insert it before cachable things eg "image--v2342334.jpg" to make use of cache but be able to bust it.
         designer.rvt = config.rvt?(/--v/.test(config.rvt)?config.rvt:"--v"+config.rvt):"";
 
         $.when(                 //core depedencies which pages may rely upon
-            loadDesigner(config), //if we wanted to load designer html instead of having on landing page html, we'd do it here
-            loadMui(config)   
+            loadDesigner()     //if we wanted to load designer html instead of having on landing page html, we'd do it here
         ).then(function(){
                                 //other dependencies            
             return $.when(
@@ -171,6 +172,28 @@ var Designer = (function() {
         }
 
         //todo notify subscribers. onInterfaceLanguageChanged
+    }
+
+    Designer.prototype.applyMui = function($el, lang, noChildren) {
+        // This method is a helper to apply/reapply mui
+        // $el is a jquery object: designer.applyMui($('#my-template'))
+        // lang is optional. by default is current ui lang
+        // exchludeChildren means only apply to $el, not it's children
+        // NOTE: avoid applying when child will also apply
+
+        lang = lang || designer.settings.uiLang;
+        $el = noChildren?$el:$el.find('[data-mui], [data-muitip]').addBack('[data-mui], [data-muitip]');//addBack to includ $el itself
+
+        $el.each(function(i,o) {
+            let muiKey    = $(this).data('mui');
+            let muiTipKey = $(this).data('muitip');
+            let text    = designer.mui[lang][muiKey];
+            let textTip = designer.mui[lang][muiTipKey];
+            if(text)
+                $(this).html(text)
+            if(textTip)
+                $(this).attr('title', textTip)
+        });
     }
 
     Designer.prototype.chooseNewTemplate = function(options) {
@@ -274,8 +297,17 @@ var Designer = (function() {
     }
 
 
-    function loadDesigner(config) {
+    function loadDesigner() {
         var prom = $.Deferred();
+
+        //start loading mui, so will load while scripts include/execute
+        loadMui().then(function(){
+            setTimeout(function(){
+                designer.applyMui($('body')); // OK because we have not loaded any other pages, so just static html landing page.
+                
+                prom.resolve()//this is where loadDesigner 'ends'
+            },1); //let event loop run one time == 10 years of JS experience
+        }) 
 
         // this is just as though it were in main html landing page, but needed so we can add rvt
         var vendorScripts =
@@ -299,14 +331,12 @@ var Designer = (function() {
 
         $('head').append(vendorScripts + ourScripts);
 
-        setTimeout(function(){prom.resolve()},1); //let event loop run one time == 10 years of JS experience
-
-        return prom;
+        return prom; //resolved after loadMui above
 
     }
 
 
-    function loadMui(config) {
+    function loadMui() {
         // load the strings for the multi-lingual user interface
         var prom = $.Deferred();
 
@@ -323,17 +353,19 @@ var Designer = (function() {
     }
 
 
-    function loadEditorPage(config) {
+    function loadEditorPage() {
         // load the editor page. (see NOTES ABOUT PAGE LOADING at start of this file.)
 
         var prom = $.Deferred();
 
         //TODO: move paths to config
         $.ajax({url: "html/editorpage"+designer.rvt+".html", cache:true, dataType:'text'}).done(function(response) {
-            $('.pg-edit').empty().html(response)
+            response = $(response);
+            designer.applyMui(response);
+            $('.pg-edit').empty().append(response)
 
             designer.pages.editor = new DesignerEditorPage(designer);
-            designer.pages.editor.load(config).done(function(){
+            designer.pages.editor.load(designer.settings).done(function(){
                 prom.resolve()
             });
             
@@ -349,7 +381,9 @@ var Designer = (function() {
 
         //TODO: move paths to config
         $.ajax({url: "html/assetmanagerpage"+designer.rvt+".html", cache:true, dataType:'text'}).done(function(response) {
-            $('.pg-assetmanager').empty().html(response)
+            response = $(response);
+            designer.applyMui(response);
+            $('.pg-assetmanager').empty().append(response)
 
             designer.pages.assetManager = new DesignerAssetManagerPage(designer);
             designer.pages.assetManager.load(config).done(function(){
@@ -370,7 +404,9 @@ var Designer = (function() {
 
         //TODO: move paths to config
         $.ajax({url: "html/templatechooserdialogpage"+designer.rvt+".html", cache:true, dataType:'text'}).done(function(response) {
-            $('.pg-templ').empty().html(response)
+            response = $(response);
+            designer.applyMui(response);
+            $('.pg-templ').empty().append(response)
 
             designer.pages.templateChooserDialog = new DesignerTemplateChooserDialogPage(designer);
             designer.pages.templateChooserDialog.load(config).done(function(){

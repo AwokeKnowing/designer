@@ -60,8 +60,8 @@ var EditorControl_color = (function() {
                 }
             },
             strings: {
-                save:  'OK',
-                clear: 'Cancel'
+                save:  designer.mui.uiLang['designer_ui_ok'],
+                clear: designer.mui.uiLang['designer_ui_cancel']
             }
         });
 

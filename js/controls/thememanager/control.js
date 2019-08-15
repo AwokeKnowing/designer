@@ -32,7 +32,7 @@ var EditorControl_thememanager = (function() {
         
         
         var thm  = $('<div class="thememanager"></div>');
-        var sb   = $('<div class="select-box"><div class="sb-button sb-save">Save as<br>New Theme</div><div class="sb-button sb-drop">Apply a Theme</div></div>');
+        var sb   = $('<div class="select-box"><div class="sb-button sb-save">Save as<br>New Theme</div><div class="sb-button sb-drop" data-mui="thememanager_applyTheme">Apply a Theme</div></div>');
         var opts = $('<div class="sb-options hidden" ></div>');
 
         sb.append(opts)
@@ -82,6 +82,7 @@ var EditorControl_thememanager = (function() {
             return false;
         })
 
+        designer.applyMui(thm);
         $control.append(thm);
         
         getThemeGroups().done(function() {
