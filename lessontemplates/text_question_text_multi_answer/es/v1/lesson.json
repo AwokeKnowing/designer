@@ -1,0 +1,204 @@
+{
+  "designer": {
+    "template": {
+      "txtid": "text_question_text_multi_answer"
+    },
+    "bind": {
+      "content": {
+        "question": {
+          "val": "Algunas preguntas necesitan respuestas. Para ver si sabe la respuesta, se le está haciendo una pregunta. ¿Cuál de las siguientes es la mejor respuesta a la pregunta?",
+          "control": {
+            "type": "textarea",
+            "rows": 5
+          }
+        },
+        "instructions": {
+          "val": "Considere la pregunta y seleccione una respuesta"
+        },
+        "correctAnswer": {
+          "val": "La mejor respuesta"
+        },
+        "answer2": {
+          "val": "La respuesta casi correcta"
+        },
+        "answer3": {
+          "val": "La respuesta claramente incorrecta"
+        },
+        "answer4": {
+          "val": ""
+        },
+        "correctFeedback": {
+          "val": "¡Eso es correcto! Seleccionaste la mejor respuesta"
+        },
+        "answer2Feedback": {
+          "val": "Lo siento, esa no es la mejor respuesta"
+        },
+        "answer3Feedback": {
+          "val": "Lo siento, eso es incorrecto"
+        },
+        "answer4Feedback": {
+          "val": "Lo siento, verifique su respuesta"
+        }
+      },
+      "appearance": {
+        "decorativeSideImage": {
+          "val": {
+            "src": "_kc_computer_saleswoman.jpg",
+            "width": 280,
+            "height": 428,
+            "crop": {
+              "zoom": 1,
+              "x": 0,
+              "y": 40,
+              "width": 280,
+              "height": 428
+            }
+          },
+          "control": {
+            "type": "croppedimage"
+          }
+        }
+      },
+      "theme": {
+        "themeManager": {"control": {"type": "thememanager"} },
+        "backgroundColor": {
+          "val": "rgb(240, 240, 240)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "accentColor": {
+          "val": "rgb(163, 47, 59)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "accentColorText": {
+          "val": "rgb(197, 197, 197)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "questionBackgroundColor": {
+          "val": "rgb(240, 240, 240)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "answerBackgroundColor": {
+          "val": "rgb(62, 109, 209)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "questionColor": {
+          "val": "rgb(0, 0, 0)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "answerColor": {
+          "val": "rgb(255, 255, 255)",
+          "control": {
+            "type": "color"
+          }
+        }
+      }
+    },
+    "assets": {
+      "_kc_computer_saleswoman.jpg": {
+        "txtid": "_kc_computer_saleswoman.jpg",
+        "md5": "f0d2e78445edd80f66fdd7668c357801",
+        "added": 1552088617,
+        "tags": [
+          "images",
+          "computer",
+          "saleswoman",
+          "jpg"
+        ],
+        "type": "image",
+        "title": "_kc_computer_saleswoman.jpg",
+        "file": "_kc_computer_saleswoman.jpg",
+        "width": 467,
+        "height": 720,
+        "mime": "image\/jpeg",
+        "size": 47666,
+        "hsize": "47 KB",
+        "about": "467x720 (47 KB)"
+      },
+      "_kc_computer_saleswoman2.jpg": {
+        "txtid": "_kc_computer_saleswoman2.jpg",
+        "md5": "f3599c5bcd3c6f96041db1c9db2f9a62",
+        "added": 1552088717,
+        "tags": [
+          "images",
+          "computer",
+          "saleswoman2",
+          "jpg"
+        ],
+        "type": "image",
+        "title": "_kc_computer_saleswoman2.jpg",
+        "file": "_kc_computer_saleswoman2.jpg",
+        "width": 706,
+        "height": 1024,
+        "mime": "image\/jpeg",
+        "size": 267353,
+        "hsize": "261 KB",
+        "about": "706x1024 (261 KB)"
+      },
+      "_kc_gecko.jpg": {
+        "txtid": "_kc_gecko.jpg",
+        "md5": "eff46a8997be3a48d7a6069ef9ed759d",
+        "added": 1552088917,
+        "tags": [
+          "images",
+          "gecko",
+          "jpg"
+        ],
+        "type": "image",
+        "title": "_kc_gecko.jpg",
+        "file": "_kc_gecko.jpg",
+        "width": 509,
+        "height": 340,
+        "mime": "image\/jpeg",
+        "size": 20519,
+        "hsize": "20 KB",
+        "about": "509x340 (20 KB)"
+      },
+      "_kc_question-mark3.png": {
+        "txtid": "_kc_question-mark3.png",
+        "md5": "40a02507bc970b1f1fc03a5c9257d087",
+        "added": 1552089417,
+        "tags": [
+          "images",
+          "question",
+          "mark3",
+          "png"
+        ],
+        "type": "image",
+        "title": "_kc_question-mark3.png",
+        "file": "_kc_question-mark3.png",
+        "width": 512,
+        "height": 512,
+        "mime": "image\/png",
+        "size": 29959,
+        "hsize": "29 KB",
+        "about": "512x512 (29 KB)"
+      }
+    },
+    "manifest": {
+      "files": [
+        "index.html",
+        "lesson.json",
+        "_kc_computer_saleswoman.jpg",
+        "_kc_computer_saleswoman2.jpg",
+        "_kc_gecko.jpg",
+        "business-design-development-2.gif",
+        "_kc_question-mark3.png"
+      ]
+    }
+  },
+  "lang": "en",
+  "courseId": "DES1001",
+  "lessonId": "bde01b80-9041-453a-97ab-c9556ad49ab3"
+}

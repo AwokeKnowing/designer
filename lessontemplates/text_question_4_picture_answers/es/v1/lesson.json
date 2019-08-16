@@ -1,0 +1,275 @@
+{
+  "designer": {
+    "template": {
+      "txtid": "text_question_4_picture_answers"
+    },
+    "bind": {
+      "content": {
+        "question": {
+          "val": "¿Cuál de estos segmentos demográficos ha experimentado el mayor crecimiento relativo (porcentaje) en los Estados Unidos entre 1980 y 2010?",
+          "control": {
+            "type": "textarea",
+            "rows": 5
+          }
+        },
+        "instructions": {
+          "val": "Haga clic en la mejor opción"
+        },
+        "correctAnswer": {
+          "val": "personas de edad profesional 25-65"
+        },
+        "answer2": {
+          "val": "jóvenes de 15 a 25 años"
+        },
+        "answer3": {
+          "val": "bebés y niños de 0 a 15 años"
+        },
+        "answer4": {
+          "val": "personas jubiladas mayores de 65 años"
+        },
+        "correctImage": {
+          "val": {
+            "src": "_kc_officeworkerfem.jpg",
+            "width": 200,
+            "height": 120,
+            "crop": {
+              "zoom": 1,
+              "x": 0,
+              "y": 2,
+              "width": 200,
+              "height": 120
+            }
+          },
+          "control": {
+            "type": "croppedimage"
+          }
+        },
+        "answer2Image": {
+          "val": {
+            "src": "_kc_engineeringstudent.jpg",
+            "width": 200,
+            "height": 120,
+            "crop": {
+              "zoom": 0.3226,
+              "x": 0,
+              "y": 0,
+              "width": 620,
+              "height": 372
+            }
+          },
+          "control": {
+            "type": "croppedimage"
+          }
+        },
+        "answer3Image": {
+          "val": {
+            "src": "_kc_school_children1.jpg",
+            "width": 200,
+            "height": 120,
+            "crop": {
+              "zoom": 0.4,
+              "x": 0,
+              "y": 30,
+              "width": 500,
+              "height": 300
+            }
+          },
+          "control": {
+            "type": "croppedimage"
+          }
+        },
+        "answer4Image": {
+          "val": {
+            "src": "_kc_retire.jpg",
+            "width": 200,
+            "height": 120,
+            "crop": {
+              "zoom": 1,
+              "x": 0,
+              "y": 5,
+              "width": 200,
+              "height": 120
+            }
+          },
+          "control": {
+            "type": "croppedimage"
+          }
+        },
+        "correctFeedback": {
+          "val": "¡Eso es correcto!"
+        },
+        "answer2Feedback": {
+          "val": "Lo siento, esa no es la mejor respuesta"
+        },
+        "answer3Feedback": {
+          "val": "Lo siento, esa no es la mejor respuesta"
+        },
+        "answer4Feedback": {
+          "val": "Lo siento, eso es incorrecto"
+        }
+      },
+      "theme": {
+        "themeManager": {
+          "control": {
+            "type": "thememanager"
+          }
+        },
+        "backgroundColor": {
+          "val": "rgb(240, 240, 240)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "accentColor": {
+          "val": "rgb(163, 47, 59)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "accentColorText": {
+          "val": "rgb(197, 197, 197)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "questionBackgroundColor": {
+          "val": "rgb(240, 240, 240)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "answerBackgroundColor": {
+          "val": "rgb(62, 109, 209)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "questionColor": {
+          "val": "rgb(0, 0, 0)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "answerColor": {
+          "val": "rgb(255, 255, 255)",
+          "control": {
+            "type": "color"
+          }
+        }
+      }
+    },
+    "assets": {
+      "_kc_engineeringstudent.jpg": {
+        "txtid": "_kc_engineeringstudent.jpg",
+        "md5": "3d367cc1305eb7ccd38e37099cba07dc",
+        "added": 1552088817,
+        "tags": [
+          "images",
+          "engineeringstudent",
+          "jpg"
+        ],
+        "type": "image",
+        "title": "_kc_engineeringstudent.jpg",
+        "file": "_kc_engineeringstudent.jpg",
+        "width": 621,
+        "height": 372,
+        "mime": "image/jpeg",
+        "size": 68100,
+        "hsize": "67 KB",
+        "about": "621x372 (67 KB)"
+      },
+      "_kc_officeworkerfem.jpg": {
+        "txtid": "_kc_officeworkerfem.jpg",
+        "md5": "23060abd5dbba2c9dab84adf9d7547fc",
+        "added": 1552089317,
+        "tags": [
+          "images",
+          "officeworkerfem",
+          "jpg"
+        ],
+        "type": "image",
+        "title": "_kc_officeworkerfem.jpg",
+        "file": "_kc_officeworkerfem.jpg",
+        "width": 200,
+        "height": 133,
+        "mime": "image/jpeg",
+        "size": 5896,
+        "hsize": "6 KB",
+        "about": "200x133 (6 KB)"
+      },
+      "_kc_question-mark3.png": {
+        "txtid": "_kc_question-mark3.png",
+        "md5": "40a02507bc970b1f1fc03a5c9257d087",
+        "added": 1552089417,
+        "tags": [
+          "images",
+          "question",
+          "mark3",
+          "png"
+        ],
+        "type": "image",
+        "title": "_kc_question-mark3.png",
+        "file": "_kc_question-mark3.png",
+        "width": 512,
+        "height": 512,
+        "mime": "image/png",
+        "size": 29959,
+        "hsize": "29 KB",
+        "about": "512x512 (29 KB)"
+      },
+      "_kc_retire.jpg": {
+        "txtid": "_kc_retire.jpg",
+        "md5": "e98a150b00f22a8a277a317d49461df0",
+        "added": 1552089617,
+        "tags": [
+          "images",
+          "retire",
+          "jpg"
+        ],
+        "type": "image",
+        "title": "_kc_retire.jpg",
+        "file": "_kc_retire.jpg",
+        "width": 200,
+        "height": 133,
+        "mime": "image/jpeg",
+        "size": 50664,
+        "hsize": "49 KB",
+        "about": "200x133 (49 KB)"
+      },
+      "_kc_school_children1.jpg": {
+        "txtid": "_kc_school_children1.jpg",
+        "md5": "3967ea12b4e538780723f3006a552850",
+        "added": 1552089717,
+        "tags": [
+          "images",
+          "school",
+          "children1",
+          "jpg"
+        ],
+        "type": "image",
+        "title": "_kc_school_children1.jpg",
+        "file": "_kc_school_children1.jpg",
+        "width": 500,
+        "height": 334,
+        "mime": "image/jpeg",
+        "size": 207531,
+        "hsize": "203 KB",
+        "about": "500x334 (203 KB)"
+      }
+    },
+    "manifest": {
+      "files": [
+        "index.html",
+        "lesson.json",
+        "_kc_engineeringstudent.jpg",
+        "_kc_officeworkerfem.jpg",
+        "_kc_question-mark3.png",
+        "_kc_retire.jpg",
+        "_kc_school_children1.jpg"
+      ]
+    }
+  },
+  "lang": "es",
+  "courseId": "DES1001",
+  "lessonId": "30176288-bcb7-45b7-8f49-d624b71bbca3"
+}
