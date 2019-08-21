@@ -17,7 +17,7 @@
         },
         "image": {
           "val": {
-            "src": "_kc_conflictresolution.jpg",
+            "src": "_kc_conflictresolution-ar.jpg",
             "width": "704",
             "height": "396",
             "crop": {
@@ -122,9 +122,9 @@
       }
     },
     "assets": {
-      "_kc_conflictresolution.jpg": {
-        "txtid": "_kc_conflictresolution.jpg",
-        "md5": "a53fefeb3bdaba762cec7d43602ed77a",
+      "_kc_conflictresolution-ar.jpg": {
+        "txtid": "_kc_conflictresolution-ar.jpg",
+        "md5": "a53fefeb3bdaba762cec7d43602ed77b",
         "added": "1552089317",
         "tags": [
           "images",
@@ -132,8 +132,8 @@
           "jpg"
         ],
         "type": "image",
-        "title": "_kc_conflictresolution.jpg",
-        "file": "_kc_conflictresolution.jpg",
+        "title": "_kc_conflictresolution-ar.jpg",
+        "file": "_kc_conflictresolution-ar.jpg",
         "width": "1280",
         "height": "720",
         "mime": "image/jpeg",
@@ -166,7 +166,7 @@
       "files": [
         "index.html",
         "lesson.json",
-        "_kc_conflictresolution.jpg",
+        "_kc_conflictresolution-ar.jpg",
         "_kc_question-mark3ar.png"
       ]
     }

@@ -140,7 +140,7 @@
                         "contingency-arrow-signs.jpg"
                     ],
                     "text_question_picture_hot_spots": [
-                        "_kc_conflictresolution-es.jpg",
+                        "_kc_conflictresolution-ar.jpg",
                         "_kc_question-mark3ar.png",
                         "_kc_food-groups.png"
                     ],
@@ -960,6 +960,25 @@
             "type": "image",
             "title": "_kc_conflictresolution.jpg",
             "file": "_kc_conflictresolution.jpg",
+            "width": 1280,
+            "height": 720,
+            "mime": "image\/jpeg",
+            "size": 100646,
+            "hsize": "100.6 KB",
+            "about": "1280x720 (6 KB)"
+        },
+        "_kc_conflictresolution-ar.jpg": {
+            "txtid": "_kc_conflictresolution-ar.jpg",
+            "md5": "a53fefeb3bdaba762cec7d43602ed77b",
+            "added": 1552089317,
+            "tags": [
+                "images",
+                "conflict",
+                "jpg"
+            ],
+            "type": "image",
+            "title": "_kc_conflictresolution-ar.jpg",
+            "file": "_kc_conflictresolution-ar.jpg",
             "width": 1280,
             "height": 720,
             "mime": "image\/jpeg",
