@@ -108,7 +108,7 @@
                         "_kc_starry_night.jpg"
                     ],
                     "picture_question_text_multi_answer": [
-                        "_kc_question-mark3.png",
+                        "_kc_question-mark3ar.png",
                         "_kc_starry_night.jpg",
                         "chess1.gif"
                     ],
@@ -118,7 +118,7 @@
                         "_kc_listening.jpg",
                         "_kc_observing.jpg",
                         "business-clipart-animated-gif-448886-3518714.gif",
-                        "_kc_question-mark3.png",
+                        "_kc_question-mark3ar.png",
                         "business-clipart-animated-gif-448886-5209975.gif",
                         "_kc_reading.jpg",
                         "_kc_speaking.jpg",
@@ -127,7 +127,7 @@
                     "text_question_4_picture_answers": [
                         "_kc_engineeringstudent.jpg",
                         "_kc_officeworkerfem.jpg",
-                        "_kc_question-mark3.png",
+                        "_kc_question-mark3ar.png",
                         "_kc_retire.jpg",
                         "_kc_school_children1.jpg",
                         "construction-worker-concrete-hummer-vibrator-38600.jpeg",
@@ -135,13 +135,13 @@
                     ],
                     "text_question_fill_in_the_blank_answer": [
                         "_kc_computer_saleswoman2.jpg",
-                        "_kc_question-mark3.png",
+                        "_kc_question-mark3ar.png",
                         "_kc_engineeringstudent.jpg",
                         "contingency-arrow-signs.jpg"
                     ],
                     "text_question_picture_hot_spots": [
                         "_kc_conflictresolution-es.jpg",
-                        "_kc_question-mark3.png",
+                        "_kc_question-mark3ar.png",
                         "_kc_food-groups.png"
                     ],
                     "text_question_text_multi_answer": [
@@ -149,7 +149,7 @@
                         "_kc_computer_saleswoman2.jpg",
                         "business-design-development-2.gif",
                         "_kc_gecko.jpg",
-                        "_kc_question-mark3.png"
+                        "_kc_question-mark3ar.png"
                     ]
                     
                 }
@@ -371,6 +371,26 @@
             "width": 512,
             "height": 512,
             "mime": "image\/png",
+            "size": 29959,
+            "hsize": "29 KB",
+            "about": "512x512 (29 KB)"
+        },
+        "_kc_question-mark3ar.png": {
+            "txtid": "_kc_question-mark3ar.png",
+            "md5": "40a02507bc970b1f1fc03a5c9257d088",
+            "added": 1552089417,
+            "tags": [
+                "images",
+                "question",
+                "mark3",
+                "png"
+            ],
+            "type": "image",
+            "title": "_kc_question-mark3ar.png",
+            "file": "_kc_question-mark3ar.png",
+            "width": 512,
+            "height": 512,
+            "mime": "image/png",
             "size": 29959,
             "hsize": "29 KB",
             "about": "512x512 (29 KB)"

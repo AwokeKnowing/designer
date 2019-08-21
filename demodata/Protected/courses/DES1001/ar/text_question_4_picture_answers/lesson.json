@@ -197,25 +197,25 @@
         "hsize": "6 KB",
         "about": "200x133 (6 KB)"
       },
-      "_kc_question-mark3.png": {
-        "txtid": "_kc_question-mark3.png",
-        "md5": "40a02507bc970b1f1fc03a5c9257d087",
-        "added": 1552089417,
-        "tags": [
-          "images",
-          "question",
-          "mark3",
-          "png"
-        ],
-        "type": "image",
-        "title": "_kc_question-mark3.png",
-        "file": "_kc_question-mark3.png",
-        "width": 512,
-        "height": 512,
-        "mime": "image/png",
-        "size": 29959,
-        "hsize": "29 KB",
-        "about": "512x512 (29 KB)"
+      "_kc_question-mark3ar.png": {
+          "txtid": "_kc_question-mark3ar.png",
+          "md5": "40a02507bc970b1f1fc03a5c9257d088",
+          "added": 1552089417,
+          "tags": [
+              "images",
+              "question",
+              "mark3",
+              "png"
+          ],
+          "type": "image",
+          "title": "_kc_question-mark3ar.png",
+          "file": "_kc_question-mark3ar.png",
+          "width": 512,
+          "height": 512,
+          "mime": "image/png",
+          "size": 29959,
+          "hsize": "29 KB",
+          "about": "512x512 (29 KB)"
       },
       "_kc_retire.jpg": {
         "txtid": "_kc_retire.jpg",
@@ -263,7 +263,7 @@
         "lesson.json",
         "_kc_engineeringstudent.jpg",
         "_kc_officeworkerfem.jpg",
-        "_kc_question-mark3.png",
+        "_kc_question-mark3ar.png",
         "_kc_retire.jpg",
         "_kc_school_children1.jpg"
       ]

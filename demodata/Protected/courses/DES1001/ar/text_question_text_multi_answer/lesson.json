@@ -165,9 +165,9 @@
         "hsize": "20 KB",
         "about": "509x340 (20 KB)"
       },
-      "_kc_question-mark3.png": {
+      "_kc_question-mark3ar.png": {
         "txtid": "_kc_question-mark3.png",
-        "md5": "40a02507bc970b1f1fc03a5c9257d087",
+        "md5": "40a02507bc970b1f1fc03a5c9257d088",
         "added": 1552089417,
         "tags": [
           "images",
@@ -176,8 +176,8 @@
           "png"
         ],
         "type": "image",
-        "title": "_kc_question-mark3.png",
-        "file": "_kc_question-mark3.png",
+        "title": "_kc_question-mark3ar.png",
+        "file": "_kc_question-mark3ar.png",
         "width": 512,
         "height": 512,
         "mime": "image\/png",
@@ -194,7 +194,7 @@
         "_kc_computer_saleswoman2.jpg",
         "_kc_gecko.jpg",
         "business-design-development-2.gif",
-        "_kc_question-mark3.png"
+        "_kc_question-mark3ar.png"
       ]
     }
   },

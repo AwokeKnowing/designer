@@ -108,9 +108,9 @@
             }
         },
         "assets": {
-            "_kc_question-mark3.png": {
-                "txtid": "_kc_question-mark3.png",
-                "md5": "40a02507bc970b1f1fc03a5c9257d087",
+            "_kc_question-mark3ar.png": {
+                "txtid": "_kc_question-mark3ar.png",
+                "md5": "40a02507bc970b1f1fc03a5c9257d088",
                 "added": 1552089417,
                 "tags": [
                     "images",
@@ -119,8 +119,8 @@
                     "png"
                 ],
                 "type": "image",
-                "title": "_kc_question-mark3.png",
-                "file": "_kc_question-mark3.png",
+                "title": "_kc_question-mark3ar.png",
+                "file": "_kc_question-mark3ar.png",
                 "width": 512,
                 "height": 512,
                 "mime": "image/png",
@@ -153,7 +153,7 @@
             "files": [
                 "index.html",
                 "lesson.json",
-                "_kc_question-mark3.png",
+                "_kc_question-mark3ar.png",
                 "_kc_starry_night.jpg"
             ]
         }
