@@ -69,34 +69,13 @@
                 "size": 29959,
                 "hsize": "29 KB",
                 "about": "512x512 (29 KB)"
-            },
-            "_kc_starry_night.jpg": {
-                "txtid": "_kc_starry_night.jpg",
-                "md5": "4a6359dc48a2da76cafe5c5f4efc8adf",
-                "added": 1552089417,
-                "tags": [
-                  "images",
-                  "starry",
-                  "nighyt",
-                  "jpg"
-                ],
-                "type": "image",
-                "title": "_kc_starry_night.jpg",
-                "file": "_kc_starry_night.jpg",
-                "width": 819,
-                "height": 648,
-                "mime": "image\/jpeg",
-                "size": 103052,
-                "hsize": "103 KB",
-                "about": "819x648 (103 KB)"
             }
         },
         "manifest": {
             "files": [
                 "index.html", 
                 "lesson.json", 
-                "_kc_question-mark3.png",
-                "_kc_starry_night.jpg"
+                "_kc_question-mark3.png"
             ]
         }
     }  

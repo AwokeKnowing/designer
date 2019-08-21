@@ -6,26 +6,26 @@
     "bind": {
       "content": {
         "question": {
-          "val": "Which of these demographic segments has experience the highest relative growth (percentage) in the US betwen 1980 and 2010?",
+          "val": "ما هو القطاع الديموجرافي الذي شهد أعلى نمو نسبي (نسبة مئوية) من بين القطاعات التالية في الولايات المتحدة في الفترة بين عام 1980 وعام 2010؟",
           "control": {
             "type": "textarea",
             "rows": 5
           }
         },
         "instructions": {
-          "val": "Click on the best choice"
+          "val": "انقر على أفضل اختيار"
         },
         "correctAnswer": {
-          "val": "professional age people 25-65"
+          "val": "فئة العاملين في سن 25-65"
         },
         "answer2": {
-          "val": "young people age 15-25"
+          "val": "فئة الشباب في سن 15-25"
         },
         "answer3": {
-          "val": "infants and children age 0-15"
+          "val": "فئة الرضع والأطفال في سن 0-15"
         },
         "answer4": {
-          "val": "retired aged people age 65+"
+          "val": "فئة المتقاعدين في سن65+"
         },
         "correctImage": {
           "val": {
@@ -96,16 +96,16 @@
           }
         },
         "correctFeedback": {
-          "val": "That is correct!"
+          "val": "هذا صحيح!"
         },
         "answer2Feedback": {
-          "val": "Sorry, that's not the best answer"
+          "val": "للأسف! هذه ليست أفضل إجابة"
         },
         "answer3Feedback": {
-          "val": "Sorry, that's incorrect"
+          "val": "للأسف! هذا غير صحيح"
         },
         "answer4Feedback": {
-          "val": "Sorry, please check your answer"
+          "val": "للأسف! هذا غير صحيح"
         }
       },
       "theme": {
@@ -269,7 +269,7 @@
       ]
     }
   },
-  "lang": "en",
+  "lang": "ar",
   "courseId": "DES1001",
   "lessonId": "30176288-bcb7-45b7-8f49-d624b71bbca3"
 }

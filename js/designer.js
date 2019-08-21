@@ -166,6 +166,8 @@ var Designer = (function() {
         if (lang in designer.mui) {
             desiger.settings.uiLang = lang;
 
+            $('body').toggleClass('rtl', lang === 'ar'); //if ar lang, add rtl as marker class on body
+
             //convenience var for current language mui.  For example in a template you can use
             // {{designer.mui.uiLang.some_mui_key}}  and uiLange will be the mui for current lang.
             desiger.mui.uiLang = desiger.mui[desiger.settings.uiLang];
@@ -344,8 +346,10 @@ var Designer = (function() {
         //currently we specify app strings locally. We should keep it that way until we have some gui tool
         $.ajax({url: "json/mui"+designer.rvt+".json", cache:true, dataType:'json'}).done(function(response) {
             designer.mui = response;
-            //for convenience, map mui.uiLang to the current language strings
+            //for convenience, map mui.uiLang to the current language strings (see setUserInterfaceLanguage)
             designer.mui.uiLang = designer.mui[designer.settings.uiLang]; 
+            $('body').toggleClass('rtl', designer.settings.uiLang === 'ar'); 
+
             prom.resolve()
         });
 

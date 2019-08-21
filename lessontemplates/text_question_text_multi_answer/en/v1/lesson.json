@@ -81,45 +81,6 @@
                 "hsize": "47 KB",
                 "about": "467x720 (47 KB)"
             },
-            "_kc_computer_saleswoman2.jpg": {
-                "txtid": "_kc_computer_saleswoman2.jpg",
-                "md5": "f3599c5bcd3c6f96041db1c9db2f9a62",
-                "added": 1552088717,
-                "tags": [
-                  "images",
-                  "computer",
-                  "saleswoman2",
-                  "jpg"
-                ],
-                "type": "image",
-                "title": "_kc_computer_saleswoman2.jpg",
-                "file": "_kc_computer_saleswoman2.jpg",
-                "width": 706,
-                "height": 1024,
-                "mime": "image\/jpeg",
-                "size": 267353,
-                "hsize": "261 KB",
-                "about": "706x1024 (261 KB)"
-            },
-            "_kc_gecko.jpg": {
-                "txtid": "_kc_gecko.jpg",
-                "md5": "eff46a8997be3a48d7a6069ef9ed759d",
-                "added": 1552088917,
-                "tags": [
-                  "images",
-                  "gecko",
-                  "jpg"
-                ],
-                "type": "image",
-                "title": "_kc_gecko.jpg",
-                "file": "_kc_gecko.jpg",
-                "width": 509,
-                "height": 340,
-                "mime": "image\/jpeg",
-                "size": 20519,
-                "hsize": "20 KB",
-                "about": "509x340 (20 KB)"
-            },
             "_kc_question-mark3.png": {
                 "txtid": "_kc_question-mark3.png",
                 "md5": "40a02507bc970b1f1fc03a5c9257d087",
@@ -146,8 +107,6 @@
                 "index.html", 
                 "lesson.json", 
                 "_kc_computer_saleswoman.jpg",
-                "_kc_computer_saleswoman2.jpg",
-                "_kc_gecko.jpg",
                 "_kc_question-mark3.png"
             ]
         }

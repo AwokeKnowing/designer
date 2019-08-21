@@ -1,177 +1,177 @@
 {
-  "designer": {
-    "template": {
-      "txtid": "text_question_picture_hot_spots"
-    },
-    "bind": {
-      "content": {
-        "question": {
-          "val": "En el ciclo del conflicto, ¿cuál es el primer paso del ciclo?",
-          "control": {
-            "type": "textarea",
-            "rows": "5"
-          }
+    "designer": {
+        "template": {
+            "txtid": "text_question_picture_hot_spots"
         },
-        "instructions": {
-          "val": "Haga clic en la parte de la imagen que responde a la pregunta"
-        },
-        "image": {
-          "val": {
-            "src": "_kc_conflictresolution-es.jpg",
-            "width": "704",
-            "height": "396",
-            "crop": {
-              "zoom": "0.55",
-              "x": "0",
-              "y": "0",
-              "width": "1280",
-              "height": "720"
+        "bind": {
+            "content": {
+                "question": {
+                    "val": "En el ciclo del conflicto, ¿cuál es el primer paso del ciclo?",
+                    "control": {
+                        "type": "textarea",
+                        "rows": "5"
+                    }
+                },
+                "instructions": {
+                    "val": "Haga clic en la parte de la imagen que responde a la pregunta"
+                },
+                "image": {
+                    "val": {
+                        "src": "_kc_conflictresolution-es.jpg",
+                        "width": "704",
+                        "height": "396",
+                        "crop": {
+                            "zoom": "0.55",
+                            "x": "0",
+                            "y": "0",
+                            "width": "1280",
+                            "height": "720"
+                        }
+                    },
+                    "control": {
+                        "type": "croppedimage"
+                    }
+                },
+                "imageHotSpot": {
+                    "val": {
+                        "grid": "[[0,0,0,0,0,3,3,3,3,0,0,0,0,0,0,0],[0,0,0,0,0,3,3,3,3,0,0,2,2,2,0,0],[0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0],[0,4,4,4,4,0,6,6,6,6,2,2,2,2,2,0],[4,4,4,4,4,4,6,6,6,6,0,0,0,0,0,0],[4,4,4,4,4,4,6,6,6,6,0,1,1,0,0,0],[0,0,0,0,0,5,5,0,0,0,1,1,1,1,0,0],[0,0,0,0,5,5,5,5,0,1,1,1,1,1,1,0],[0,0,0,0,5,5,5,5,0,1,1,1,1,1,1,0]]"
+                    },
+                    "control": {
+                        "type": "croppedimagehotspot",
+                        "position": {
+                            "top": "140",
+                            "left": "130",
+                            "width": "708",
+                            "height": "400"
+                        }
+                    }
+                },
+                "correctFeedback": {
+                    "val": "¡Observe que la situación actual es correcto!"
+                },
+                "answer2Feedback": {
+                    "val": "Utilizar conflicto a su favor no es correcto."
+                },
+                "answer3Feedback": {
+                    "val": "Incorrecto. ¿Hay algo que hacer antes de calificar?"
+                },
+                "answer4Feedback": {
+                    "val": "Esta es una buena pregunta, pero no es la mejor respuesta."
+                },
+                "answer5Feedback": {
+                    "val": "Simplificar es muy importante, pero no es el primer paso."
+                },
+                "answer6Feedback": {
+                    "val": "Haga clic en una de las imágenes circundantes."
+                },
+                "answer7Feedback": {
+                    "val": "Lo siento, esa no es la mejor respuesta."
+                },
+                "answer8Feedback": {
+                    "val": "Lo siento, esa no es la mejor respuesta."
+                }
+            },
+            "theme": {
+                "themeManager": {
+                    "control": {
+                        "type": "thememanager"
+                    }
+                },
+                "backgroundColor": {
+                    "val": "rgb(240, 240, 240)",
+                    "control": {
+                        "type": "color"
+                    }
+                },
+                "accentColor": {
+                    "val": "rgb(163, 47, 59)",
+                    "control": {
+                        "type": "color"
+                    }
+                },
+                "accentColorText": {
+                    "val": "rgb(197, 197, 197)",
+                    "control": {
+                        "type": "color"
+                    }
+                },
+                "questionBackgroundColor": {
+                    "val": "rgb(240, 240, 240)",
+                    "control": {
+                        "type": "color"
+                    }
+                },
+                "answerBackgroundColor": {
+                    "val": "rgb(62, 109, 209)",
+                    "control": {
+                        "type": "color"
+                    }
+                },
+                "questionColor": {
+                    "val": "rgb(0, 0, 0)",
+                    "control": {
+                        "type": "color"
+                    }
+                },
+                "answerColor": {
+                    "val": "rgb(255, 255, 255)",
+                    "control": {
+                        "type": "color"
+                    }
+                }
             }
-          },
-          "control": {
-            "type": "croppedimage"
-          }
         },
-        "imageHotSpot": {
-          "val": {
-            "grid": "[[0,0,0,0,0,3,3,3,3,0,0,0,0,0,0,0],[0,0,0,0,0,3,3,3,3,0,0,2,2,2,0,0],[0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0],[0,4,4,4,4,0,6,6,6,6,2,2,2,2,2,0],[4,4,4,4,4,4,6,6,6,6,0,0,0,0,0,0],[4,4,4,4,4,4,6,6,6,6,0,1,1,0,0,0],[0,0,0,0,0,5,5,0,0,0,1,1,1,1,0,0],[0,0,0,0,5,5,5,5,0,1,1,1,1,1,1,0],[0,0,0,0,5,5,5,5,0,1,1,1,1,1,1,0]]"
-          },
-          "control": {
-            "type": "croppedimagehotspot",
-            "position": {
-              "top": "140",
-              "left": "130",
-              "width": "708",
-              "height": "400"
+        "assets": {
+            "_kc_conflictresolution-es.jpg": {
+                    "txtid": "_kc_conflictresolution-es.jpg",
+                    "md5": "24f652d2d3af6f6c380ccc452fb9527f",
+                    "added": 1552089317,
+                    "tags": [
+                        "images",
+                        "conflict",
+                        "jpg"
+                    ],
+                    "type": "image",
+                    "title": "_kc_conflictresolution-es.jpg",
+                    "file": "_kc_conflictresolution-es.jpg",
+                    "width": 1280,
+                    "height": 720,
+                    "mime": "image\/jpeg",
+                    "size": 101246,
+                    "hsize": "101.2 KB",
+                    "about": "1280x720 (101 KB)"
+            },
+            "_kc_question-mark3.png": {
+                "txtid": "_kc_question-mark3.png",
+                "md5": "40a02507bc970b1f1fc03a5c9257d087",
+                "added": "1552089417",
+                "tags": [
+                    "images",
+                    "question",
+                    "mark3",
+                    "png"
+                ],
+                "type": "image",
+                "title": "_kc_question-mark3.png",
+                "file": "_kc_question-mark3.png",
+                "width": "512",
+                "height": "512",
+                "mime": "image/png",
+                "size": "29959",
+                "hsize": "29 KB",
+                "about": "512x512 (29 KB)"
             }
-          }
         },
-        "correctFeedback": {
-          "val": "¡Observe que la situación actual es correcto!"
-        },
-        "answer2Feedback": {
-          "val": "Utilizar conflicto a su favor no es correcto."
-        },
-        "answer3Feedback": {
-          "val": "Incorrecto. ¿Hay algo que hacer antes de calificar?"
-        },
-        "answer4Feedback": {
-          "val": "Esta es una buena pregunta, pero no es la mejor respuesta."
-        },
-        "answer5Feedback": {
-          "val": "Simplificar es muy importante, pero no es el primer paso."
-        },
-        "answer6Feedback": {
-          "val": "Haga clic en una de las imágenes circundantes."
-        },
-        "answer7Feedback": {
-          "val": "Lo siento, esa no es la mejor respuesta."
-        },
-        "answer8Feedback": {
-          "val": "Lo siento, esa no es la mejor respuesta."
+        "manifest": {
+            "files": [
+                "index.html",
+                "lesson.json",
+                "_kc_conflictresolution-es.jpg",
+                "_kc_question-mark3.png"
+            ]
         }
-      },
-      "theme": {
-        "themeManager": {
-          "control": {
-            "type": "thememanager"
-          }
-        },
-        "backgroundColor": {
-          "val": "rgb(240, 240, 240)",
-          "control": {
-            "type": "color"
-          }
-        },
-        "accentColor": {
-          "val": "rgb(163, 47, 59)",
-          "control": {
-            "type": "color"
-          }
-        },
-        "accentColorText": {
-          "val": "rgb(197, 197, 197)",
-          "control": {
-            "type": "color"
-          }
-        },
-        "questionBackgroundColor": {
-          "val": "rgb(240, 240, 240)",
-          "control": {
-            "type": "color"
-          }
-        },
-        "answerBackgroundColor": {
-          "val": "rgb(62, 109, 209)",
-          "control": {
-            "type": "color"
-          }
-        },
-        "questionColor": {
-          "val": "rgb(0, 0, 0)",
-          "control": {
-            "type": "color"
-          }
-        },
-        "answerColor": {
-          "val": "rgb(255, 255, 255)",
-          "control": {
-            "type": "color"
-          }
-        }
-      }
     },
-    "assets": {
-      "_kc_conflictresolution-es.jpg": {
-          "txtid": "_kc_conflictresolution-es.jpg",
-          "md5": "24f652d2d3af6f6c380ccc452fb9527f",
-          "added": 1552089317,
-          "tags": [
-            "images",
-            "conflict",
-            "jpg"
-          ],
-          "type": "image",
-          "title": "_kc_conflictresolution-es.jpg",
-          "file": "_kc_conflictresolution-es.jpg",
-          "width": 1280,
-          "height": 720,
-          "mime": "image\/jpeg",
-          "size": 101246,
-          "hsize": "101.2 KB",
-          "about": "1280x720 (101 KB)"
-      },
-      "_kc_question-mark3.png": {
-        "txtid": "_kc_question-mark3.png",
-        "md5": "40a02507bc970b1f1fc03a5c9257d087",
-        "added": "1552089417",
-        "tags": [
-          "images",
-          "question",
-          "mark3",
-          "png"
-        ],
-        "type": "image",
-        "title": "_kc_question-mark3.png",
-        "file": "_kc_question-mark3.png",
-        "width": "512",
-        "height": "512",
-        "mime": "image/png",
-        "size": "29959",
-        "hsize": "29 KB",
-        "about": "512x512 (29 KB)"
-      }
-    },
-    "manifest": {
-      "files": [
-        "index.html",
-        "lesson.json",
-        "_kc_conflictresolution.jpg",
-        "_kc_question-mark3.png"
-      ]
-    }
-  },
-  "lang": "es",
-  "courseId": "DES1001",
-  "lessonId": "842072dc-7a33-43c9-bc0b-0481998db41b"
+    "lang": "es",
+    "courseId": "DES1001",
+    "lessonId": "842072dc-7a33-43c9-bc0b-0481998db41b"
 }

@@ -61,7 +61,7 @@ var DesignerTemplateChooserDialogPage = (function() {
         $page.removeClass("hidden");
 
         // load the data for templates and display them
-        loadTemplates().done(function(){
+        loadTemplates({lessonLang:designer.settings.lessonLang,filters:{}}).done(function(){
             console.log('Template Dialog: loaded template list')
 
             // we don't resolve until user chooses template
@@ -83,6 +83,8 @@ var DesignerTemplateChooserDialogPage = (function() {
             $cancelBtn.show();
         else
             $cancelBtn.hide();
+
+
     }
 
 
@@ -103,7 +105,7 @@ var DesignerTemplateChooserDialogPage = (function() {
         $page = $('.pg-templ');
     }
 
-    function loadTemplates() {
+    function loadTemplates(options) {
         // Load the template data and render into view.  template data looks like:
         /*
         {
@@ -132,7 +134,7 @@ var DesignerTemplateChooserDialogPage = (function() {
             templates = templatesjson.templates;
 
             // render them in the list view
-            renderTemplates(templates);
+            renderTemplates(templates, options);
 
             prom.resolve();
 
@@ -144,7 +146,7 @@ var DesignerTemplateChooserDialogPage = (function() {
         return prom;
     }
 
-    function renderTemplates(templates) {
+    function renderTemplates(templates, options) {
         // Here we render the template data into the template cards in the list view.
         // Sorry about jquery building, but mustache seemed overkill and template strings not fully supported yet.
 
@@ -158,7 +160,7 @@ var DesignerTemplateChooserDialogPage = (function() {
             //       <div class="tmpl-about">User will read a question and select answer</div>
             //    </div>
             //</div>
-        
+
             var td = templates[i];
             var $tmpl = $('<div class="template"></div>');
             $tmpl.attr('id', td.txtid);
@@ -173,9 +175,17 @@ var DesignerTemplateChooserDialogPage = (function() {
             var $info = $('<div class="info"></div>');
             $info.append($('<div class="tmpl-title">').text(td.title));
             $info.append($('<div class="tmpl-version">').text(designer.mui.uiLang['designer_ui_itemVersion']+": "+td.version));
+            $info.append($('<div class="tmpl-lang tmpl-lang_'+td.lang+'">').text('('+designer.mui[td.lang]['designer_ui_thisLanguage']+')'));
             $info.append($('<div class="tmpl-about">').text(td.about));
 
             $tmpl.append($info);
+            
+            if(td.lang != options.lessonLang) // for now, only show lessons matching current lesson lang (not uiLang)
+                $tmpl.addClass('hidden');     // this should always be the case if 'replacing' a lesson (replace with same lang)
+
+            if(td.lang == 'ar')
+                $tmpl.attr('dir', 'rtl');     //regardless of ui lang, we show ar templates rtl
+
 
             $page.find('.templates').append($tmpl);
         }

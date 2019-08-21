@@ -6,14 +6,14 @@
     "bind": {
       "content": {
         "question": {
-          "val": "In the Cycle of Conflict, which is the first step in the cycle?",
+          "val": "في دورة الصراع ، ما هي الخطوة الأولى في الدورة؟",
           "control": {
             "type": "textarea",
             "rows": "5"
           }
         },
         "instructions": {
-          "val": "Click on the part of the image that answers the question."
+          "val": "انقر على جزء الصورة الذي يمثل الإجابة"
         },
         "image": {
           "val": {
@@ -47,28 +47,28 @@
           }
         },
         "correctFeedback": {
-          "val": "Observe the current situation is correct!"
+          "val": "ملاحظة الموقف الحالي صحيح!"
         },
         "answer2Feedback": {
-          "val": "Utilize conflict in your favor is not correct."
+          "val": "استغلال الصراع لصالحك غير صحيح"
         },
         "answer3Feedback": {
-          "val": "Incorrect. Is there anything to do before rating?"
+          "val": "غير صحيح. هل هناك أي شئ يمكن فعله قبل التقييم؟"
         },
         "answer4Feedback": {
-          "val": "This is a good question, but not the best answer"
+          "val": "هذا سؤال جيد، ولكن ليس أفضل إجابة"
         },
         "answer5Feedback": {
-          "val": "Simplifying is very important, but not the first step."
+          "val": "التبسيط مهم للغاية ، ولكن ليس الخطوة الأولى"
         },
         "answer6Feedback": {
-          "val": "This graphic just represents \"conflict\". Click one of the surrounding images."
+          "val": "هذا الشكل يمثل فقط الصراع. انقر فوق إحدى الصور المحيطة"
         },
         "answer7Feedback": {
-          "val": "Sorry, that's not the best answer"
+          "val": "للأسف، هذه ليست أفضل إجابة"
         },
         "answer8Feedback": {
-          "val": "Sorry, that's not the best answer"
+          "val": "للأسف، هذه ليست أفضل إجابة"
         }
       },
       "theme": {
@@ -171,7 +171,7 @@
       ]
     }
   },
-  "lang": "en",
+  "lang": "ar",
   "courseId": "DES1001",
   "lessonId": "842072dc-7a33-43c9-bc0b-0481998db41b"
 }

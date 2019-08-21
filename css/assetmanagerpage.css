@@ -7,11 +7,14 @@
 .pg-assetmanager .prev-img-large {margin:0px 0px;;padding-top: 50px; max-width:480px;height:270px;position: relative;}
 .pg-assetmanager .prev-img-large > div {background-image:url(../img/blankimg480.png);position:absolute;box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,1);top:0px;right:0px;left:0px;bottom:0px;background-size: contain;background-repeat: no-repeat;background-position: center center;}
 .pg-assetmanager .prev-descr-large {padding:15px;margin-top:20px;position: relative;float:left;max-height: 100px;overflow:auto;max-height: calc(100vh - 670px);width:100%;}
+.rtl .pg-assetmanager .prev-descr-large{direction: rtl}
 .pg-assetmanager .prev-descr-large > div {font-size: 16px}
 .pg-assetmanager .prev-descr-large .tmpl-title {text-shadow: 1px 1px 3px  rgba(0,0,0,.5)}
+.rtl .pg-assetmanager .prev-descr-large .tmpl-title {text-align: right;direction: ltr;/*filenames mess up rtl*/}
 .pg-assetmanager .prev-descr-large .tmpl-version {color:#999;}
 .pg-assetmanager .prev-descr-large .tmpl-interaction {}
 .pg-assetmanager .prev-descr-large .tmpl-about {padding-top:10px;color:#c5c5c5;}
+.rtl .pg-assetmanager .prev-descr-large .tmpl-about {text-align:right;direction: ltr;/*about eg 32x32 (20 KB)*/}
 .pg-assetmanager .prev-button-sec {text-align: center;position: absolute; bottom:40px;left:0;right: 0;}
 .pg-assetmanager .prev-button {margin:auto;display:inline-block;text-align: center;padding: 18px 30px;background: #df803d;border-radius: 4px;box-shadow: 2px 2px 6px 0px rgba(0,0,0,.5);opacity:.9;cursor: pointer;}
 .pg-assetmanager .prev-button:hover {opacity: 1;box-shadow: 2px 2px 16px 0px rgba(0,0,0,.5);}
@@ -38,22 +41,27 @@
 
 .pg-assetmanager .assets {overflow-y:scroll;position: relative;height: calc(100vh - 150px);background: #292929;box-shadow: inset 0px 2px 8px 0px rgba(0,0,0,.8);}
 .pg-assetmanager .assets-list {display: none;}
+.rtl .pg-assetmanager .assets-list{direction: rtl}
 .pg-assetmanager .assets-list.selected {display: block;}
 .pg-assetmanager .asset {position:relative; margin: 12px;background: #404040;min-height: 78px;padding:15px;box-shadow: 1px 1px 4px 0px rgba(0,0,0,.5);cursor: pointer;border-radius: 3px;}
+.rtl .pg-assetmanager .asset{direction: rtl}
 .pg-assetmanager .asset.selected {border-bottom: 3px solid #df803d;background:  #504440;transform: translate(-10px, -1px);}
 .pg-assetmanager .asset:hover{transform: translate(-1px, -1px);background: #444}
 .pg-assetmanager .asset.selected:hover{transform: translate(-10px, -1px);}
 .pg-assetmanager .asset.unavailable {background:transparent;pointer-events:none;box-shadow:none;color:red;}
 .pg-assetmanager .asset .prev-small {border:1px dashed #6a6a6a;width:48px;height: 48px;background-size: contain;background-repeat:no-repeat;background-position:center center;margin-right:13px;display: inline-block;} 
+.rtl .pg-assetmanager .asset .prev-small{margin-right:0px;margin-left:13px;}
 .pg-assetmanager .asset.prev-large {display: inline-block;margin-right: 0;margin-bottom: 0;}
 .pg-assetmanager .asset.prev-large > div {border:1px dashed #6a6a6a;width:130px;height: 130px;background-size: contain;background-repeat:no-repeat;background-position:center center;display: inline-block;} 
 .pg-assetmanager .asset.prev-large.unavailable > div {border:1px dashed red;opacity: .5}
-.pg-assetmanager .asset .info {min-width: 220px;width: calc(100% - 220px);display: inline-block;vertical-align: top;font-size:14px;}
+.pg-assetmanager .asset .info {min-width: 70px;width: calc(100% - 70px);display: inline-block;vertical-align: top;font-size:14px;}
 .pg-assetmanager .asset .tmpl-title {font-size:16px;}
+.rtl .pg-assetmanager .asset .tmpl-title {text-align:right;direction: ltr;/*filenames mess up rtl*/}
 .pg-assetmanager .asset .tmpl-version {color:#999;}
 .pg-assetmanager .asset .tmpl-type    {color:#999;}
 .pg-assetmanager .asset .tmpl-interaction {}
 .pg-assetmanager .asset .tmpl-about {color:#ddd;}
+.rtl .pg-assetmanager .asset .tmpl-about{text-align:right;direction: ltr;/*about eg 32x32 (20 KB)*/}
 .pg-assetmanager .asset:hover .tmpl-about {color:#fff;}
 .pg-assetmanager .load-more {margin:10px;width:200px;display:block;text-align: center;padding: 18px 30px;background: #2b576b;border-radius: 4px;box-shadow: 2px 2px 6px 0px rgba(0,0,0,.5);opacity:.9;cursor: pointer;}
 .pg-assetmanager .load-more:hover {opacity: 1;box-shadow: 2px 2px 16px 0px rgba(0,0,0,.5);}
@@ -74,6 +82,7 @@
 .uploader #upload_file-image.hidden {display: none;}
 .uploader #upload_notimage {display: block;float: left; clear: both; width: 100%;}
 .uploader #upload_notimage.hidden {display: none;}
+.rtl .uploader #upload_notimage{direction: rtl}
 .uploader progress,.uploader .progress {display: inline;clear: both;margin: 0 auto;width: 100%;max-width: 180px;height: 8px;border: 0;border-radius: 4px;background-color: #eee;overflow: hidden;}
 .uploader .progress[value]::-webkit-progress-bar {border-radius: 4px;background-color: #eee;}
 .uploader .progress[value]::-webkit-progress-value {background: linear-gradient(to right, #393f90 0%, #454cad 50%); border-radius: 4px;}

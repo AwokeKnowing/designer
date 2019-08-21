@@ -79,7 +79,7 @@ function Uploader(settings, uploadDoneCallback){
     if(s.isDemo) {
       setTimeout(function(){
         resetForm();
-        document.getElementById('upload_notimage').innerHTML='<div style="color:#cc6666"><b>NOTE</b>: Adding files is disabled in Demo Mode</div>';
+        document.getElementById('upload_notimage').innerHTML='<div style="color:#cc6666">'+designer.mui.uiLang['designer_ui_upImgDemoNote']+'</div>';
       },2000)
       
       return;

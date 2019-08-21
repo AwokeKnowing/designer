@@ -11,8 +11,13 @@ AddCharset utf-8 .js
     CheckSpelling on
 </IfModule>
 
+RewriteEngine On
+RewriteBase /
+
 RewriteRule ^robots\.txt$ /robots.txt.php [L]
 RewriteRule ^sitemap\.xml$ /sitemap.xml.php [L]
+
+
 
 # for non optimize engine
 DirectoryIndex index.htm
@@ -20,13 +25,16 @@ DirectoryIndex index.htm
 # for optimize start
 #DirectoryIndex index.min.htm
 
-ErrorDocument 404 <script>location.href='/en/page404';</script>
+ErrorDocument 404 <div>404</div>
 
 
-RewriteEngine On
-RewriteBase /
+
 
 DirectoryIndex index.html
+
+
+RewriteCond %{REQUEST_URI} ^/(ar|es|en) [NC]
+RewriteRule  (.*) ?lessonLang=$1&uiLang=$1 [R=301,NE]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} /images/loader/logo-.*\.png$ [NC]
@@ -37,11 +45,14 @@ RewriteRule ^.*$ images/loader/logo.png [L]
 RewriteCond %{HTTP_HOST} .
 RewriteRule ^(.*)--v[0-9]+\.(html|srt|vtt|json|css|js|mst|jpg|jpeg|png|svg)$ $1.$2 [NC,L]
 
+#RewriteRule  ^(.*)/ar$ $1?lessonLang=ar&uiLang=ar [L,NE]
 
 #RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} !-d
 #RewriteCond %{REQUEST_URI} !\.(js)$
 #RewriteRule ^.*$ /index.htm [L,QSA]
+
+
 
 RewriteCond %{HTTP_HOST} ^knowledgecity\.com$ [NC]
 RewriteRule ^(.*)$ https://www.knowledgecity.com/$1 [R=301,L]

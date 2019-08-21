@@ -20,7 +20,7 @@ var EditorControl_color = (function() {
     EditorControl_color.prototype.build = function(ctlid, panelKey, controlKey, settings) {
     	var $control = $('#' + ctlid);
     	
-    	var inp = $('<input type="text" style="cursor:pointer;border-left: 25px solid transparent">');
+    	var inp = $('<input type="text" style="cursor:pointer;border-left: 25px solid transparent;direction:ltr">');
         var inpid = ctlid + '-text'
     	inp.attr('data-bind', "style:{ 'border-left-color': "+ panelKey + "." + controlKey + ".val}, value: "+ panelKey + "." + controlKey + ".val, valueUpdate: 'afterkeydown'");
         inp.attr('id', inpid);

@@ -6,38 +6,38 @@
     "bind": {
       "content": {
         "question": {
-          "val": "Some questions need answers. To see if you know the answer, you are being asked a question. Which of the following is the best answer to the question?",
+          "val": "بعض الأسئلة تحتاج إلى إجابات. لمعرفة ما إذا كنت تعرف الإجابة ، يتم طرح سؤال عليك. أي مما يلي هو أفضل إجابة على السؤال؟",
           "control": {
             "type": "textarea",
             "rows": 5
           }
         },
         "instructions": {
-          "val": "Consider the question, and select a response"
+          "val": "استعرض السؤال، واختر إجابة"
         },
         "correctAnswer": {
-          "val": "The best answer"
+          "val": "أفضل إجابة"
         },
         "answer2": {
-          "val": "The almost correct answer"
+          "val": "إجابة صحيحة تقريباً"
         },
         "answer3": {
-          "val": "The clearly wrong answer"
+          "val": "إجابة خاطئة بوضوح"
         },
         "answer4": {
           "val": ""
         },
         "correctFeedback": {
-          "val": "That's right! You selected the best answer"
+          "val": "هذا صحيح ! لقد اخترت أفضل إجابة"
         },
         "answer2Feedback": {
-          "val": "Sorry, that's not the best answer"
+          "val": "للأسف، هذه ليست أفضل إجابة"
         },
         "answer3Feedback": {
-          "val": "Sorry, that's incorrect"
+          "val": "للأسف! هذا غير صحيح"
         },
         "answer4Feedback": {
-          "val": "Sorry, please check your answer"
+          "val": "للأسف! نرجو مراجعة إجابتك"
         }
       },
       "appearance": {
@@ -198,7 +198,7 @@
       ]
     }
   },
-  "lang": "en",
+  "lang": "ar",
   "courseId": "DES1001",
   "lessonId": "bde01b80-9041-453a-97ab-c9556ad49ab3"
 }

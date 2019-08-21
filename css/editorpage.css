@@ -16,14 +16,19 @@
 .pg-edit .props {height:calc(100vh - 50px);padding-bottom:20px;float:right;overflow-y: scroll;overflow-x:hidden;width:300px;background: #333;border-left: 1px solid #666;vertical-align: top;color:#bbb;font-size: 12px}
 .pg-edit .panel {margin-top: 10px;padding-bottom: 5px;position: relative;}
 .pg-edit .ptitle {cursor:pointer;user-select:none;font-size: 14px;font-weight: bold;color:#ddd;width: 100%;background-color: #555;padding: 6px;box-shadow: 3px 1px 3px 0px rgba(0,0,0.5)}
+.rtl .pg-edit .ptitle {direction: rtl}
 .pg-edit .controls {padding: 0px 5px;}
 .pg-edit .controls .arrow {}
-.pg-edit .ptitle::before {;content: ' '; display: inline-block; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid currentColor; vertical-align: middle; margin-right: .7rem; transform: translateY(-2px); transition: transform .2s ease-out;transform: rotate(90deg) translateX(-3px);}
+.pg-edit .ptitle::before {content: ' '; display: inline-block; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid currentColor; vertical-align: middle; margin-right: .7rem; transform: translateY(-2px); transition: transform .2s ease-out;transform: rotate(90deg) translateX(-3px);}
+.rtl .pg-edit .ptitle::before {margin-right: .8rem;margin-left: .7rem};
 .pg-edit .panel.collapsed .ptitle::before {transform: rotate(0deg) translateX(0px);}
 .pg-edit .panel.collapsed .controls {display: none;}
 .pg-edit .control {margin-top: 10px;}
-.pg-edit .control .title {;}
+.pg-edit .control .title {}
+.rtl .pg-edit .control .title{direction: rtl;padding-right: 10px;}
 .pg-edit .control input, .control textarea {background-color: #444;color:#eee;padding: 5px;border: 1px solid #888;border-radius: 4px;width: 280px;}
 .pg-edit .control textarea {font-family: sans-serif;}
+.rtl .pg-edit .control input, .rtl .pg-edit .control textarea {direction: rtl;/*won't make sense for all (eg rgb), but specialized types can override*/}
 .pg-edit .control .widebutton {cursor:pointer;font-size:14px;text-align:center;background-color: #666;color:#eee;padding: 5px;margin:3px 0px;border: 1px solid #bbb;border-radius: 4px;width: 280px;box-shadow: 1px 1px 0px 1px rgba(0,0,0,.5)}
+.rtl .pg-edit .control .widebutton {direction: rtl}
 .pg-edit .control .widebutton:hover{background: #888;} 

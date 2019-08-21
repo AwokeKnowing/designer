@@ -9,9 +9,12 @@ html, body{margin:0;background: #444}
 /*Header*/
 .header {height:50px;border:1px solid #555;font-size: 24px;color:white;background: #555;padding: 5px 35px;}
 .header img{width:28px;height: 28px;display: inline-block;position:relative;top: 4px; left:-4px;}
+.rtl .header{direction: rtl}
+.rtl .header img{left:4px}
+
 .app {width: 100%;height: calc(100vh - 50px);}
 .pages {}
-.rtl {direction: rtl;}
+.rtl {/*keep empty. goes on body just as 'marker'. to apply to item add .rtl .item{direction:rtl}*/}
 
 .hidden {display: none!important /*needs important since this css is loaded first, and to apply anywhere to more specific css*/}
 .loading {background: rgba(220, 220, 255, 0.3);bottom: 0;left: 0;position: fixed;right: 0; top: 50px; z-index: 9998;}

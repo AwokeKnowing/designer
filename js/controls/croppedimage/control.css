@@ -8,6 +8,7 @@
 .croppie-controls > div.disabled {opacity:.1;cursor: default;pointer-events: none;}
 .croppie-controls.left {right:auto;left: calc(10vw + 60px);text-align: left;}
 .croppie-controls.left > div {background: #2b576b;}
+.rtl .croppie-controls > div{direction: rtl}
 
 .croppedimage {/*position: relative; causes image to overlap title of next control*/}
 .croppedimage .thumbnail {width: 27px; height: 27px; border: 1px solid #888; border-radius: 5px 0px 0px 5px; position: relative; margin-top: -27px; overflow: hidden;}
@@ -15,6 +16,7 @@
 .croppedimage .thumbnail:hover {overflow: visible;}
 .croppedimage .thumbnail > div:hover {transform: scale(1);margin-top: -50px;margin-left: -5px; z-index: 50}
 .croppedimage.control input { padding: 5px 5px 5px 30px!important; margin-right: -3px;}
+.rtl .croppedimage.control input{direction: ltr}
 .croppedimage .thumbnail > div > div {display: inline-block;}
 .croppedimage .thumbnail  > div > div > div {transform-origin: left top 0px!important;position: relative; overflow: hidden;}
 .croppedimage .thumbnail img {position:absolute;}
