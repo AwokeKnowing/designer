@@ -18,64 +18,62 @@
                 "answer4Feedback": {"val": "Sorry, please check your answer"}
             },
             "theme": {
-                "themeManager": {"control": {"type": "thememanager"} },
+                "themeManager": {
+                    "control": {
+                        "type": "thememanager"
+                    }
+                },
                 "backgroundColor": {
                     "val": "rgb(240, 240, 240)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "accentColor": {
                     "val": "rgb(163, 47, 59)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "accentColorText": {
                     "val": "rgb(197, 197, 197)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "questionBackgroundColor": {
                     "val": "rgb(240, 240, 240)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "answerBackgroundColor": {
                     "val": "rgb(62, 109, 209)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "questionColor": {
                     "val": "rgb(0, 0, 0)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "answerColor": {
                     "val": "rgb(255, 255, 255)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 }
             }
         },
         "assets": {
-            "_kc_question-mark3.png": {
-                "txtid": "_kc_question-mark3.png",
-                "md5": "40a02507bc970b1f1fc03a5c9257d087",
-                "added": 1552089417,
-                "tags": [
-                  "images",
-                  "question",
-                  "mark3",
-                  "png"
-                ],
-                "type": "image",
-                "title": "_kc_question-mark3.png",
-                "file": "_kc_question-mark3.png",
-                "width": 512,
-                "height": 512,
-                "mime": "image\/png",
-                "size": 29959,
-                "hsize": "29 KB",
-                "about": "512x512 (29 KB)"
-            }
+            
         },
         "manifest": {
             "files": [
                 "index.html", 
-                "lesson.json", 
-                "_kc_question-mark3.png"
+                "lesson.json"
             ]
         }
     }  

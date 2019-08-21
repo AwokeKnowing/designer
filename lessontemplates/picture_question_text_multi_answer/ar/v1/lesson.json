@@ -6,7 +6,7 @@
         "bind": {
             "content": {
                 "question": {
-                    "val": "Este es un óleo sobre lienzo del pintor postimpresionista holandés Vincent van Gogh. Pintado en junio de 1889, describe la vista desde la ventana orientada al este de su habitación, justo antes del amanecer. <br> <b> ¿Cuál es el nombre de la pintura? </b>",
+                    "val": "<p>هذه لوحة زيتية للرسام الهولندي فنسنت فان جوخ، وهو ينتمي لمدرسة ما بعد الانطباعية. وقد رسمت في يونيو 1889، وهي تصف المنظر من النافذة المواجهة للشرق في غرفته قبل شروق الشمس مباشرة.<br><b> ما هو اسم اللوحة؟</b></p>",
                     "control": {
                         "type": "textarea",
                         "rows": 5
@@ -30,31 +30,31 @@
                     }
                 },
                 "instructions": {
-                    "val": "Considere la imagen y el comentario / pregunta, y seleccione una respuesta"
+                    "val": "استعرض الصورة والتعليق/السؤال، واختر إجابة"
                 },
                 "correctAnswer": {
-                    "val": "La noche estrellada"
+                    "val": "ليلة صافية"
                 },
                 "answer2": {
-                    "val": "La Mona Lisa"
+                    "val": "موناليزا"
                 },
                 "answer3": {
-                    "val": "La última cena"
+                    "val": "العشاء الأخير"
                 },
                 "answer4": {
-                    "val": "Sonata a la luz de la luna"
+                    "val": "سوناتا ضوء القمر"
                 },
                 "correctFeedback": {
-                    "val": "¡Eso es correcto! Seleccionaste la mejor respuesta"
+                    "val": "هذا صحيح! لقد اخترت أفضل إجابة"
                 },
                 "answer2Feedback": {
-                    "val": "Lo siento, eso no es correcto"
+                    "val": "للأسف! هذا ليس صحيحاً"
                 },
                 "answer3Feedback": {
-                    "val": "Lo siento, eso es incorrecto"
+                    "val": "للأسف! هذا غير صحيح"
                 },
                 "answer4Feedback": {
-                    "val": "Lo siento, verifique su respuesta"
+                    "val": "للأسف! نرجو مراجعة إجابتك"
                 }
             },
             "theme": {
@@ -108,9 +108,9 @@
             }
         },
         "assets": {
-            "_kc_question-mark3.png": {
-                "txtid": "_kc_question-mark3.png",
-                "md5": "40a02507bc970b1f1fc03a5c9257d087",
+            "_kc_question-mark3ar.png": {
+                "txtid": "_kc_question-mark3ar.png",
+                "md5": "40a02507bc970b1f1fc03a5c9257d088",
                 "added": 1552089417,
                 "tags": [
                     "images",
@@ -119,8 +119,8 @@
                     "png"
                 ],
                 "type": "image",
-                "title": "_kc_question-mark3.png",
-                "file": "_kc_question-mark3.png",
+                "title": "_kc_question-mark3ar.png",
+                "file": "_kc_question-mark3ar.png",
                 "width": 512,
                 "height": 512,
                 "mime": "image/png",
@@ -153,7 +153,7 @@
             "files": [
                 "index.html",
                 "lesson.json",
-                "_kc_question-mark3.png",
+                "_kc_question-mark3ar.png",
                 "_kc_starry_night.jpg"
             ]
         }

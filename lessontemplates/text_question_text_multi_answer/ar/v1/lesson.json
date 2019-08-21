@@ -1,21 +1,44 @@
 {
     "designer": {
-        "template": {"txtid":"text_question_text_multi_answer"},
+        "template": {
+            "txtid": "text_question_text_multi_answer"
+        },
         "bind": {
             "content": {
                 "question": {
-                    "val": "Some questions need answers. To see if you know the answer, you are being asked a question. Which of the following is the best answer to the question?",
-                    "control": {"type":"textarea", "rows": 5}
+                    "val": "بعض الأسئلة تحتاج إلى إجابات. لمعرفة ما إذا كنت تعرف الإجابة ، يتم طرح سؤال عليك. أي مما يلي هو أفضل إجابة على السؤال؟",
+                    "control": {
+                        "type": "textarea",
+                        "rows": 5
+                    }
                 },
-                "instructions":    {"val": "Consider the question, and select a response"},
-                "correctAnswer":   {"val": "The best answer"},
-                "answer2":         {"val": "The almost correct answer"},
-                "answer3":         {"val": "The clearly wrong answer"},
-                "answer4":         {"val": ""},
-                "correctFeedback": {"val": "That's right! You selected the best answer"},
-                "answer2Feedback": {"val": "Sorry, that's not the best answer"},
-                "answer3Feedback": {"val": "Sorry, that's incorrect"},
-                "answer4Feedback": {"val": "Sorry, please check your answer"}
+                "instructions": {
+                    "val": "استعرض السؤال، واختر إجابة"
+                },
+                "correctAnswer": {
+                    "val": "أفضل إجابة"
+                },
+                "answer2": {
+                    "val": "إجابة صحيحة تقريباً"
+                },
+                "answer3": {
+                    "val": "إجابة خاطئة بوضوح"
+                },
+                "answer4": {
+                    "val": ""
+                },
+                "correctFeedback": {
+                    "val": "هذا صحيح ! لقد اخترت أفضل إجابة"
+                },
+                "answer2Feedback": {
+                    "val": "للأسف، هذه ليست أفضل إجابة"
+                },
+                "answer3Feedback": {
+                    "val": "للأسف! هذا غير صحيح"
+                },
+                "answer4Feedback": {
+                    "val": "للأسف! نرجو مراجعة إجابتك"
+                }
             },
             "appearance": {
                 "decorativeSideImage": {
@@ -23,9 +46,17 @@
                         "src": "_kc_computer_saleswoman.jpg",
                         "width": 280,
                         "height": 428,
-                        "crop": {"zoom":1, "x":0, "y":40, "width":280,"height":428}
+                        "crop": {
+                            "zoom": 1,
+                            "x": 0,
+                            "y": 40,
+                            "width": 280,
+                            "height": 428
+                        }
                     },
-                    "control": {"type":"croppedimage"}
+                    "control": {
+                        "type": "croppedimage"
+                    }
                 }
             },
             "theme": {
@@ -84,10 +115,10 @@
                 "md5": "f0d2e78445edd80f66fdd7668c357801",
                 "added": 1552088617,
                 "tags": [
-                  "images",
-                  "computer",
-                  "saleswoman",
-                  "jpg"
+                    "images",
+                    "computer",
+                    "saleswoman",
+                    "jpg"
                 ],
                 "type": "image",
                 "title": "_kc_computer_saleswoman.jpg",
@@ -99,19 +130,19 @@
                 "hsize": "47 KB",
                 "about": "467x720 (47 KB)"
             },
-            "_kc_question-mark3.png": {
+            "_kc_question-mark3ar.png": {
                 "txtid": "_kc_question-mark3.png",
-                "md5": "40a02507bc970b1f1fc03a5c9257d087",
+                "md5": "40a02507bc970b1f1fc03a5c9257d088",
                 "added": 1552089417,
                 "tags": [
-                  "images",
-                  "question",
-                  "mark3",
-                  "png"
+                    "images",
+                    "question",
+                    "mark3",
+                    "png"
                 ],
                 "type": "image",
-                "title": "_kc_question-mark3.png",
-                "file": "_kc_question-mark3.png",
+                "title": "_kc_question-mark3ar.png",
+                "file": "_kc_question-mark3ar.png",
                 "width": 512,
                 "height": 512,
                 "mime": "image\/png",
@@ -122,11 +153,11 @@
         },
         "manifest": {
             "files": [
-                "index.html", 
-                "lesson.json", 
+                "index.html",
+                "lesson.json",
                 "_kc_computer_saleswoman.jpg",
-                "_kc_question-mark3.png"
+                "_kc_question-mark3ar.png"
             ]
         }
-    }  
+    }
 }

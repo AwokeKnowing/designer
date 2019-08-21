@@ -1,0 +1,8 @@
+{
+    "designer": {
+        "template": {"txtid":"new"},
+        "bind":  {},
+        "assets":{},
+        "manifest": {"files": ["index.html", "lesson.json", "_kc_newlesson.jpg"]}
+    }
+}

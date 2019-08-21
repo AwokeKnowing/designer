@@ -6,20 +6,20 @@
         "bind": {
             "content": {
                 "question": {
-                    "val": "¿Cuál es el método de comunicación complementario para hablar, actuar y escribir?",
+                    "val": "ما هي طريقة الاتصال المقابلة أو التكميلية للتحدث والتمثيل والكتابة؟",
                     "control": {
                         "type": "textarea",
                         "rows": 5
                     }
                 },
                 "instructions": {
-                    "val": "Arrastra los elementos desde el círculo y suéltalos junto al cuadro correspondiente"
+                    "val": "اسحب العناصر من الدائرة وأفلتها بجوار مربع التوافق"
                 },
                 "answer1": {
-                    "val": "Hablando"
+                    "val": "التحدث"
                 },
                 "answer1Match": {
-                    "val": "Escuchando"
+                    "val": "الاستماع"
                 },
                 "answer1Image": {
                     "val": {
@@ -56,10 +56,10 @@
                     }
                 },
                 "answer2": {
-                    "val": "Actuando"
+                    "val": "التمثيل"
                 },
                 "answer2Match": {
-                    "val": "Observando"
+                    "val": "الملاحظة"
                 },
                 "answer2Image": {
                     "val": {
@@ -96,10 +96,10 @@
                     }
                 },
                 "answer3": {
-                    "val": "Escritura"
+                    "val": "الكتابة"
                 },
                 "answer3Match": {
-                    "val": "Lectura"
+                    "val": "القراءة"
                 },
                 "answer3Image": {
                     "val": {
@@ -136,10 +136,10 @@
                     }
                 },
                 "correctFeedback": {
-                    "val": "¡Eso es correcto!"
+                    "val": "هذا صحيح!"
                 },
                 "incorrectFeedback": {
-                    "val": "Lo siento, por favor intente nuevamente"
+                    "val": "للأسف! نرجو المحاولة مرة أخرى"
                 }
             },
             "theme": {
@@ -269,9 +269,9 @@
                 "hsize": "5 KB",
                 "about": "160x90 (5 KB)"
             },
-            "_kc_question-mark3.png": {
-                "txtid": "_kc_question-mark3.png",
-                "md5": "40a02507bc970b1f1fc03a5c9257d087",
+            "_kc_question-mark3ar.png": {
+                "txtid": "_kc_question-mark3ar.png",
+                "md5": "40a02507bc970b1f1fc03a5c9257d088",
                 "added": 1552089417,
                 "tags": [
                     "images",
@@ -280,8 +280,8 @@
                     "png"
                 ],
                 "type": "image",
-                "title": "_kc_question-mark3.png",
-                "file": "_kc_question-mark3.png",
+                "title": "_kc_question-mark3ar.png",
+                "file": "_kc_question-mark3ar.png",
                 "width": 512,
                 "height": 512,
                 "mime": "image/png",
@@ -357,7 +357,7 @@
                 "_kc_listening.jpg",
                 "_kc_nextarrow.png",
                 "_kc_observing.jpg",
-                "_kc_question-mark3.png",
+                "_kc_question-mark3ar.png",
                 "_kc_reading.jpg",
                 "_kc_speaking.jpg",
                 "_kc_writing.jpg"

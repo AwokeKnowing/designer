@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html dir="ltr" mozdisallowselectionprint moznomarginboxes>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style type="text/css">
+      html, body{margin: 0px; padding: 0px;width: 100%;}
+      img{max-width: 100%;max-height: 100%;height: auto;}
+      div.img{text-align: center;}
+      .hidden{display: none;}
+    </style>
+    <title></title>
+  </head>
+
+  <body tabindex="1" class="loadingInProgress">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn0.knowledgecity.com/vendors/kc/webplayer/2.0/lesson.js"></script>
+    <script src="https://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.js"></script>
+    
+    <div class="img" style="width:100%;height:auto;"><img src="_kc_newlesson.jpg" class="slide" />    </div>
+    <script>
+    lesson.size(960,540,960,540);
+path = location.pathname.split('/');
+configFilename = path[path.length-1].replace('index', 'lesson').replace('html','json');
+    
+$.ajax({"url":configFilename,cache:false,dataType:"json"}).done(function(settings){
+
+    vm = ko.mapping.fromJS(settings.designer.bind);
+    ko.applyBindings(vm); // This makes Knockout get to work
+
+    window.parent.postMessage(JSON.stringify({eventName:"designerSettings",eventData: settings.designer}),'*');
+
+    window.addEventListener('message', function(e){
+        try {var data = JSON.parse(e.data);} catch(ev) { return false; }
+        
+        if(data['eventName'] == "bindUpdated") {
+            //console.log("received update", data);
+            ko.mapping.fromJS(data['eventData'], vm);
+        }
+    });
+
+}).fail(
+    function(r){console.log("error",r)
+});
+    </script>
+  </body>
+</html>

@@ -6,26 +6,26 @@
         "bind": {
             "content": {
                 "question": {
-                    "val": "¿Cuál de estos segmentos demográficos ha experimentado el mayor crecimiento relativo (porcentaje) en los Estados Unidos entre 1980 y 2010?",
+                    "val": "ما هو القطاع الديموجرافي الذي شهد أعلى نمو نسبي (نسبة مئوية) من بين القطاعات التالية في الولايات المتحدة في الفترة بين عام 1980 وعام 2010؟",
                     "control": {
                         "type": "textarea",
                         "rows": 5
                     }
                 },
                 "instructions": {
-                    "val": "Haga clic en la mejor opción"
+                    "val": "انقر على أفضل اختيار"
                 },
                 "correctAnswer": {
-                    "val": "personas de edad profesional 25-65"
+                    "val": "فئة العاملين في سن 25-65"
                 },
                 "answer2": {
-                    "val": "jóvenes de 15 a 25 años"
+                    "val": "فئة الشباب في سن 15-25"
                 },
                 "answer3": {
-                    "val": "bebés y niños de 0 a 15 años"
+                    "val": "فئة الرضع والأطفال في سن 0-15"
                 },
                 "answer4": {
-                    "val": "personas jubiladas mayores de 65 años"
+                    "val": "فئة المتقاعدين في سن65+"
                 },
                 "correctImage": {
                     "val": {
@@ -96,16 +96,16 @@
                     }
                 },
                 "correctFeedback": {
-                    "val": "¡Eso es correcto!"
+                    "val": "هذا صحيح!"
                 },
                 "answer2Feedback": {
-                    "val": "Lo siento, esa no es la mejor respuesta"
+                    "val": "للأسف! هذه ليست أفضل إجابة"
                 },
                 "answer3Feedback": {
-                    "val": "Lo siento, esa no es la mejor respuesta"
+                    "val": "للأسف! هذا غير صحيح"
                 },
                 "answer4Feedback": {
-                    "val": "Lo siento, eso es incorrecto"
+                    "val": "للأسف! هذا غير صحيح"
                 }
             },
             "theme": {
@@ -197,25 +197,25 @@
                 "hsize": "6 KB",
                 "about": "200x133 (6 KB)"
             },
-            "_kc_question-mark3.png": {
-                "txtid": "_kc_question-mark3.png",
-                "md5": "40a02507bc970b1f1fc03a5c9257d087",
-                "added": 1552089417,
-                "tags": [
-                    "images",
-                    "question",
-                    "mark3",
-                    "png"
-                ],
-                "type": "image",
-                "title": "_kc_question-mark3.png",
-                "file": "_kc_question-mark3.png",
-                "width": 512,
-                "height": 512,
-                "mime": "image/png",
-                "size": 29959,
-                "hsize": "29 KB",
-                "about": "512x512 (29 KB)"
+            "_kc_question-mark3ar.png": {
+                    "txtid": "_kc_question-mark3ar.png",
+                    "md5": "40a02507bc970b1f1fc03a5c9257d088",
+                    "added": 1552089417,
+                    "tags": [
+                            "images",
+                            "question",
+                            "mark3",
+                            "png"
+                    ],
+                    "type": "image",
+                    "title": "_kc_question-mark3ar.png",
+                    "file": "_kc_question-mark3ar.png",
+                    "width": 512,
+                    "height": 512,
+                    "mime": "image/png",
+                    "size": 29959,
+                    "hsize": "29 KB",
+                    "about": "512x512 (29 KB)"
             },
             "_kc_retire.jpg": {
                 "txtid": "_kc_retire.jpg",
@@ -263,7 +263,7 @@
                 "lesson.json",
                 "_kc_engineeringstudent.jpg",
                 "_kc_officeworkerfem.jpg",
-                "_kc_question-mark3.png",
+                "_kc_question-mark3ar.png",
                 "_kc_retire.jpg",
                 "_kc_school_children1.jpg"
             ]

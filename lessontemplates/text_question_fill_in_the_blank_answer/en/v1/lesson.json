@@ -24,38 +24,56 @@
                 }
             },
             "theme": {
+                "themeManager": {
+                    "control": {
+                        "type": "thememanager"
+                    }
+                },
                 "backgroundColor": {
                     "val": "rgb(240, 240, 240)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "accentColor": {
                     "val": "rgb(163, 47, 59)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "accentColorText": {
                     "val": "rgb(197, 197, 197)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "questionBackgroundColor": {
                     "val": "rgb(240, 240, 240)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "answerBackgroundColor": {
                     "val": "rgb(62, 109, 209)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "questionColor": {
                     "val": "rgb(0, 0, 0)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 },
                 "answerColor": {
                     "val": "rgb(255, 255, 255)",
-                    "control": {"type":"color"}
+                    "control": {
+                        "type": "color"
+                    }
                 }
             }
         },
         "assets": {
-            "themeManager": {"control": {"type": "thememanager"} },
             "_kc_computer_saleswoman2.jpg": {
                 "txtid": "_kc_computer_saleswoman2.jpg",
                 "md5": "f3599c5bcd3c6f96041db1c9db2f9a62",

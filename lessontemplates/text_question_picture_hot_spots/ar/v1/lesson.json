@@ -1,0 +1,174 @@
+{
+  "designer": {
+    "template": {
+      "txtid": "text_question_picture_hot_spots"
+    },
+    "bind": {
+      "content": {
+        "question": {
+          "val": "في دورة الصراع ، ما هي الخطوة الأولى في الدورة؟",
+          "control": {
+            "type": "textarea",
+            "rows": "5"
+          }
+        },
+        "instructions": {
+          "val": "انقر على جزء الصورة الذي يمثل الإجابة"
+        },
+        "image": {
+          "val": {
+            "src": "_kc_conflictresolution-ar.jpg",
+            "width": "704",
+            "height": "396",
+            "crop": {
+              "zoom": "0.55",
+              "x": "0",
+              "y": "0",
+              "width": "1280",
+              "height": "720"
+            }
+          },
+          "control": {
+            "type": "croppedimage"
+          }
+        },
+        "imageHotSpot": {
+          "val": {
+            "grid": "[[0,0,0,0,0,3,3,3,3,0,0,0,0,0,0,0],[0,0,0,0,0,3,3,3,3,0,0,2,2,2,0,0],[0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0],[0,4,4,4,4,0,6,6,6,6,2,2,2,2,2,0],[4,4,4,4,4,4,6,6,6,6,0,0,0,0,0,0],[4,4,4,4,4,4,6,6,6,6,0,1,1,0,0,0],[0,0,0,0,0,5,5,0,0,0,1,1,1,1,0,0],[0,0,0,0,5,5,5,5,0,1,1,1,1,1,1,0],[0,0,0,0,5,5,5,5,0,1,1,1,1,1,1,0]]"
+          },
+          "control": {
+            "type": "croppedimagehotspot",
+            "position": {
+              "top": "140",
+              "left": "130",
+              "width": "708",
+              "height": "400"
+            }
+          }
+        },
+        "correctFeedback": {
+          "val": "ملاحظة الموقف الحالي صحيح!"
+        },
+        "answer2Feedback": {
+          "val": "استغلال الصراع لصالحك غير صحيح"
+        },
+        "answer3Feedback": {
+          "val": "غير صحيح. هل هناك أي شئ يمكن فعله قبل التقييم؟"
+        },
+        "answer4Feedback": {
+          "val": "هذا سؤال جيد، ولكن ليس أفضل إجابة"
+        },
+        "answer5Feedback": {
+          "val": "التبسيط مهم للغاية ، ولكن ليس الخطوة الأولى"
+        },
+        "answer6Feedback": {
+          "val": "هذا الشكل يمثل فقط الصراع. انقر فوق إحدى الصور المحيطة"
+        },
+        "answer7Feedback": {
+          "val": "للأسف، هذه ليست أفضل إجابة"
+        },
+        "answer8Feedback": {
+          "val": "للأسف، هذه ليست أفضل إجابة"
+        }
+      },
+      "theme": {
+        "themeManager": {
+          "control": {
+            "type": "thememanager"
+          }
+        },
+        "backgroundColor": {
+          "val": "rgb(240, 240, 240)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "accentColor": {
+          "val": "rgb(163, 47, 59)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "accentColorText": {
+          "val": "rgb(197, 197, 197)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "questionBackgroundColor": {
+          "val": "rgb(240, 240, 240)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "answerBackgroundColor": {
+          "val": "rgb(62, 109, 209)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "questionColor": {
+          "val": "rgb(0, 0, 0)",
+          "control": {
+            "type": "color"
+          }
+        },
+        "answerColor": {
+          "val": "rgb(255, 255, 255)",
+          "control": {
+            "type": "color"
+          }
+        }
+      }
+    },
+    "assets": {
+      "_kc_conflictresolution-ar.jpg": {
+        "txtid": "_kc_conflictresolution-ar.jpg",
+        "md5": "a53fefeb3bdaba762cec7d43602ed77b",
+        "added": "1552089317",
+        "tags": [
+          "images",
+          "conflict",
+          "jpg"
+        ],
+        "type": "image",
+        "title": "_kc_conflictresolution-ar.jpg",
+        "file": "_kc_conflictresolution-ar.jpg",
+        "width": "1280",
+        "height": "720",
+        "mime": "image/jpeg",
+        "size": "100646",
+        "hsize": "100.6 KB",
+        "about": "1280x720 (6 KB)"
+      },
+      "_kc_question-mark3ar.png": {
+          "txtid": "_kc_question-mark3ar.png",
+          "md5": "40a02507bc970b1f1fc03a5c9257d088",
+          "added": 1552089417,
+          "tags": [
+              "images",
+              "question",
+              "mark3",
+              "png"
+          ],
+          "type": "image",
+          "title": "_kc_question-mark3ar.png",
+          "file": "_kc_question-mark3ar.png",
+          "width": 512,
+          "height": 512,
+          "mime": "image/png",
+          "size": 29959,
+          "hsize": "29 KB",
+          "about": "512x512 (29 KB)"
+      }
+    },
+    "manifest": {
+      "files": [
+        "index.html",
+        "lesson.json",
+        "_kc_conflictresolution-ar.jpg",
+        "_kc_question-mark3ar.png"
+      ]
+    }
+  }
+}
