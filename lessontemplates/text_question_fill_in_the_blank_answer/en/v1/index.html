@@ -164,7 +164,8 @@ $(".choices input").focus();
 
 setInterval(function(){
     //console.log(   !!( ($('.choice input').eq(0).val()).length == $('.choice input').eq(0).attr('maxlength')*1 )         ) ;
-    $(".next").toggle(!!( ($('.choice input').eq(0).val()).length == $('.choice input').eq(0).attr('maxlength')*1 )  )
+    //$(".next").toggle(!!( ($('.choice input').eq(0).val()).length == $('.choice input').eq(0).attr('maxlength')*1 )  )
+    $(".next").toggle(!!( ($('.choice input').eq(0).val()).length > 0  ))
 },500);
 
 //todo: make like:
