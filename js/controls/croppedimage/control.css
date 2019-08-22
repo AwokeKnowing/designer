@@ -11,6 +11,8 @@
 .rtl .croppie-controls > div{direction: rtl}
 
 .croppedimage {/*position: relative; causes image to overlap title of next control*/}
+.croppedimage .clearbtn {float:right;background: rgba(50,50,50,.6);font-family: sans-serif;width:27px;height: 27px;border: 1px solid #555;border-radius: 3px;margin-top: -27px;margin-right:-2px;font-size:18px;line-height: 22px;text-align: center;position: relative;cursor:pointer;}
+.croppedimage .clearbtn:hover{color:white;background: rgba(50,50,50,.9)}
 .croppedimage .thumbnail {width: 27px; height: 27px; border: 1px solid #888; border-radius: 5px 0px 0px 5px; position: relative; margin-top: -27px; overflow: hidden;}
 .croppedimage .thumbnail > div {transform: scale(.25);  transform-origin: left top 0px; width: 108px; height: 108px;background: black; text-align: center; overflow: hidden; transition: all .3s ease-out; margin-left:-1px; margin-top:-1px;}
 .croppedimage .thumbnail:hover {overflow: visible;}

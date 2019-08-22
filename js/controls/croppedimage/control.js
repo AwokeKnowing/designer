@@ -23,6 +23,7 @@ var EditorControl_croppedimage = (function() {
         var val = "valueUpdate: 'afterkeydown', value: " + panelKey + "." + controlKey + ".val";
 
         $control.append($('<input type="text" disabled>').attr('data-bind', val + ".src"));        //relative to lesson folder
+        $control.append($('<div class="clearbtn">x</div>'));
         $control.append($('<input type="hidden">').attr('data-bind', val + ".width"));      //post-scale (final) width
         $control.append($('<input type="hidden">').attr('data-bind', val + ".height"));
         $control.append($('<input type="hidden">').attr('data-bind', val + ".crop.x"));     //crop points, in image space
@@ -34,6 +35,7 @@ var EditorControl_croppedimage = (function() {
 
         var thumbnail = createThumbnail(panelKey, controlKey, editor.currentLesson.ref.sourcePath);
         $control.append(thumbnail);
+
         $control.append('<div style="clear:both">');
 
         $control.click(control.control_click)
@@ -45,8 +47,15 @@ var EditorControl_croppedimage = (function() {
     }
 
     EditorControl_croppedimage.prototype.control_click = function(e) {
-
+        //loads the croppie dialog and applies the crop points
         var $control = $(this);
+
+        //if clicked clear button, just clear text
+        if($(e.target).hasClass("clearbtn")){
+            $control.find("[data-bind$='.src']").eq(0).val('').trigger('keydown');
+            e.preventDefault();
+            return false;
+        }
         
         // get the current crop points/zoom to pass to the dialog box
         var src =       $control.find("[data-bind$='val.src']"          ).eq(0).val() || '';
@@ -74,16 +83,6 @@ var EditorControl_croppedimage = (function() {
         $('.pg-edit').append($dialog);
 
         var crop = $('.croppie-tool').croppie({viewport: {width: width, height: height}});
-
-        // all images must currently be same domain because croppie uses canvas (no crossdomain). 
-        // However since we do html and don't get data we could modify croppie to show with left/offset  
-        // or use our own croppie and get around this.
-        // that said, even if crop tool doesn't work, image does render, and other image can be chosen
-        crop.croppie('bind', {
-            url: (/\/\/|^\//.test(src)?'':editor.currentLesson.ref.sourcePath) + src, 
-            points: [x, y, x + cropW, y + cropH],       // convert x,y,width,height to x1,y1,x2,y2 for croppie
-            zoom: cropZ
-        });
 
         $dialog.on('click', '.croppie-cancel', function() {
             crop.croppie('destroy');
@@ -126,6 +125,24 @@ var EditorControl_croppedimage = (function() {
                 });
             })
         })
+
+        // all images must currently be same domain because croppie uses canvas (no crossdomain). 
+        // However since we do html and don't get data we could modify croppie to show with left/offset  
+        // or use our own croppie and get around this.
+        // that said, even if crop tool doesn't work, image does render, and other image can be chosen
+        
+        if(src) { //if we have image, show it in croppie crop/zoom box
+            crop.croppie('bind', {
+                url: (/\/\/|^\//.test(src)?'':editor.currentLesson.ref.sourcePath) + src, 
+                points: [x, y, x + cropW, y + cropH],       // convert x,y,width,height to x1,y1,x2,y2 for croppie
+                zoom: cropZ
+            });
+        } else {
+            // no img to show so just go to choose dialog
+            $dialog.find('.croppie-chooseimage').click();
+        }
+
+        return false;
 
     }
 
